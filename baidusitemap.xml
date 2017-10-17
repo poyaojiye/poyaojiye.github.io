@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/10/16/test/</loc>
+    <lastmod>2017-10-16T13:01:02.115Z</lastmod>
+    <data>
+        <display>
+        <title>git基本常用命令</title>
+        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
+        
+        <tag>git github 基本常用命令</tag>
+         
+         
+           
+             
+              <breadCrumb title="github" url="http://yoursite.com/categories/github/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/10/16/test2/</loc>
+    <lastmod>2017-10-16T00:49:19.401Z</lastmod>
+    <data>
+        <display>
+        <title>test</title>
+        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/10/16/hello-world/</loc>
+    <lastmod>2017-10-15T16:48:11.477Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-10-15T16:48:11.476Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>
