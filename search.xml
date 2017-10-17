@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[git基本常用命令]]></title>
+    <url>%2F2017%2F10%2F16%2Ftest%2F</url>
+    <content type="text"><![CDATA[参考链接http://blog.csdn.net/free_wind22/article/details/50967723 Git基本常用命令如下： 创建一个空目录 XX指目录名) mkdir XX 显示当前目录的路径。 pwd 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git init 把xx文件添加到暂存区去。 git add XX 提交文件 –m 后面的是注释。 git commit –m “XX” 查看仓库状态 git status 查看XX文件修改了那些内容 git diff XX 查看历史记录 git log 回退到上一个版本 git reset –hard HEAD^ 回退到上一个版本 git reset –hard HEAD~ 如果想回退到100个版本，使用 ) git reset –hard HEAD~100 查看XX文件内容 cat XX 查看历史记录的版本号id git reflog 把XX文件在工作区的修改全部撤销。 git checkout – XX 删除XX文件 git rm XX 关联一个远程库 git remote add origin https://github.com/…. 把当前master分支推送到远程库，第一次要用-u 以后不需要 git push –u origin master 从远程库中克隆 git clone https://github.com/…. 创建dev分支 并切换到dev分支上 git checkout –b dev 查看当前所有的分支 git branch 切换回master分支 git checkout master 在当前的分支上合并dev分支 git merge dev 删除dev分支 git branch –d dev 创建分支 git branch name 把当前的工作隐藏起来 等以后恢复现场后继续工作 git stash 查看所有被隐藏的文件列表 git stash list 恢复被隐藏的文件，但是内容不删除 git stash apply 删除文件 git stash drop 恢复文件的同时 也删除文件 git stash pop 查看远程库的信息 git remote 查看远程库的详细信息 git remote –v Git会把master分支推送到远程库对应的远程分支上 git push origin master]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>git github 基本常用命令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2F2017%2F10%2F16%2Ftest2%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F10%2F16%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
