@@ -5,7 +5,8 @@
     <url>%2F2017%2F10%2F17%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
     <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
       <categories>
-        <category>git&gt;github</category>
+        <category>test1</category>
+        <category>test2</category>
       </categories>
       <tags>
         <tag>Markdown</tag>
