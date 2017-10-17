@@ -1940,7 +1940,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #20ecd0;
+  background: #ff18a7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2537,6 +2537,7 @@ pre .javascript .function {
 }
 .category-all-page .category-list-item {
   margin: 5px 10px;
+  list-style-type: none;
 }
 .category-all-page .category-list-count {
   color: #bbb;
