@@ -3,9 +3,9 @@
   <entry>
     <title><![CDATA[Markdown博客模板]]></title>
     <url>%2F2017%2F10%2F17%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
-    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾 如果觉得我的文章对您有用，请在下方随意 点赞&amp;打赏。您的支持将鼓励我继续创作！ 欢迎评论、留言，或直接联系我，一起交流学习！]]></content>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
       <categories>
-        <category>git&amp;github</category>
+        <category>git&gt;github</category>
       </categories>
       <tags>
         <tag>Markdown</tag>
