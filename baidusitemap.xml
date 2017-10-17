@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/10/17/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2017-10-17T09:50:38.179Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown博客模板</title>
+        <pubTime>2017-10-17T09:16:19.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>博客模板</tag>
+         
+         
+           
+             
+              <breadCrumb title="git&amp;github" url="http://yoursite.com/categories/git-github/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/10/16/test/</loc>
     <lastmod>2017-10-17T09:09:32.009Z</lastmod>
     <data>
@@ -31,34 +53,4 @@
     
     
     
-    
-  <url>
-    <loc>http://yoursite.com/2017/10/16/test2/</loc>
-    <lastmod>2017-10-16T00:49:19.401Z</lastmod>
-    <data>
-        <display>
-        <title>test</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/10/16/hello-world/</loc>
-    <lastmod>2017-10-15T16:48:11.477Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-10-15T16:48:11.476Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>

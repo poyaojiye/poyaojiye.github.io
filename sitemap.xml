@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/10/17/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
+    
+    <lastmod>2017-10-17T09:50:38.179Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/10/16/test/</loc>
     
     <lastmod>2017-10-17T09:09:32.009Z</lastmod>
@@ -40,20 +47,6 @@
     <loc>http://yoursite.com/404.html</loc>
     
     <lastmod>2017-10-16T10:30:08.509Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/10/16/test2/</loc>
-    
-    <lastmod>2017-10-16T00:49:19.401Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/10/16/hello-world/</loc>
-    
-    <lastmod>2017-10-15T16:48:11.477Z</lastmod>
     
   </url>
   
