@@ -1,191 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title><![CDATA[Markdown博客模板]]></title>
-      <url>/2017/10/17/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</url>
-      <content type="html"><![CDATA[<h3 id="Markdown博客模板"><a href="#Markdown博客模板" class="headerlink" title="Markdown博客模板"></a>Markdown博客模板</h3><ol>
-<li><p>开头</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">layout: photo</div><div class="line">title: 标题</div><div class="line">date: 2017-10-16 08:49:19</div><div class="line">categories: 分类</div><div class="line">tags: [标签1,标签2,标签3]</div><div class="line">photos: </div><div class="line"> - /images/xxx.jpg</div><div class="line"> - http://....</div><div class="line">---</div></pre></td></tr></table></figure>
-</li>
-<li><p>结尾</p>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> git&gt;github </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> Markdown </tag>
-            
-            <tag> 博客模板 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[git基本常用命令]]></title>
-      <url>/2017/10/16/test/</url>
-      <content type="html"><![CDATA[<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://blog.csdn.net/free_wind22/article/details/50967723" target="_blank" rel="external">http://blog.csdn.net/free_wind22/article/details/50967723</a></p>
-<h3 id="Git基本常用命令如下："><a href="#Git基本常用命令如下：" class="headerlink" title="Git基本常用命令如下："></a>Git基本常用命令如下：</h3><ol>
-<li>创建一个空目录 XX指目录名)<blockquote>
-<p>mkdir XX</p>
-</blockquote>
-</li>
-<li>显示当前目录的路径。<blockquote>
-<p>pwd</p>
-</blockquote>
-</li>
-<li>把当前的目录变成可以管理的git仓库，生成隐藏.git文件。<blockquote>
-<p>git init</p>
-</blockquote>
-</li>
-<li>把xx文件添加到暂存区去。<blockquote>
-<p>git add XX</p>
-</blockquote>
-</li>
-<li>提交文件 –m 后面的是注释。<blockquote>
-<p>git commit –m “XX”</p>
-</blockquote>
-</li>
-<li>查看仓库状态<blockquote>
-<p>git status</p>
-</blockquote>
-</li>
-<li>查看XX文件修改了那些内容<blockquote>
-<p>git diff  XX</p>
-</blockquote>
-</li>
-<li>查看历史记录<blockquote>
-<p>git log</p>
-</blockquote>
-</li>
-<li>回退到上一个版本<blockquote>
-<p>git reset  –hard HEAD^</p>
-</blockquote>
-</li>
-<li>回退到上一个版本<blockquote>
-<p>git reset  –hard HEAD~</p>
-</blockquote>
-</li>
-<li>如果想回退到100个版本，使用 )<blockquote>
-<p>git reset –hard HEAD~100</p>
-</blockquote>
-</li>
-<li>查看XX文件内容<blockquote>
-<p>cat XX</p>
-</blockquote>
-</li>
-<li>查看历史记录的版本号id<blockquote>
-<p>git reflog</p>
-</blockquote>
-</li>
-<li>把XX文件在工作区的修改全部撤销。<blockquote>
-<p>git checkout – XX</p>
-</blockquote>
-</li>
-<li>删除XX文件<blockquote>
-<p>git rm XX</p>
-</blockquote>
-</li>
-<li>关联一个远程库<blockquote>
-<p>git remote add origin <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>….</p>
-</blockquote>
-</li>
-<li>把当前master分支推送到远程库，第一次要用-u 以后不需要<blockquote>
-<p>git push –u origin master</p>
-</blockquote>
-</li>
-<li>从远程库中克隆<blockquote>
-<p>git clone <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>….</p>
-</blockquote>
-</li>
-<li>创建dev分支 并切换到dev分支上<blockquote>
-<p>git checkout –b dev</p>
-</blockquote>
-</li>
-<li>查看当前所有的分支<blockquote>
-<p>git branch</p>
-</blockquote>
-</li>
-<li>切换回master分支<blockquote>
-<p>git checkout master</p>
-</blockquote>
-</li>
-<li>在当前的分支上合并dev分支<blockquote>
-<p>git merge dev</p>
-</blockquote>
-</li>
-<li>删除dev分支<blockquote>
-<p>git branch –d dev</p>
-</blockquote>
-</li>
-<li>创建分支<blockquote>
-<p>git branch name</p>
-</blockquote>
-</li>
-<li>把当前的工作隐藏起来 等以后恢复现场后继续工作<blockquote>
-<p>git stash</p>
-</blockquote>
-</li>
-<li>查看所有被隐藏的文件列表<blockquote>
-<p>git stash list</p>
-</blockquote>
-</li>
-<li>恢复被隐藏的文件，但是内容不删除<blockquote>
-<p>git stash apply</p>
-</blockquote>
-</li>
-<li>删除文件<blockquote>
-<p>git stash drop</p>
-</blockquote>
-</li>
-<li>恢复文件的同时 也删除文件<blockquote>
-<p>git stash pop</p>
-</blockquote>
-</li>
-<li>查看远程库的信息<blockquote>
-<p>git remote</p>
-</blockquote>
-</li>
-<li>查看远程库的详细信息<blockquote>
-<p>git remote –v</p>
-</blockquote>
-</li>
-<li>Git会把master分支推送到远程库对应的远程分支上<blockquote>
-<p>git push origin master</p>
-</blockquote>
-</li>
-</ol>
-]]></content>
-      
-        <categories>
-            
-            <category> github </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> git </tag>
-            
-            <tag> github </tag>
-            
-            <tag> 基本常用命令 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>git&gt;github</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git基本常用命令]]></title>
+    <url>%2F2017%2F10%2F16%2Ftest%2F</url>
+    <content type="text"><![CDATA[参考链接http://blog.csdn.net/free_wind22/article/details/50967723 Git基本常用命令如下： 创建一个空目录 XX指目录名) mkdir XX 显示当前目录的路径。 pwd 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git init 把xx文件添加到暂存区去。 git add XX 提交文件 –m 后面的是注释。 git commit –m “XX” 查看仓库状态 git status 查看XX文件修改了那些内容 git diff XX 查看历史记录 git log 回退到上一个版本 git reset –hard HEAD^ 回退到上一个版本 git reset –hard HEAD~ 如果想回退到100个版本，使用 ) git reset –hard HEAD~100 查看XX文件内容 cat XX 查看历史记录的版本号id git reflog 把XX文件在工作区的修改全部撤销。 git checkout – XX 删除XX文件 git rm XX 关联一个远程库 git remote add origin https://github.com/…. 把当前master分支推送到远程库，第一次要用-u 以后不需要 git push –u origin master 从远程库中克隆 git clone https://github.com/…. 创建dev分支 并切换到dev分支上 git checkout –b dev 查看当前所有的分支 git branch 切换回master分支 git checkout master 在当前的分支上合并dev分支 git merge dev 删除dev分支 git branch –d dev 创建分支 git branch name 把当前的工作隐藏起来 等以后恢复现场后继续工作 git stash 查看所有被隐藏的文件列表 git stash list 恢复被隐藏的文件，但是内容不删除 git stash apply 删除文件 git stash drop 恢复文件的同时 也删除文件 git stash pop 查看远程库的信息 git remote 查看远程库的详细信息 git remote –v Git会把master分支推送到远程库对应的远程分支上 git push origin master]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>github</tag>
+        <tag>基本常用命令</tag>
+      </tags>
+  </entry>
 </search>

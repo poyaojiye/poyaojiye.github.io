@@ -1940,7 +1940,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff6c;
+  background: #830f93;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2542,11 +2542,11 @@ pre .javascript .function {
   color: #bbb;
 }
 .category-all-page .category-list-count:before {
-  display: inline;
+  display: list-item;
   content: " (";
 }
 .category-all-page .category-list-count:after {
-  display: inline;
+  display: list-item;
   content: ") ";
 }
 .category-all-page .category-list-child {
