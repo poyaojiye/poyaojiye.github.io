@@ -1940,7 +1940,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a18a5b;
+  background: #7aff2f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2533,12 +2533,10 @@ pre .javascript .function {
 .category-all-page .category-list {
   margin: 0;
   padding: 0;
-  list-style: none;
   list-style-type: none;
 }
 .category-all-page .category-list-item {
   margin: 5px 10px;
-  list-style-type: none;
 }
 .category-all-page .category-list-count {
   color: #bbb;
@@ -3123,7 +3121,6 @@ pre .javascript .function {
 }
 .category-list ul {
   list-style: none;
-  list-style-type: none;
 }
 .category-list ul li:before {
   content: '> ';
