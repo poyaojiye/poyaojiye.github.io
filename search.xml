@@ -2,12 +2,10 @@
 <search>
   <entry>
     <title><![CDATA[Markdown博客模板]]></title>
-    <url>%2F2017%2F10%2F17%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
+    <url>%2F2017%2F10%2F17%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
       <categories>
-        <category>test1</category>
-        <category>test2</category>
-        <category>test3</category>
+        <category>博客设置</category>
       </categories>
       <tags>
         <tag>Markdown</tag>
@@ -15,16 +13,172 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[git基本常用命令]]></title>
-    <url>%2F2017%2F10%2F16%2Ftest%2F</url>
-    <content type="text"><![CDATA[参考链接http://blog.csdn.net/free_wind22/article/details/50967723 Git基本常用命令如下： 创建一个空目录 XX指目录名) mkdir XX 显示当前目录的路径。 pwd 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git init 把xx文件添加到暂存区去。 git add XX 提交文件 –m 后面的是注释。 git commit –m “XX” 查看仓库状态 git status 查看XX文件修改了那些内容 git diff XX 查看历史记录 git log 回退到上一个版本 git reset –hard HEAD^ 回退到上一个版本 git reset –hard HEAD~ 如果想回退到100个版本，使用 ) git reset –hard HEAD~100 查看XX文件内容 cat XX 查看历史记录的版本号id git reflog 把XX文件在工作区的修改全部撤销。 git checkout – XX 删除XX文件 git rm XX 关联一个远程库 git remote add origin https://github.com/…. 把当前master分支推送到远程库，第一次要用-u 以后不需要 git push –u origin master 从远程库中克隆 git clone https://github.com/…. 创建dev分支 并切换到dev分支上 git checkout –b dev 查看当前所有的分支 git branch 切换回master分支 git checkout master 在当前的分支上合并dev分支 git merge dev 删除dev分支 git branch –d dev 创建分支 git branch name 把当前的工作隐藏起来 等以后恢复现场后继续工作 git stash 查看所有被隐藏的文件列表 git stash list 恢复被隐藏的文件，但是内容不删除 git stash apply 删除文件 git stash drop 恢复文件的同时 也删除文件 git stash pop 查看远程库的信息 git remote 查看远程库的详细信息 git remote –v Git会把master分支推送到远程库对应的远程分支上 git push origin master]]></content>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E5%A4%9A%E7%BA%A7%E5%88%86%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板 开头 12345678910---layout: phototitle: 标题date: 2017-10-16 08:49:19categories: 分类tags: [标签1,标签2,标签3]photos: - /images/xxx.jpg - http://....--- 结尾]]></content>
+      <categories>
+        <category>博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java--分类占位]]></title>
+    <url>%2F2017%2F10%2F16%2FJava%2F</url>
+    <content type="text"></content>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python--分类占位]]></title>
+    <url>%2F2017%2F10%2F16%2FPython%2F</url>
+    <content type="text"></content>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Lunix--分类占位]]></title>
+    <url>%2F2017%2F10%2F16%2FLinux%2F</url>
+    <content type="text"></content>
+      <tags>
+        <tag>Lunix</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git常用命令]]></title>
+    <url>%2F2017%2F10%2F16%2FGit%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[参考链接http://blog.csdn.net/free_wind22/article/details/50967723 Git常用命令如下： 创建一个空目录 XX指目录名) mkdir XX 显示当前目录的路径。 pwd 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git init 把xx文件添加到暂存区去。 git add XX 提交文件 –m 后面的是注释。 git commit –m “XX” 查看仓库状态 git status 查看XX文件修改了那些内容 git diff XX 查看历史记录 git log 回退到上一个版本 git reset –hard HEAD^ 回退到上一个版本 git reset –hard HEAD~ 如果想回退到100个版本，使用 ) git reset –hard HEAD~100 查看XX文件内容 cat XX 查看历史记录的版本号id git reflog 把XX文件在工作区的修改全部撤销。 git checkout – XX 删除XX文件 git rm XX 关联一个远程库 git remote add origin https://github.com/…. 把当前master分支推送到远程库，第一次要用-u 以后不需要 git push –u origin master 从远程库中克隆 git clone https://github.com/…. 创建dev分支 并切换到dev分支上 git checkout –b dev 查看当前所有的分支 git branch 切换回master分支 git checkout master 在当前的分支上合并dev分支 git merge dev 删除dev分支 git branch –d dev 创建分支 git branch name 把当前的工作隐藏起来 等以后恢复现场后继续工作 git stash 查看所有被隐藏的文件列表 git stash list 恢复被隐藏的文件，但是内容不删除 git stash apply 删除文件 git stash drop 恢复文件的同时 也删除文件 git stash pop 查看远程库的信息 git remote 查看远程库的详细信息 git remote –v Git会把master分支推送到远程库对应的远程分支上 git push origin master]]></content>
       <categories>
         <category>github</category>
       </categories>
       <tags>
         <tag>git</tag>
         <tag>github</tag>
-        <tag>基本常用命令</tag>
+        <tag>常用命令</tag>
       </tags>
   </entry>
 </search>
