@@ -4,100 +4,8 @@
 
     
   <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/</loc>
-    <lastmod>2017-10-22T15:59:54.874Z</lastmod>
-    <data>
-        <display>
-        <title>工作忆事--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>工作忆事</tag>
-         
-         
-           
-             
-              <breadCrumb title="忆往昔" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/"/>
-          
-             
-              <breadCrumb title="工作忆事" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/</loc>
-    <lastmod>2017-10-22T15:59:51.122Z</lastmod>
-    <data>
-        <display>
-        <title>生活忆事--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>生活忆事</tag>
-         
-         
-           
-             
-              <breadCrumb title="忆往昔" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/"/>
-          
-             
-              <breadCrumb title="生活忆事" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/</loc>
-    <lastmod>2017-10-22T15:59:34.444Z</lastmod>
-    <data>
-        <display>
-        <title>大学忆事--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>大学忆事</tag>
-         
-         
-           
-             
-              <breadCrumb title="忆往昔" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/"/>
-          
-             
-              <breadCrumb title="大学忆事" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/</loc>
-    <lastmod>2017-10-22T15:59:15.510Z</lastmod>
-    <data>
-        <display>
-        <title>中学忆事--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>中学忆事</tag>
-         
-         
-           
-             
-              <breadCrumb title="忆往昔" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/"/>
-          
-             
-              <breadCrumb title="中学忆事" url="http://poyaojiye.com/categories/%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/17/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
-    <lastmod>2017-10-22T15:46:50.556Z</lastmod>
+    <loc>http://poyaojiye.com/2017/10/17/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2017-10-23T05:57:48.369Z</lastmod>
     <data>
         <display>
         <title>Markdown博客模板</title>
@@ -110,7 +18,7 @@
          
            
              
-              <breadCrumb title="博客设置" url="http://poyaojiye.com/categories/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/"/>
+              <breadCrumb title="99.博客设置" url="http://poyaojiye.com/categories/99-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/"/>
           
         </display>
     </data>
@@ -118,8 +26,334 @@
 
     
   <url>
-    <loc>http://poyaojiye.com/2017/10/22/%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/</loc>
-    <lastmod>2017-10-22T15:37:50.913Z</lastmod>
+    <loc>http://poyaojiye.com/2017/10/23/12.%E5%B0%8F%E8%80%8C%E7%BE%8E/Windows%E5%91%BD%E4%BB%A4%E8%AE%A1%E7%AE%97MD5%E4%B8%8ESHA1_SHA256%E5%80%BC/</loc>
+    <lastmod>2017-10-23T05:29:50.780Z</lastmod>
+    <data>
+        <display>
+        <title>Windows命令计算 MD5 、SHA1 、SHA256 值</title>
+        <pubTime>2017-10-23T05:16:43.000Z</pubTime>
+        
+        <tag>MD5</tag>
+         
+        <tag>SHA1</tag>
+         
+        <tag>SHA256</tag>
+         
+         
+           
+             
+              <breadCrumb title="12.小而美" url="http://poyaojiye.com/categories/12-%E5%B0%8F%E8%80%8C%E7%BE%8E/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/16/04.Github/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-10-23T05:06:14.896Z</lastmod>
+    <data>
+        <display>
+        <title>Git常用命令</title>
+        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="04.Github" url="http://poyaojiye.com/categories/04-Github/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Github_Page_%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2017-10-23T03:51:20.607Z</lastmod>
+    <data>
+        <display>
+        <title>Github_Pages_博客搭建</title>
+        <pubTime>2017-10-23T01:16:19.000Z</pubTime>
+        
+        <tag>Github</tag>
+         
+        <tag>博客</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>next</tag>
+         
+         
+           
+             
+              <breadCrumb title="99.博客设置" url="http://poyaojiye.com/categories/99-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <lastmod>2017-10-23T00:58:28.462Z</lastmod>
+    <data>
+        <display>
+        <title>碎碎念--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>碎碎念</tag>
+         
+         
+           
+             
+              <breadCrumb title="11.碎碎念" url="http://poyaojiye.com/categories/11-%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/</loc>
+    <lastmod>2017-10-23T00:58:28.454Z</lastmod>
+    <data>
+        <display>
+        <title>尬聊记--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>尬聊记</tag>
+         
+         
+           
+             
+              <breadCrumb title="09.尬聊记" url="http://poyaojiye.com/categories/09-%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/</loc>
+    <lastmod>2017-10-23T00:58:28.447Z</lastmod>
+    <data>
+        <display>
+        <title>生活忆事--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>生活忆事</tag>
+         
+         
+           
+             
+              <breadCrumb title="08.忆往昔" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+          
+             
+              <breadCrumb title="生活忆事" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/</loc>
+    <lastmod>2017-10-23T00:58:28.438Z</lastmod>
+    <data>
+        <display>
+        <title>工作忆事--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>工作忆事</tag>
+         
+         
+           
+             
+              <breadCrumb title="08.忆往昔" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+          
+             
+              <breadCrumb title="工作忆事" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/</loc>
+    <lastmod>2017-10-23T00:58:28.431Z</lastmod>
+    <data>
+        <display>
+        <title>大学忆事--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>大学忆事</tag>
+         
+         
+           
+             
+              <breadCrumb title="08.忆往昔" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+          
+             
+              <breadCrumb title="大学忆事" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/</loc>
+    <lastmod>2017-10-23T00:58:28.422Z</lastmod>
+    <data>
+        <display>
+        <title>中学忆事--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>中学忆事</tag>
+         
+         
+           
+             
+              <breadCrumb title="08.忆往昔" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+          
+             
+              <breadCrumb title="中学忆事" url="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)/</loc>
+    <lastmod>2017-10-23T00:58:28.414Z</lastmod>
+    <data>
+        <display>
+        <title>自然语言处理(NLP)--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>自然语言处理</tag>
+         
+        <tag>NLP</tag>
+         
+         
+           
+             
+              <breadCrumb title="07.自然语言处理(NLP)" url="http://poyaojiye.com/categories/07-%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-NLP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2017-10-23T00:58:28.405Z</lastmod>
+    <data>
+        <display>
+        <title>人工智能--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>人工智能</tag>
+         
+         
+           
+             
+              <breadCrumb title="06.人工智能" url="http://poyaojiye.com/categories/06-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2017-10-23T00:58:28.397Z</lastmod>
+    <data>
+        <display>
+        <title>大数据--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>大数据</tag>
+         
+         
+           
+             
+              <breadCrumb title="05.大数据" url="http://poyaojiye.com/categories/05-%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/03.Python/Python/</loc>
+    <lastmod>2017-10-23T00:58:28.389Z</lastmod>
+    <data>
+        <display>
+        <title>Python--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+             
+              <breadCrumb title="03.Python" url="http://poyaojiye.com/categories/03-Python/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/02.Java/Java/</loc>
+    <lastmod>2017-10-23T00:58:28.382Z</lastmod>
+    <data>
+        <display>
+        <title>Java--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>Java</tag>
+         
+         
+           
+             
+              <breadCrumb title="02.Java" url="http://poyaojiye.com/categories/02-Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</loc>
+    <lastmod>2017-10-23T00:57:11.146Z</lastmod>
+    <data>
+        <display>
+        <title>Linux--分类占位</title>
+        <pubTime>2017-10-23T00:49:19.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="01.Linux" url="http://poyaojiye.com/categories/01-Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/22/10.%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/</loc>
+    <lastmod>2017-10-23T00:47:44.366Z</lastmod>
     <data>
         <display>
         <title>我也是段子手</title>
@@ -130,193 +364,7 @@
          
            
              
-              <breadCrumb title="我也是段子手" url="http://poyaojiye.com/categories/%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    <lastmod>2017-10-22T15:16:52.888Z</lastmod>
-    <data>
-        <display>
-        <title>碎碎念--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>碎碎念</tag>
-         
-         
-           
-             
-              <breadCrumb title="碎碎念" url="http://poyaojiye.com/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E5%B0%AC%E8%81%8A%E8%AE%B0/</loc>
-    <lastmod>2017-10-22T15:16:52.856Z</lastmod>
-    <data>
-        <display>
-        <title>尬聊记--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>尬聊记</tag>
-         
-         
-           
-             
-              <breadCrumb title="尬聊记" url="http://poyaojiye.com/categories/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)/</loc>
-    <lastmod>2017-10-22T15:16:52.841Z</lastmod>
-    <data>
-        <display>
-        <title>自然语言处理(NLP)--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>自然语言处理</tag>
-         
-        <tag>NLP</tag>
-         
-         
-           
-             
-              <breadCrumb title="自然语言处理(NLP)" url="http://poyaojiye.com/categories/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-NLP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
-    <lastmod>2017-10-22T15:16:52.841Z</lastmod>
-    <data>
-        <display>
-        <title>人工智能--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>人工智能</tag>
-         
-         
-           
-             
-              <breadCrumb title="人工智能" url="http://poyaojiye.com/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/Python/</loc>
-    <lastmod>2017-10-22T15:16:52.825Z</lastmod>
-    <data>
-        <display>
-        <title>Python--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://poyaojiye.com/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/%E5%A4%A7%E6%95%B0%E6%8D%AE/</loc>
-    <lastmod>2017-10-22T15:16:52.825Z</lastmod>
-    <data>
-        <display>
-        <title>大数据--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>大数据</tag>
-         
-         
-           
-             
-              <breadCrumb title="大数据" url="http://poyaojiye.com/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/Java/</loc>
-    <lastmod>2017-10-22T15:16:52.809Z</lastmod>
-    <data>
-        <display>
-        <title>Java--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>Java</tag>
-         
-         
-           
-             
-              <breadCrumb title="Java" url="http://poyaojiye.com/categories/Java/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/Linux/</loc>
-    <lastmod>2017-10-22T15:16:52.809Z</lastmod>
-    <data>
-        <display>
-        <title>Linux--分类占位</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="Linux" url="http://poyaojiye.com/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/16/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2017-10-22T14:58:01.202Z</lastmod>
-    <data>
-        <display>
-        <title>Git常用命令</title>
-        <pubTime>2017-10-16T00:49:19.000Z</pubTime>
-        
-        <tag>git</tag>
-         
-        <tag>github</tag>
-         
-        <tag>常用命令</tag>
-         
-         
-           
-             
-              <breadCrumb title="github" url="http://poyaojiye.com/categories/github/"/>
+              <breadCrumb title="10.我也是段子手" url="http://poyaojiye.com/categories/10-%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/"/>
           
         </display>
     </data>
