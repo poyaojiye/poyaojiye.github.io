@@ -93,6 +93,26 @@
   </entry>
   
   <entry>
+    <title>工作忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.438Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>大数据--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     <id>http://poyaojiye.com/2017/10/23/05.大数据/大数据/</id>
@@ -167,24 +187,6 @@
   </entry>
   
   <entry>
-    <title>Linux--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
-    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:57:11.146Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/03.Python/Python/"/>
     <id>http://poyaojiye.com/2017/10/23/03.Python/Python/</id>
@@ -241,22 +243,20 @@
   </entry>
   
   <entry>
-    <title>工作忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <title>Linux--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
+    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.438Z</updated>
+    <updated>2017-10-23T00:57:11.146Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
     
     
-      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
     
   </entry>
   
