@@ -28,14 +28,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F01.Linux%2FLinux%2F</url>
+    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
     <content type="text"></content>
       <categories>
-        <category>01.Linux</category>
+        <category>07.自然语言处理(NLP)</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>自然语言处理</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
@@ -51,59 +52,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[大数据--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
+    <title><![CDATA[Python--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
     <content type="text"></content>
       <categories>
-        <category>05.大数据</category>
+        <category>03.Python</category>
       </categories>
       <tags>
-        <tag>大数据</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[人工智能--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>06.人工智能</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>07.自然语言处理(NLP)</category>
-      </categories>
-      <tags>
-        <tag>自然语言处理</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[尬聊记--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>09.尬聊记</category>
-      </categories>
-      <tags>
-        <tag>尬聊记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>02.Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -119,6 +75,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[尬聊记--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>09.尬聊记</category>
+      </categories>
+      <tags>
+        <tag>尬聊记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[碎碎念--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F</url>
     <content type="text"></content>
@@ -130,26 +97,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
+    <title><![CDATA[Java--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
     <content type="text"></content>
       <categories>
-        <category>03.Python</category>
+        <category>02.Java</category>
       </categories>
       <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[大学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>大学忆事</category>
-      </categories>
-      <tags>
-        <tag>大学忆事</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -162,6 +117,51 @@
       </categories>
       <tags>
         <tag>中学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F01.Linux%2FLinux%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>01.Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[人工智能--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>06.人工智能</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大数据--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>05.大数据</category>
+      </categories>
+      <tags>
+        <tag>大数据</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>大学忆事</category>
+      </categories>
+      <tags>
+        <tag>大学忆事</tag>
       </tags>
   </entry>
   <entry>
