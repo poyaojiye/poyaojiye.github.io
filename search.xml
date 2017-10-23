@@ -39,25 +39,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[大数据--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
+    <title><![CDATA[Python--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
     <content type="text"></content>
       <categories>
-        <category>05.大数据</category>
+        <category>03.Python</category>
       </categories>
       <tags>
-        <tag>大数据</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[人工智能--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
+    <title><![CDATA[工作忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
       <categories>
-        <category>06.人工智能</category>
+        <category>08.忆往昔</category>
+        <category>工作忆事</category>
       </categories>
       <tags>
-        <tag>人工智能</tag>
+        <tag>工作忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -73,15 +74,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[工作忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[人工智能--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
     <content type="text"></content>
       <categories>
-        <category>08.忆往昔</category>
-        <category>工作忆事</category>
+        <category>06.人工智能</category>
       </categories>
       <tags>
-        <tag>工作忆事</tag>
+        <tag>人工智能</tag>
       </tags>
   </entry>
   <entry>
@@ -118,6 +118,29 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[中学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>中学忆事</category>
+      </categories>
+      <tags>
+        <tag>中学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大数据--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>05.大数据</category>
+      </categories>
+      <tags>
+        <tag>大数据</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[生活忆事--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
@@ -130,17 +153,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>03.Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[大学忆事--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
@@ -150,18 +162,6 @@
       </categories>
       <tags>
         <tag>大学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[中学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>中学忆事</category>
-      </categories>
-      <tags>
-        <tag>中学忆事</tag>
       </tags>
   </entry>
   <entry>
