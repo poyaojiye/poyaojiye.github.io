@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Windows命令计算 MD5 、SHA1 、SHA256 值]]></title>
     <url>%2F2017%2F10%2F23%2F12.%E5%B0%8F%E8%80%8C%E7%BE%8E%2FWindows%E5%91%BD%E4%BB%A4%E8%AE%A1%E7%AE%97MD5%E4%B8%8ESHA1_SHA256%E5%80%BC%2F</url>
-    <content type="text"><![CDATA[Windows命令计算MD5与SHA1_SHA256值 certutil -hashfile yourfilename MD5certutil -hashfile yourfilename SHA1certutil -hashfile yourfilename SHA256 ChangeLog: 创建于 2017-10-23 13:16:43 欢迎评论、留言，一起交流死磕~~]]></content>
+    <content type="text"><![CDATA[打开windows命令窗口，到文件所在目录，输入： certutil -hashfile yourfilename MD5certutil -hashfile yourfilename SHA1certutil -hashfile yourfilename SHA256 ChangeLog: 创建于 2017-10-23 13:16:43 欢迎评论、留言，一起交流死磕~~]]></content>
       <categories>
         <category>12.小而美</category>
       </categories>
@@ -28,26 +28,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
+    <title><![CDATA[Linux--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F01.Linux%2FLinux%2F</url>
     <content type="text"></content>
       <categories>
-        <category>03.Python</category>
+        <category>01.Linux</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[工作忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[大学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
       <categories>
         <category>08.忆往昔</category>
-        <category>工作忆事</category>
+        <category>大学忆事</category>
       </categories>
       <tags>
-        <tag>工作忆事</tag>
+        <tag>大学忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -59,17 +59,6 @@
       </categories>
       <tags>
         <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[大数据--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>05.大数据</category>
-      </categories>
-      <tags>
-        <tag>大数据</tag>
       </tags>
   </entry>
   <entry>
@@ -85,6 +74,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Python--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>03.Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[尬聊记--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
     <content type="text"></content>
@@ -96,25 +96,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F01.Linux%2FLinux%2F</url>
+    <title><![CDATA[Java--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
     <content type="text"></content>
       <categories>
-        <category>01.Linux</category>
+        <category>02.Java</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[碎碎念--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>11.碎碎念</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -130,14 +119,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
+    <title><![CDATA[碎碎念--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F</url>
     <content type="text"></content>
       <categories>
-        <category>02.Java</category>
+        <category>11.碎碎念</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大数据--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>05.大数据</category>
+      </categories>
+      <tags>
+        <tag>大数据</tag>
       </tags>
   </entry>
   <entry>
@@ -153,15 +153,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[大学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[工作忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
       <categories>
         <category>08.忆往昔</category>
-        <category>大学忆事</category>
+        <category>工作忆事</category>
       </categories>
       <tags>
-        <tag>大学忆事</tag>
+        <tag>工作忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -178,7 +178,7 @@
   <entry>
     <title><![CDATA[Markdown博客模板]]></title>
     <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
-    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容博客内容博客内容博客内容博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-17 17:16:19]]></content>
+    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容博客内容博客内容博客内容 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>99.博客设置</category>
       </categories>

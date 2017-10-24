@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://poyaojiye.com/"/>
-  <updated>2017-10-23T12:28:51.543Z</updated>
+  <updated>2017-10-24T04:27:08.684Z</updated>
   <id>http://poyaojiye.com/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="http://poyaojiye.com/2017/10/23/12.%E5%B0%8F%E8%80%8C%E7%BE%8E/Windows%E5%91%BD%E4%BB%A4%E8%AE%A1%E7%AE%97MD5%E4%B8%8ESHA1_SHA256%E5%80%BC/"/>
     <id>http://poyaojiye.com/2017/10/23/12.小而美/Windows命令计算MD5与SHA1_SHA256值/</id>
     <published>2017-10-23T05:16:43.000Z</published>
-    <updated>2017-10-23T12:28:51.543Z</updated>
+    <updated>2017-10-24T04:27:08.684Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Windows命令计算MD5与SHA1-SHA256值"><a href="#Windows命令计算MD5与SHA1-SHA256值" class="headerlink" title="Windows命令计算MD5与SHA1_SHA256值"></a>Windows命令计算MD5与SHA1_SHA256值</h3><blockquote><p>certutil -hashfile yourfilename MD5<br>certutil -hashfile yourfilename SHA1<br>certutil -hashfile yourfilename SHA256<br><a id="more"></a></p></blockquote><p><br><br><br></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-23 13:16:43</li></ol></blockquote><p><strong>欢迎评论、留言，一起交流死磕~~</strong><br><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="打开windows命令窗口，到文件所在目录，输入："><a href="#打开windows命令窗口，到文件所在目录，输入：" class="headerlink" title="打开windows命令窗口，到文件所在目录，输入："></a>打开windows命令窗口，到文件所在目录，输入：</h3><blockquote><p>certutil -hashfile yourfilename MD5<br>certutil -hashfile yourfilename SHA1<br>certutil -hashfile yourfilename SHA256<br><a id="more"></a></p></blockquote><p><br><br><br></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-23 13:16:43</li></ol></blockquote><p><strong>欢迎评论、留言，一起交流死磕~~</strong><br><br><br><br></p>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Windows命令计算MD5与SHA1-SHA256值&quot;&gt;&lt;a href=&quot;#Windows命令计算MD5与SHA1-SHA256值&quot; class=&quot;headerlink&quot; title=&quot;Windows命令计算MD5与SHA1_SHA256值&quot;&gt;&lt;/a&gt;Windows命令计算MD5与SHA1_SHA256值&lt;/h3&gt;&lt;blockquote&gt;
+      &lt;h3 id=&quot;打开windows命令窗口，到文件所在目录，输入：&quot;&gt;&lt;a href=&quot;#打开windows命令窗口，到文件所在目录，输入：&quot; class=&quot;headerlink&quot; title=&quot;打开windows命令窗口，到文件所在目录，输入：&quot;&gt;&lt;/a&gt;打开windows命令窗口，到文件所在目录，输入：&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;certutil -hashfile yourfilename MD5&lt;br&gt;certutil -hashfile yourfilename SHA1&lt;br&gt;certutil -hashfile yourfilename SHA256&lt;br&gt;
     
     </summary>
@@ -75,29 +75,29 @@
   </entry>
   
   <entry>
-    <title>Python--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/03.Python/Python/"/>
-    <id>http://poyaojiye.com/2017/10/23/03.Python/Python/</id>
+    <title>Linux--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
+    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.389Z</updated>
+    <updated>2017-10-23T00:57:11.146Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="03.Python" scheme="http://poyaojiye.com/categories/03-Python/"/>
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
     
     
-      <category term="Python" scheme="http://poyaojiye.com/tags/Python/"/>
+      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
     
   </entry>
   
   <entry>
-    <title>工作忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <title>大学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.438Z</updated>
+    <updated>2017-10-23T00:58:28.431Z</updated>
     
     <summary type="html">
     
@@ -105,10 +105,10 @@
     
       <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
     
-      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="大学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
     
-      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -127,24 +127,6 @@
     
     
       <category term="人工智能" scheme="http://poyaojiye.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大数据--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    <id>http://poyaojiye.com/2017/10/23/05.大数据/大数据/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.397Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="05.大数据" scheme="http://poyaojiye.com/categories/05-%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    
-    
-      <category term="大数据" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
@@ -169,6 +151,24 @@
   </entry>
   
   <entry>
+    <title>Python--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/03.Python/Python/"/>
+    <id>http://poyaojiye.com/2017/10/23/03.Python/Python/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.389Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="03.Python" scheme="http://poyaojiye.com/categories/03-Python/"/>
+    
+    
+      <category term="Python" scheme="http://poyaojiye.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>尬聊记--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
     <id>http://poyaojiye.com/2017/10/23/09.尬聊记/尬聊记/</id>
@@ -187,38 +187,20 @@
   </entry>
   
   <entry>
-    <title>Linux--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
-    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
+    <title>Java--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
+    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:57:11.146Z</updated>
+    <updated>2017-10-23T00:58:28.382Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
     
     
-      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>碎碎念--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    <id>http://poyaojiye.com/2017/10/23/11.碎碎念/碎碎念/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.462Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="11.碎碎念" scheme="http://poyaojiye.com/categories/11-%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-    
-    
-      <category term="碎碎念" scheme="http://poyaojiye.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
     
   </entry>
   
@@ -243,20 +225,38 @@
   </entry>
   
   <entry>
-    <title>Java--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
-    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
+    <title>碎碎念--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    <id>http://poyaojiye.com/2017/10/23/11.碎碎念/碎碎念/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.382Z</updated>
+    <updated>2017-10-23T00:58:28.462Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
+      <category term="11.碎碎念" scheme="http://poyaojiye.com/categories/11-%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
     
     
-      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
+      <category term="碎碎念" scheme="http://poyaojiye.com/tags/%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大数据--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    <id>http://poyaojiye.com/2017/10/23/05.大数据/大数据/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.397Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="05.大数据" scheme="http://poyaojiye.com/categories/05-%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+      <category term="大数据" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
@@ -281,11 +281,11 @@
   </entry>
   
   <entry>
-    <title>大学忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
+    <title>工作忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.431Z</updated>
+    <updated>2017-10-23T00:58:28.438Z</updated>
     
     <summary type="html">
     
@@ -293,10 +293,10 @@
     
       <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
     
-      <category term="大学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
     
     
-      <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -333,9 +333,9 @@
     <link href="http://poyaojiye.com/2017/10/17/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/"/>
     <id>http://poyaojiye.com/2017/10/17/99.博客设置/Markdown博客模板/</id>
     <published>2017-10-17T09:16:19.000Z</published>
-    <updated>2017-10-23T12:29:06.017Z</updated>
+    <updated>2017-10-24T04:22:36.949Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Markdown博客模板"><a href="#Markdown博客模板" class="headerlink" title="Markdown博客模板"></a>Markdown博客模板</h3><p>博客内容<br>博客内容<br>博客内容<br><a id="more"></a><br>博客内容<br>博客内容<br>博客内容<br>博客内容</p><p><br><br><br></p><p><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-17 17:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="Markdown博客模板"><a href="#Markdown博客模板" class="headerlink" title="Markdown博客模板"></a>Markdown博客模板</h3><p>博客内容<br>博客内容<br>博客内容<br><a id="more"></a><br>博客内容<br>博客内容<br><img src="/images/win10_wallpaper/3d3dc256448421a24e704fa46a2e88b4c56b8634142bcf1fbb0742d2818120f8.jpg" width="500" alt="" align="left"></p><div style="clear:both;"> <p>博客内容<br>博客内容<br><img src="/images/win10_wallpaper/3d3dc256448421a24e704fa46a2e88b4c56b8634142bcf1fbb0742d2818120f8.jpg" alt=""><br><br><br><br></p><p><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p></div>]]></content>
     
     <summary type="html">
     
@@ -357,16 +357,32 @@
     <link href="http://poyaojiye.com/2017/10/16/04.Github/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://poyaojiye.com/2017/10/16/04.Github/Git常用命令/</id>
     <published>2017-10-16T00:49:19.000Z</published>
-    <updated>2017-10-23T07:03:36.006Z</updated>
+    <updated>2017-10-24T04:38:29.355Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://blog.csdn.net/free_wind22/article/details/50967723" target="_blank" rel="external">http://blog.csdn.net/free_wind22/article/details/50967723</a></p><h3 id="Git常用命令如下："><a href="#Git常用命令如下：" class="headerlink" title="Git常用命令如下："></a>Git常用命令如下：</h3><ol><li>创建一个空目录 XX指目录名)<blockquote><p>mkdir XX</p></blockquote></li><li>显示当前目录的路径。<blockquote><p>pwd</p></blockquote></li><li>把当前的目录变成可以管理的git仓库，生成隐藏.git文件。<blockquote><p>git init</p></blockquote></li><li>把xx文件添加到暂存区去。<blockquote><p>git add XX</p></blockquote></li><li>提交文件 –m 后面的是注释。<blockquote><p>git commit –m “XX”</p></blockquote></li><li>查看仓库状态<blockquote><p>git status</p></blockquote></li><li>查看XX文件修改了那些内容<blockquote><p>git diff  XX</p></blockquote></li><li>查看历史记录<blockquote><p>git log</p></blockquote></li><li>回退到上一个版本<blockquote><p>git reset  –hard HEAD^</p></blockquote></li><li>回退到上一个版本<blockquote><p>git reset  –hard HEAD~</p></blockquote></li><li>如果想回退到100个版本，使用 )<blockquote><p>git reset –hard HEAD~100</p></blockquote></li><li>查看XX文件内容<blockquote><p>cat XX</p></blockquote></li><li>查看历史记录的版本号id<blockquote><p>git reflog</p></blockquote></li><li>把XX文件在工作区的修改全部撤销。<blockquote><p>git checkout – XX</p></blockquote></li><li>删除XX文件<blockquote><p>git rm XX</p></blockquote></li><li>关联一个远程库<blockquote><p>git remote add origin <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>….</p></blockquote></li><li>把当前master分支推送到远程库，第一次要用-u 以后不需要<blockquote><p>git push –u origin master</p></blockquote></li><li>从远程库中克隆<blockquote><p>git clone <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>….</p></blockquote></li><li>创建dev分支 并切换到dev分支上<blockquote><p>git checkout –b dev</p></blockquote></li><li>查看当前所有的分支<blockquote><p>git branch</p></blockquote></li><li>切换回master分支<blockquote><p>git checkout master</p></blockquote></li><li>在当前的分支上合并dev分支<blockquote><p>git merge dev</p></blockquote></li><li>删除dev分支<blockquote><p>git branch –d dev</p></blockquote></li><li>创建分支<blockquote><p>git branch name</p></blockquote></li><li>把当前的工作隐藏起来 等以后恢复现场后继续工作<blockquote><p>git stash</p></blockquote></li><li>查看所有被隐藏的文件列表<blockquote><p>git stash list</p></blockquote></li><li>恢复被隐藏的文件，但是内容不删除<blockquote><p>git stash apply</p></blockquote></li><li>删除文件<blockquote><p>git stash drop</p></blockquote></li><li>恢复文件的同时 也删除文件<blockquote><p>git stash pop</p></blockquote></li><li>查看远程库的信息<blockquote><p>git remote</p></blockquote></li><li>查看远程库的详细信息<blockquote><p>git remote –v</p></blockquote></li><li>Git会把master分支推送到远程库对应的远程分支上<blockquote><p>git push origin master</p></blockquote></li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://blog.csdn.net/free_wind22/article/details/50967723" target="_blank" rel="external">http://blog.csdn.net/free_wind22/article/details/50967723</a></p><h3 id="Git常用命令如下："><a href="#Git常用命令如下：" class="headerlink" title="Git常用命令如下："></a>Git常用命令如下：</h3><ol><li>创建一个空目录 XX指目录名)<blockquote><p>mkdir XX</p></blockquote></li><li>显示当前目录的路径。<blockquote><p>pwd</p></blockquote></li><li>把当前的目录变成可以管理的git仓库，生成隐藏.git文件。<blockquote><p>git init</p></blockquote></li><li>把xx文件添加到暂存区去。<blockquote><p>git add XX</p></blockquote></li><li>提交文件 –m 后面的是注释。<blockquote><p>git commit –m “XX”</p><a id="more"></a></blockquote></li><li>查看仓库状态<blockquote><p>git status</p></blockquote></li><li>查看XX文件修改了那些内容<blockquote><p>git diff  XX</p></blockquote></li><li>查看历史记录<blockquote><p>git log</p></blockquote></li><li>回退到上一个版本<blockquote><p>git reset  –hard HEAD^</p></blockquote></li><li>回退到上一个版本<blockquote><p>git reset  –hard HEAD~</p></blockquote></li><li>如果想回退到100个版本，使用 )<blockquote><p>git reset –hard HEAD~100</p></blockquote></li><li>查看XX文件内容<blockquote><p>cat XX</p></blockquote></li><li>查看历史记录的版本号id<blockquote><p>git reflog</p></blockquote></li><li>把XX文件在工作区的修改全部撤销。<blockquote><p>git checkout – XX</p></blockquote></li><li>删除XX文件<blockquote><p>git rm XX</p></blockquote></li><li>关联一个远程库<blockquote><p>git remote add origin <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>….</p></blockquote></li><li>把当前master分支推送到远程库，第一次要用-u 以后不需要<blockquote><p>git push –u origin master</p></blockquote></li><li>从远程库中克隆<blockquote><p>git clone <a href="https://github.com/" target="_blank" rel="external">https://github.com/</a>….</p></blockquote></li><li>创建dev分支 并切换到dev分支上<blockquote><p>git checkout –b dev</p></blockquote></li><li>查看当前所有的分支<blockquote><p>git branch</p></blockquote></li><li>切换回master分支<blockquote><p>git checkout master</p></blockquote></li><li>在当前的分支上合并dev分支<blockquote><p>git merge dev</p></blockquote></li><li>删除dev分支<blockquote><p>git branch –d dev</p></blockquote></li><li>创建分支<blockquote><p>git branch name</p></blockquote></li><li>把当前的工作隐藏起来 等以后恢复现场后继续工作<blockquote><p>git stash</p></blockquote></li><li>查看所有被隐藏的文件列表<blockquote><p>git stash list</p></blockquote></li><li>恢复被隐藏的文件，但是内容不删除<blockquote><p>git stash apply</p></blockquote></li><li>删除文件<blockquote><p>git stash drop</p></blockquote></li><li>恢复文件的同时 也删除文件<blockquote><p>git stash pop</p></blockquote></li><li>查看远程库的信息<blockquote><p>git remote</p></blockquote></li><li>查看远程库的详细信息<blockquote><p>git remote –v</p></blockquote></li><li>Git会把master分支推送到远程库对应的远程分支上<blockquote><p>git push origin master</p></blockquote></li></ol>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;参考链接&quot;&gt;&lt;a href=&quot;#参考链接&quot; class=&quot;headerlink&quot; title=&quot;参考链接&quot;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/free_wind22/article/details/5096
-      
+      &lt;h3 id=&quot;参考链接&quot;&gt;&lt;a href=&quot;#参考链接&quot; class=&quot;headerlink&quot; title=&quot;参考链接&quot;&gt;&lt;/a&gt;参考链接&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/free_wind22/article/details/50967723&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/free_wind22/article/details/50967723&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Git常用命令如下：&quot;&gt;&lt;a href=&quot;#Git常用命令如下：&quot; class=&quot;headerlink&quot; title=&quot;Git常用命令如下：&quot;&gt;&lt;/a&gt;Git常用命令如下：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;创建一个空目录 XX指目录名)&lt;blockquote&gt;
+&lt;p&gt;mkdir XX&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;显示当前目录的路径。&lt;blockquote&gt;
+&lt;p&gt;pwd&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;把当前的目录变成可以管理的git仓库，生成隐藏.git文件。&lt;blockquote&gt;
+&lt;p&gt;git init&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;把xx文件添加到暂存区去。&lt;blockquote&gt;
+&lt;p&gt;git add XX&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;提交文件 –m 后面的是注释。&lt;blockquote&gt;
+&lt;p&gt;git commit –m “XX”&lt;/p&gt;
     
     </summary>
     

@@ -1940,7 +1940,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0b7053;
+  background: #46ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2726,7 +2726,7 @@ pre .javascript .function {
 .header {
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 70%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2786,7 +2786,7 @@ pre .javascript .function {
   }
 }
 .container .main-inner {
-  width: 90%;
+  width: 70%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
@@ -3123,5 +3123,9 @@ pre .javascript .function {
   content: '> ';
 }
 .site-meta {
-  background: #00f;
+  background: #00cdcd;
+}
+body {
+  background: url("/images/win10_wallpaper/214682e255425809d47ec8558f2cef5f54b176cd789e357954944a9d86d7c668.jpg");
+  background-attachment: fixed;
 }
