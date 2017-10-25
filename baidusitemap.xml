@@ -4,20 +4,16 @@
 
     
   <url>
-    <loc>http://poyaojiye.com/2017/10/25/01.Linux/%E9%80%9A%E8%BF%87%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%BF%9E%E6%8E%A5ubuntu/</loc>
-    <lastmod>2017-10-25T06:03:11.309Z</lastmod>
+    <loc>http://poyaojiye.com/2017/10/26/01.Linux/ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2017-10-25T17:05:15.596Z</lastmod>
     <data>
         <display>
-        <title>通过主机名连接ubuntu</title>
-        <pubTime>2017-10-25T06:16:19.000Z</pubTime>
+        <title>ubuntu开启ssh服务</title>
+        <pubTime>2017-10-25T16:56:39.000Z</pubTime>
         
         <tag>ubuntu</tag>
          
         <tag>ssh</tag>
-         
-        <tag>主机名</tag>
-         
-        <tag>ping</tag>
          
          
            
@@ -30,16 +26,42 @@
 
     
   <url>
-    <loc>http://poyaojiye.com/2017/10/17/01.Linux/ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/</loc>
-    <lastmod>2017-10-25T05:51:22.230Z</lastmod>
+    <loc>http://poyaojiye.com/2017/10/25/01.Linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-10-25T09:41:40.502Z</lastmod>
     <data>
         <display>
-        <title>ubuntu开启ssh服务</title>
-        <pubTime>2017-10-17T09:16:19.000Z</pubTime>
+        <title>ubuntu软件安装记录</title>
+        <pubTime>2017-10-25T09:02:19.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>软件</tag>
+         
+         
+           
+             
+              <breadCrumb title="01.Linux" url="http://poyaojiye.com/categories/01-Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/25/01.Linux/%E9%80%9A%E8%BF%87%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%BF%9E%E6%8E%A5ubuntu/</loc>
+    <lastmod>2017-10-25T09:04:15.362Z</lastmod>
+    <data>
+        <display>
+        <title>通过主机名连接ubuntu</title>
+        <pubTime>2017-10-25T06:16:19.000Z</pubTime>
         
         <tag>ubuntu</tag>
          
         <tag>ssh</tag>
+         
+        <tag>主机名</tag>
+         
+        <tag>ping</tag>
          
          
            
