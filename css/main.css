@@ -1940,7 +1940,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4d25e2;
+  background: #f40bdb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3126,6 +3126,7 @@ pre .javascript .function {
   background: #00cdcd;
 }
 body {
-  background: url("/images/win10_wallpaper/214682e255425809d47ec8558f2cef5f54b176cd789e357954944a9d86d7c668.jpg");
-  background-attachment: fixed;
+  background: url("/images/win10_wallpaper/214682e255425809d47ec8558f2cef5f54b176cd789e357954944a9d86d7c668.jpg") fixed center center no-repeat;
+  background-size: cover;
+  width: 100%;
 }

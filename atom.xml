@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://poyaojiye.com/"/>
-  <updated>2017-10-24T04:27:08.684Z</updated>
+  <updated>2017-10-25T04:08:54.261Z</updated>
   <id>http://poyaojiye.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vmware安装Ubuntu虚拟机</title>
+    <link href="http://poyaojiye.com/2017/10/25/01.Linux/VM%E5%AE%89%E8%A3%85Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>http://poyaojiye.com/2017/10/25/01.Linux/VM安装Ubuntu虚拟机/</id>
+    <published>2017-10-25T00:16:19.000Z</published>
+    <updated>2017-10-25T04:08:54.261Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="题记"><a href="#题记" class="headerlink" title="题记"></a>题记</h3><blockquote><p>愈发觉得记忆力大不如前，能秀的只能是自己的逻辑能力，和已化为类似直觉的经验。<br>好记性不如烂笔头，避免简单操作的重复性，还是需要记录一些自己认为需要标记的点。</p></blockquote><h3 id="安装-激活vmware"><a href="#安装-激活vmware" class="headerlink" title="安装/激活vmware"></a>安装/激活vmware</h3><p>请参考其他网络资源。</p><h3 id="下载ubuntu-server-LTS"><a href="#下载ubuntu-server-LTS" class="headerlink" title="下载ubuntu server LTS"></a>下载ubuntu server LTS</h3><p>下载地址：<br><a href="https://www.ubuntu.com/download/server" target="_blank" rel="external">https://www.ubuntu.com/download/server</a></p><a id="more"></a><h3 id="新建虚拟机"><a href="#新建虚拟机" class="headerlink" title="新建虚拟机"></a>新建虚拟机</h3><p>请参考其他网络资源。</p><h3 id="使用下载的镜像安装ubuntu"><a href="#使用下载的镜像安装ubuntu" class="headerlink" title="使用下载的镜像安装ubuntu"></a>使用下载的镜像安装ubuntu</h3><p>请参考其他网络资源。</p><h3 id="拍摄快照"><a href="#拍摄快照" class="headerlink" title="拍摄快照"></a>拍摄快照</h3><p>做一些改变之前拍摄快照方便恢复。</p><h3 id="移植虚拟机"><a href="#移植虚拟机" class="headerlink" title="移植虚拟机"></a>移植虚拟机</h3><ol><li>复制存放虚拟机的文件夹</li><li>通过菜单：文件-打开，选择复制的文件夹创建出一个新的虚拟机</li></ol><p>或者</p><ol><li>通过菜单；文件-导出为ovf</li><li>通过菜单：文件-打开，选择ovf文件恢复</li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题记&quot;&gt;&lt;a href=&quot;#题记&quot; class=&quot;headerlink&quot; title=&quot;题记&quot;&gt;&lt;/a&gt;题记&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;愈发觉得记忆力大不如前，能秀的只能是自己的逻辑能力，和已化为类似直觉的经验。&lt;br&gt;好记性不如烂笔头，避免简单操作的重复性，还是需要记录一些自己认为需要标记的点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;安装-激活vmware&quot;&gt;&lt;a href=&quot;#安装-激活vmware&quot; class=&quot;headerlink&quot; title=&quot;安装/激活vmware&quot;&gt;&lt;/a&gt;安装/激活vmware&lt;/h3&gt;&lt;p&gt;请参考其他网络资源。&lt;/p&gt;
+&lt;h3 id=&quot;下载ubuntu-server-LTS&quot;&gt;&lt;a href=&quot;#下载ubuntu-server-LTS&quot; class=&quot;headerlink&quot; title=&quot;下载ubuntu server LTS&quot;&gt;&lt;/a&gt;下载ubuntu server LTS&lt;/h3&gt;&lt;p&gt;下载地址：&lt;br&gt;&lt;a href=&quot;https://www.ubuntu.com/download/server&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.ubuntu.com/download/server&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+    
+    
+      <category term="Ubuntu" scheme="http://poyaojiye.com/tags/Ubuntu/"/>
+    
+      <category term="虚拟机" scheme="http://poyaojiye.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="Vmware" scheme="http://poyaojiye.com/tags/Vmware/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows命令计算 MD5 、SHA1 、SHA256 值</title>
@@ -75,20 +105,40 @@
   </entry>
   
   <entry>
-    <title>Java--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
-    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
+    <title>Linux--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
+    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.382Z</updated>
+    <updated>2017-10-23T00:57:11.146Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
     
     
-      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
+      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工作忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.438Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -167,20 +217,22 @@
   </entry>
   
   <entry>
-    <title>Linux--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
-    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
+    <title>生活忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/生活忆事/生活忆事/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:57:11.146Z</updated>
+    <updated>2017-10-23T00:58:28.447Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="生活忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
     
     
-      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
+      <category term="生活忆事" scheme="http://poyaojiye.com/tags/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -203,22 +255,20 @@
   </entry>
   
   <entry>
-    <title>生活忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/生活忆事/生活忆事/</id>
+    <title>Java--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
+    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.447Z</updated>
+    <updated>2017-10-23T00:58:28.382Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="生活忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
     
     
-      <category term="生活忆事" scheme="http://poyaojiye.com/tags/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
     
   </entry>
   
@@ -237,26 +287,6 @@
     
     
       <category term="Python" scheme="http://poyaojiye.com/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>工作忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.438Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    
-    
-      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -333,13 +363,17 @@
     <link href="http://poyaojiye.com/2017/10/17/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/"/>
     <id>http://poyaojiye.com/2017/10/17/99.博客设置/Markdown博客模板/</id>
     <published>2017-10-17T09:16:19.000Z</published>
-    <updated>2017-10-24T04:22:36.949Z</updated>
+    <updated>2017-10-25T05:43:07.691Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Markdown博客模板"><a href="#Markdown博客模板" class="headerlink" title="Markdown博客模板"></a>Markdown博客模板</h3><p>博客内容<br>博客内容<br>博客内容<br><a id="more"></a><br>博客内容<br>博客内容<br><img src="/images/win10_wallpaper/3d3dc256448421a24e704fa46a2e88b4c56b8634142bcf1fbb0742d2818120f8.jpg" width="500" alt="" align="left"></p><div style="clear:both;"> <p>博客内容<br>博客内容<br><img src="/images/win10_wallpaper/3d3dc256448421a24e704fa46a2e88b4c56b8634142bcf1fbb0742d2818120f8.jpg" alt=""><br><br><br><br></p><p><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p></div>]]></content>
+    <content type="html"><![CDATA[<h3 id="Markdown博客模板"><a href="#Markdown博客模板" class="headerlink" title="Markdown博客模板"></a>Markdown博客模板</h3><p>博客内容</p><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Markdown博客模板&quot;&gt;&lt;a href=&quot;#Markdown博客模板&quot; class=&quot;headerlink&quot; title=&quot;Markdown博客模板&quot;&gt;&lt;/a&gt;Markdown博客模板&lt;/h3&gt;&lt;p&gt;博客内容&lt;br&gt;博客内容&lt;br&gt;博客内容&lt;br&gt;
+      
+      
+        &lt;h3 id=&quot;Markdown博客模板&quot;&gt;&lt;a href=&quot;#Markdown博客模板&quot; class=&quot;headerlink&quot; title=&quot;Markdown博客模板&quot;&gt;&lt;/a&gt;Markdown博客模板&lt;/h3&gt;&lt;p&gt;博客内容&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b
+      
     
     </summary>
     
