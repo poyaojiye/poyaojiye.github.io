@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[通过主机名连接ubuntu]]></title>
+    <url>%2F2017%2F10%2F25%2F01.Linux%2F%E9%80%9A%E8%BF%87%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%BF%9E%E6%8E%A5ubuntu%2F</url>
+    <content type="text"><![CDATA[背景 在vmware安装多个ubuntu虚拟机之后，使用了桥接的网络连接方式，因为考虑到dhcp的方式ip可能是不固定的，所以在使用xshell连接的时候想用主机名代替ip连接，但是发现在windows机器里可以通过ip ping ubuntu，通过主机名则不行。 把ubuntu机器加到win 10的工作组里面安装samba1sudo apt-get install samba 配置/etc/samba/smb.conf，win 10默认的工作组名为WORKGROUP，该文件中默认的也是WORKGROUP1234 [global] ## Browsing/Identification ### # Change this to the workgroup/NT-domain name your Samba server will part ofworkgroup = WORKGROUP 启动samba1sudo /etc/init.d/samba start 现在可以在windows中通过主机名ssh等连接ubuntu，当然也是能ping通欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+      <categories>
+        <category>01.Linux</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>ssh</tag>
+        <tag>主机名</tag>
+        <tag>ping</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vmware安装Ubuntu虚拟机]]></title>
     <url>%2F2017%2F10%2F25%2F01.Linux%2FVM%E5%AE%89%E8%A3%85Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA%2F</url>
     <content type="text"><![CDATA[题记 愈发觉得记忆力大不如前，能秀的只能是自己的逻辑能力，和已化为类似直觉的经验。好记性不如烂笔头，避免简单操作的重复性，还是需要记录一些自己认为需要标记的点。 安装/激活vmware请参考其他网络资源。 下载ubuntu server LTS下载地址：https://www.ubuntu.com/download/server 新建虚拟机请参考其他网络资源。 使用下载的镜像安装ubuntu请参考其他网络资源。 拍摄快照做一些改变之前拍摄快照方便恢复。 移植虚拟机 复制存放虚拟机的文件夹 通过菜单：文件-打开，选择复制的文件夹创建出一个新的虚拟机 或者 通过菜单；文件-导出为ovf 通过菜单：文件-打开，选择ovf文件恢复 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
@@ -41,14 +55,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Linux--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F01.Linux%2FLinux%2F</url>
+    <title><![CDATA[尬聊记--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
     <content type="text"></content>
       <categories>
-        <category>01.Linux</category>
+        <category>09.尬聊记</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
+        <tag>尬聊记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Python--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>03.Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -98,17 +123,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[尬聊记--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>09.尬聊记</category>
-      </categories>
-      <tags>
-        <tag>尬聊记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[生活忆事--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
@@ -118,6 +132,18 @@
       </categories>
       <tags>
         <tag>生活忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[中学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>中学忆事</category>
+      </categories>
+      <tags>
+        <tag>中学忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -132,6 +158,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Linux--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F01.Linux%2FLinux%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>01.Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
     <content type="text"></content>
@@ -140,17 +177,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Python--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F03.Python%2FPython%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>03.Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -163,18 +189,6 @@
       </categories>
       <tags>
         <tag>大学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[中学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>中学忆事</category>
-      </categories>
-      <tags>
-        <tag>中学忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -198,6 +212,18 @@
       <tags>
         <tag>Markdown</tag>
         <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ubuntu开启ssh服务]]></title>
+    <url>%2F2017%2F10%2F17%2F01.Linux%2Fubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1%2F</url>
+    <content type="text"><![CDATA[安装openssh-server12sudo apt-get updatesudo apt-get install openssh-server 查看ssh服务1sudo ps -e|grep ssh #是否存在sshd进程 如果没有sshd进程，执行：1sudo service ssh start 查看ubuntu IP1ifconfig 使用ssh客户端工具连接1ssh 你的ip 通过主机名连接请参见另一篇 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+      <categories>
+        <category>01.Linux</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+        <tag>ssh</tag>
       </tags>
   </entry>
   <entry>

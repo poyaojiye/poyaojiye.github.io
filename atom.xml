@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://poyaojiye.com/"/>
-  <updated>2017-10-25T04:08:54.261Z</updated>
+  <updated>2017-10-25T06:03:11.309Z</updated>
   <id>http://poyaojiye.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过主机名连接ubuntu</title>
+    <link href="http://poyaojiye.com/2017/10/25/01.Linux/%E9%80%9A%E8%BF%87%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%BF%9E%E6%8E%A5ubuntu/"/>
+    <id>http://poyaojiye.com/2017/10/25/01.Linux/通过主机名连接ubuntu/</id>
+    <published>2017-10-25T06:16:19.000Z</published>
+    <updated>2017-10-25T06:03:11.309Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><blockquote><p>在vmware安装多个ubuntu虚拟机之后，使用了桥接的网络连接方式，因为考虑到dhcp的方式ip<br>可能是不固定的，所以在使用xshell连接的时候想用主机名代替ip连接，但是发现在windows机器<br>里可以通过ip ping ubuntu，通过主机名则不行。</p></blockquote><h3 id="把ubuntu机器加到win-10的工作组里面"><a href="#把ubuntu机器加到win-10的工作组里面" class="headerlink" title="把ubuntu机器加到win 10的工作组里面"></a>把ubuntu机器加到win 10的工作组里面</h3><h4 id="安装samba"><a href="#安装samba" class="headerlink" title="安装samba"></a>安装samba</h4><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install samba</div></pre></td></tr></table></figure></code></pre><h4 id="配置-etc-samba-smb-conf，win-10默认的工作组名为WORKGROUP，该文件中默认的也是WORKGROUP"><a href="#配置-etc-samba-smb-conf，win-10默认的工作组名为WORKGROUP，该文件中默认的也是WORKGROUP" class="headerlink" title="配置/etc/samba/smb.conf，win 10默认的工作组名为WORKGROUP，该文件中默认的也是WORKGROUP"></a>配置/etc/samba/smb.conf，win 10默认的工作组名为WORKGROUP，该文件中默认的也是WORKGROUP</h4><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> [global]</div><div class="line"> ## Browsing/Identification ###</div><div class="line"> # Change this to the workgroup/NT-domain name your Samba server will part of</div><div class="line">workgroup = WORKGROUP</div></pre></td></tr></table></figure></code></pre><h4 id="启动samba"><a href="#启动samba" class="headerlink" title="启动samba"></a>启动samba</h4><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo /etc/init.d/samba start</div></pre></td></tr></table></figure></code></pre><h3 id="现在可以在windows中通过主机名ssh等连接ubuntu，当然也是能ping通"><a href="#现在可以在windows中通过主机名ssh等连接ubuntu，当然也是能ping通" class="headerlink" title="现在可以在windows中通过主机名ssh等连接ubuntu，当然也是能ping通"></a>现在可以在windows中通过主机名ssh等连接ubuntu，当然也是能ping通</h3><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;在vmware安装多个ubuntu虚拟机之后，使用了桥接的网络连接方式，因为考虑到dhcp的方式ip&lt;br&gt;可能是
+      
+    
+    </summary>
+    
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+    
+    
+      <category term="ubuntu" scheme="http://poyaojiye.com/tags/ubuntu/"/>
+    
+      <category term="ssh" scheme="http://poyaojiye.com/tags/ssh/"/>
+    
+      <category term="主机名" scheme="http://poyaojiye.com/tags/%E4%B8%BB%E6%9C%BA%E5%90%8D/"/>
+    
+      <category term="ping" scheme="http://poyaojiye.com/tags/ping/"/>
+    
+  </entry>
   
   <entry>
     <title>Vmware安装Ubuntu虚拟机</title>
@@ -105,20 +137,38 @@
   </entry>
   
   <entry>
-    <title>Linux--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
-    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
+    <title>尬聊记--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+    <id>http://poyaojiye.com/2017/10/23/09.尬聊记/尬聊记/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:57:11.146Z</updated>
+    <updated>2017-10-23T00:58:28.454Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+      <category term="09.尬聊记" scheme="http://poyaojiye.com/categories/09-%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
     
     
-      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
+      <category term="尬聊记" scheme="http://poyaojiye.com/tags/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/03.Python/Python/"/>
+    <id>http://poyaojiye.com/2017/10/23/03.Python/Python/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.389Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="03.Python" scheme="http://poyaojiye.com/categories/03-Python/"/>
+    
+    
+      <category term="Python" scheme="http://poyaojiye.com/tags/Python/"/>
     
   </entry>
   
@@ -199,24 +249,6 @@
   </entry>
   
   <entry>
-    <title>尬聊记--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    <id>http://poyaojiye.com/2017/10/23/09.尬聊记/尬聊记/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.454Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="09.尬聊记" scheme="http://poyaojiye.com/categories/09-%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    
-    
-      <category term="尬聊记" scheme="http://poyaojiye.com/tags/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>生活忆事--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
     <id>http://poyaojiye.com/2017/10/23/08.忆往昔/生活忆事/生活忆事/</id>
@@ -233,6 +265,26 @@
     
     
       <category term="生活忆事" scheme="http://poyaojiye.com/tags/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.422Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -255,6 +307,24 @@
   </entry>
   
   <entry>
+    <title>Linux--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/01.Linux/Linux/"/>
+    <id>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:57:11.146Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
     <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
@@ -269,24 +339,6 @@
     
     
       <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/03.Python/Python/"/>
-    <id>http://poyaojiye.com/2017/10/23/03.Python/Python/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.389Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="03.Python" scheme="http://poyaojiye.com/categories/03-Python/"/>
-    
-    
-      <category term="Python" scheme="http://poyaojiye.com/tags/Python/"/>
     
   </entry>
   
@@ -307,26 +359,6 @@
     
     
       <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>中学忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.422Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    
-    
-      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -383,6 +415,33 @@
       <category term="Markdown" scheme="http://poyaojiye.com/tags/Markdown/"/>
     
       <category term="博客模板" scheme="http://poyaojiye.com/tags/%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ubuntu开启ssh服务</title>
+    <link href="http://poyaojiye.com/2017/10/17/01.Linux/ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/"/>
+    <id>http://poyaojiye.com/2017/10/17/01.Linux/ubuntu开启ssh服务/</id>
+    <published>2017-10-17T09:16:19.000Z</published>
+    <updated>2017-10-25T05:51:22.230Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装openssh-server"><a href="#安装openssh-server" class="headerlink" title="安装openssh-server"></a>安装openssh-server</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get update</div><div class="line">sudo apt-get install openssh-server</div></pre></td></tr></table></figure><h3 id="查看ssh服务"><a href="#查看ssh服务" class="headerlink" title="查看ssh服务"></a>查看ssh服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ps -e|grep ssh #是否存在sshd进程</div></pre></td></tr></table></figure><p>如果没有sshd进程，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo service ssh start</div></pre></td></tr></table></figure></p><h3 id="查看ubuntu-IP"><a href="#查看ubuntu-IP" class="headerlink" title="查看ubuntu IP"></a>查看ubuntu IP</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ifconfig</div></pre></td></tr></table></figure><h3 id="使用ssh客户端工具连接"><a href="#使用ssh客户端工具连接" class="headerlink" title="使用ssh客户端工具连接"></a>使用ssh客户端工具连接</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh 你的ip</div></pre></td></tr></table></figure><h3 id="通过主机名连接"><a href="#通过主机名连接" class="headerlink" title="通过主机名连接"></a>通过主机名连接</h3><p>请参见另一篇</p><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;安装openssh-server&quot;&gt;&lt;a href=&quot;#安装openssh-server&quot; class=&quot;headerlink&quot; title=&quot;安装openssh-server&quot;&gt;&lt;/a&gt;安装openssh-server&lt;/h3&gt;&lt;figure class=&quot;hi
+      
+    
+    </summary>
+    
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+    
+    
+      <category term="ubuntu" scheme="http://poyaojiye.com/tags/ubuntu/"/>
+    
+      <category term="ssh" scheme="http://poyaojiye.com/tags/ssh/"/>
     
   </entry>
   
