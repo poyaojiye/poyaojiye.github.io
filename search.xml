@@ -106,9 +106,9 @@
             
             <tag> ubuntu </tag>
             
-            <tag> 主机名 </tag>
-            
             <tag> ssh </tag>
+            
+            <tag> 主机名 </tag>
             
             <tag> ping </tag>
             
@@ -258,20 +258,22 @@
     </entry>
     
     <entry>
-      <title><![CDATA[人工智能--分类占位]]></title>
-      <url>/2017/10/23/06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</url>
+      <title><![CDATA[生活忆事--分类占位]]></title>
+      <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/</url>
       <content type="html"></content>
       
         <categories>
             
-            <category> 06.人工智能 </category>
+            <category> 08.忆往昔 </category>
+            
+            <category> 生活忆事 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 人工智能 </tag>
+            <tag> 生活忆事 </tag>
             
         </tags>
         
@@ -298,20 +300,20 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Linux--分类占位]]></title>
-      <url>/2017/10/23/01.Linux/Linux/</url>
+      <title><![CDATA[人工智能--分类占位]]></title>
+      <url>/2017/10/23/06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</url>
       <content type="html"></content>
       
         <categories>
             
-            <category> 01.Linux </category>
+            <category> 06.人工智能 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> Linux </tag>
+            <tag> 人工智能 </tag>
             
         </tags>
         
@@ -358,22 +360,22 @@
     </entry>
     
     <entry>
-      <title><![CDATA[生活忆事--分类占位]]></title>
-      <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/</url>
+      <title><![CDATA[大学忆事--分类占位]]></title>
+      <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/</url>
       <content type="html"></content>
       
         <categories>
             
             <category> 08.忆往昔 </category>
             
-            <category> 生活忆事 </category>
+            <category> 大学忆事 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 生活忆事 </tag>
+            <tag> 大学忆事 </tag>
             
         </tags>
         
@@ -400,22 +402,20 @@
     </entry>
     
     <entry>
-      <title><![CDATA[大学忆事--分类占位]]></title>
-      <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/</url>
+      <title><![CDATA[Linux--分类占位]]></title>
+      <url>/2017/10/23/01.Linux/Linux/</url>
       <content type="html"></content>
       
         <categories>
             
-            <category> 08.忆往昔 </category>
-            
-            <category> 大学忆事 </category>
+            <category> 01.Linux </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 大学忆事 </tag>
+            <tag> Linux </tag>
             
         </tags>
         
@@ -442,28 +442,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[工作忆事--分类占位]]></title>
-      <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> 08.忆往昔 </category>
-            
-            <category> 工作忆事 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 工作忆事 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[中学忆事--分类占位]]></title>
       <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/</url>
       <content type="html"></content>
@@ -480,6 +458,28 @@
         <tags>
             
             <tag> 中学忆事 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[工作忆事--分类占位]]></title>
+      <url>/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> 08.忆往昔 </category>
+            
+            <category> 工作忆事 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 工作忆事 </tag>
             
         </tags>
         
