@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hadoop单机/伪分布式配置_hadoop2.7.4/Ubuntu16.04]]></title>
+    <url>%2F2017%2F10%2F31%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2Fhadoop%E5%8D%95%E6%9C%BA_%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%85%8D%E7%BD%AE_hadoop2.7.4_Ubuntu16.04%2F</url>
+    <content type="text"><![CDATA[安装hadoop 本教程需要些许linux基础 下载最新稳定版hadoop 当前最新稳定版，stable，是hadoop-2.7.4.tar.gz： https://dist.apache.org/repos/dist/release/hadoop/common/ 123456# wget的-c是断点续传，6不6wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz# 同时建议下载，内含校验码判断文件是否下载完整，不然安装到一半报异常神烦啊，wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz.mds# 使用md5sum校验，与mds文件中的md5码比较即可md5sum hadoop-2.7.4.tar.gz|tr [a-z] [A-Z] 安装jre获jdk，jdk中包含jre，具体步骤另见教程 添加hadoop用户 12345sudo useradd -m hadoop -s /bin/bash# 设置密码sudo passwd hadoop# 增加管理员权限sudo adduser hadoop sudo 把tar包解压到/usr/local/，解压出来的文件 1234tar -zxvf hadoop-2.7.4.tar.gz -C /usr/localcd /usr/local/sudo mv ./hadoop-2.7.4/ ./hadoopsudo chown -R hadoop ./hadoop 1.然后可以执行hadoop查看版本，表示hadoop已安装成功 12cd cd /usr/local/hadoop./bin/hadoop version hadoop单机配置 通过上面的配置，现在可以查看hadoop自带的一些实例，运行： 12cd /usr/local/./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.4.jar 可以看到wordcout,grep等多个示例 hadoop伪分布配置 配置/usr/local/hadoop/etc/hadoop/中的 core-site.xml,如果要切回hadoop单机模式，需要把改文件配置清空（敲黑板擦，划重点） 1234567891011&lt;configuration&gt; &lt;property&gt; &lt;name&gt;hadoop.tmp.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp&lt;/value&gt; &lt;description&gt;Abase for other temporary directories.&lt;/description&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;fs.defaultFS&lt;/name&gt; &lt;value&gt;hdfs://localhost:9000&lt;/value&gt; &lt;/property&gt; &lt;/configuration&gt; hdfs-site.xml 1234567891011121314 &lt;configuration&gt; &lt;property&gt; &lt;name&gt;dfs.replication&lt;/name&gt; &lt;value&gt;1&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/name&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/data&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 配置完成后格式化NameNode 1./bin/hdfs namenode -format 执行成功会显示： name has been successfully formatted. Exitting with status 0. 启动hdfs,包含两个进程NameNode和DataNode 1./sbin/start-dfs.sh 通过jps可以查看存在的java进程中是否存在NameNode和DataNode 成功启动后，可以访问 Web 界面 http://localhost:50070 查看 NameNode 和 Datanode 信息，及HDFS 中的文件。 停止hdfs的命令： 1./sbin/stop-dfs.sh 其中，hadoop伪分布式的运行实例 12345678910111213141516#创建用户目录./bin/hdfs dfs -mkdir -p /user/hadoop#创建input目录./bin/hdfs dfs -mkdir input#上传数据文件./bin/hdfs dfs -put ./etc/hadoop/*xml input#查看input目录./bin/hdfs dfs -ls input#执行MapReduce作业./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep input output &apos;dfs[a-z.]+&apos;#查看执行结果./bin/hdfs dfs -cat output/*#下载/取回执行结果./bin/hdfs dfs -get output ./output#清除结果目录，执行前output不能已存在./bin/hdfs dfs -rm -r output 启动YARN（yet another resource negotiator） 配置/usr/local/hadoop/etc/hadoop/mapred-site.xml 原文件名为mapred-site.xml.template，重命名为mapred-site.xml 1mv mapred-site.xml.template mapred-site.xml 配置mapred-site.xml 123456&lt;configuration&gt; &lt;property&gt; &lt;name&gt;mapreduce.framework.name&lt;/name&gt; &lt;value&gt;yarn&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 配置yarn-site.xml 123456&lt;configuration&gt; &lt;property&gt; &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt; &lt;value&gt;mapreduce_shuffle&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 启动停止yarn 123456789#启动yarn./sbin/start-dfs.sh./sbin/start-yarn.sh./sbin/mr-jobhistory-daemon.sh start historyserver#停止yarn./sbin/stop-yarn.sh./sbin/mr-jobhistory-daemon.sh stop historyserver./sbin/stop-dfs.sh 其中，启动yarn后可以通过jps看到 NodeManager 和 ResourceManager 两个Java进程 hadoop启动没有NodeManager,需要在yarn-site.xml中增加下面的配置,下面的内存我的机器里配置为3072才可以较为正常运行（敲黑板擦，划重点），所以伪分布式使用yarn不仅没有性能提升，反而更慢，龟速。中间修改配置文件需要重启yarn才能生效： 12345678&lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.memory-mb&lt;/name&gt; &lt;value&gt;3072&lt;/value&gt;&lt;/property&gt;&lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.cpu-vcores&lt;/name&gt; &lt;value&gt;1&lt;/value&gt;&lt;/property&gt; 配置完成后运行方式和伪单机命令相同，可以在http://localhost:8088/cluster查看状态信息。 tips： 可以通过配置环境变量和设置软连接的方式减少目录的切换和输入 hadoop不只是可扩展性，还有可收缩性，有点逆向思维。 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 15:00:23]]></content>
+      <categories>
+        <category>05.大数据</category>
+      </categories>
+      <tags>
+        <tag>hadoop</tag>
+        <tag>单机</tag>
+        <tag>伪分布</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux常用命令--持续更新]]></title>
     <url>%2F2017%2F10%2F31%2F01.Linux%2FLinux%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
     <content type="text"><![CDATA[压缩/解压 12345678910111213141516171819# 压缩gzip filenamegzip *# 解压gzip -d filename.gzgzip -d *.gz# 打包tar -cvf xxx.tar /dir# 压缩打包tar -zcvf xxx.tar.gz /dir# 解包tar -xvf xxx.tar ./# 解包解压，参数z可以省略，tar自动识别tar -zxvf xxx.tar.gz ./# 到指定目录gzip -c filename&gt;/dir/xxx.gzgzip -cd xxx.gz&gt;/dir/filenametar -cvf /dir/xxx.tar /dirtar -xvf xxx.tar -C /dir 新增用户 12# -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shelluseradd -m hadoop -s /bin/bash 软链接 ln -s /source_path link 硬链接 1234# create hard linkln filename hard_link# view file&apos;s hard link after permissionsll filename 递归创建文件夹 mkdir -P folder 查看主机名 12hostnamecat /etc/hostname grep 12grep -n &apos;str&apos; file # show the line numbergrep -P &apos;regex&apos; file # by the regular expression find–查找 123456789101112131415161718192021222324252627282930313233343536find -name april* 在当前目录下查找以april开始的文件find -name april* fprint file 在当前目录下查找以april开始的文件，并把结果输出到file中find -name ap* -o -name may* 查找以ap或may开头的文件find /mnt -name tom.txt -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件find /mnt -name t.txt ! -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件find /tmp -name wa* -type l 在/tmp下查找名为wa开头且类型为符号链接的文件find /home -mtime -2 在/home下查最近两天内改动过的文件find /home -atime -1 查1天之内被存取过的文件find /home -mmin +60 在/home下查60分钟前改动过的文件find /home -amin +30 查最近30分钟前被存取过的文件find /home -newer tmp.txt 在/home下查更新时间比tmp.txt近的文件或目录find /home -anewer tmp.txt 在/home下查存取时间比tmp.txt近的文件或目录find /home -used -2 列出文件或目录被改动过之后，在2日内被存取过的文件或目录find /home -user cnscn 列出/home目录内属于用户cnscn的文件或目录find /home -uid +501 列出/home目录内用户的识别码大于501的文件或目录find /home -group cnscn 列出/home内组为cnscn的文件或目录find /home -gid 501 列出/home内组id为501的文件或目录find /home -nouser 列出/home内不属于本地用户的文件或目录find /home -nogroup 列出/home内不属于本地组的文件或目录find /home -name tmp.txt -maxdepth 4 列出/home内的tmp.txt 查时深度最多为3层find /home -name tmp.txt -mindepth 3 从第2层开始查find /home -empty 查找大小为0的文件或空目录find /home -size +512k 查大于512k的文件find /home -size -512k 查小于512k的文件find /home -links +2 查硬连接数大于2的文件或目录find /home -perm 0700 查权限为700的文件或目录find /tmp -name tmp.txt -exec cat &#123;&#125; \;find /tmp -name tmp.txt -ok rm &#123;&#125; \;find / -amin -10 # 查找在系统中最后10分钟访问的文件find / -atime -2 # 查找在系统中最后48小时访问的文件find / -empty # 查找在系统中为空的文件或者文件夹find / -group cat # 查找在系统中属于 groupcat的文件find / -mmin -5 # 查找在系统中最后5分钟里修改过的文件find / -mtime -1 #查找在系统中最后24小时里修改过的文件find / -nouser #查找在系统中属于作废用户的文件find / -user fred #查找在系统中属于FRED这个用户的文件 which–追踪命令路径 12which grepwhich python3 时间 12345cal 日期表date 格式输出date +%Y%m%d #20171001date +%Y-%m-%d #2017-10-01ntp 对时 ps–查看进程 1ps -ef|grep test kill–杀死进程 12kill processidkill -9 processid # 强制杀死 top/htop–查看系统性能 查看空间 12df -hdu -h ifconfig –查看、修改网卡信息，ip信息 用户和用户组操作 123456789101112131415161718useradd hadoop -m -s /bin/bash # 创建home目录和指定默认bashsudo passwd hadoop # 修改密码sudo adduser xxxx sudo # 添加用户到sudouserdel # 删除用户userdel -r # 删除home目录cat /etc/passwd # 查看是否有用户sudo -s # 执行环境变数中的 SHELL 所指定的 shellgroupaddgroupdelgroupmodsudo usermod -a -G sudo xxxxsudo usermod -g 默认用户组 xxxxsudo adduser xxxx sudochown username filechgrp groupname filechmod u=rwx filechmod g=rwx filechmod o=rwx file 关机/重启 123rebootshutdowninit split和cat重定向–拆分和合并 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 13:18:37]]></content>
@@ -10,19 +24,6 @@
       <tags>
         <tag>Linux</tag>
         <tag>常用命令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ubuntu apt-get update时报waiting for headers]]></title>
-    <url>%2F2017%2F10%2F31%2F01.Linux%2FWaiting_for_headers%2F</url>
-    <content type="text"><![CDATA[直接：12sudo rm -f /var/lib/apt/lists/*sudo rm -rf /var/lib/apt/lists/partial/* 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 11:54:10]]></content>
-      <categories>
-        <category>01.Linux</category>
-      </categories>
-      <tags>
-        <tag>waiting for headers</tag>
-        <tag>apt-get update</tag>
-        <tag>ubuntu</tag>
       </tags>
   </entry>
   <entry>
@@ -39,9 +40,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[碎碎念201711]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+    <title><![CDATA[碎碎念201710]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201710%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 阶段性工作的抽象总结 123 新工作的方向，银行金融，与互联网公司的优缺点 123 为什么会有天才 123 star法则制作简历 123 追求其他资源的利用，避免单打独斗 123 裸辞的原因 123 Java,Python,基础算法，算法复杂度,自然语言 123 成功的案例 与客户，业务等等打交道，业务逻辑学习能力具体的案例，以及抽象出来的东西 对于面试，准备，策划一场面试 123 面试技巧，最后环节问的问题 123 打有准备之仗 123123123123123123 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>11.碎碎念</category>
       </categories>
@@ -50,9 +51,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[碎碎念201710]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201710%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 阶段性工作的抽象总结 123 新工作的方向，银行金融，与互联网公司的优缺点 123 为什么会有天才 123 star法则制作简历 123 追求其他资源的利用，避免单打独斗 123 裸辞的原因 123 Java,Python,基础算法，算法复杂度,自然语言 123 成功的案例 与客户，业务等等打交道，业务逻辑学习能力具体的案例，以及抽象出来的东西 对于面试，准备，策划一场面试 123 面试技巧，最后环节问的问题 123 打有准备之仗 123123123123123123 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+    <title><![CDATA[碎碎念201711]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>11.碎碎念</category>
       </categories>
@@ -87,20 +88,8 @@
   </entry>
   <entry>
     <title><![CDATA[ubuntu软件安装记录]]></title>
-    <url>%2F2017%2F10%2F26%2F01.Linux%2Fubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[安装openssh-server 安装samba 安装node.js 安装git 安装gedit 安装python3 # 已自带 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-25 17:02:19]]></content>
-      <categories>
-        <category>01.Linux</category>
-      </categories>
-      <tags>
-        <tag>ubuntu</tag>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[ubuntu软件安装记录]]></title>
     <url>%2F2017%2F10%2F26%2F01.Linux%2FUbuntu%2Fubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[安装openssh-server 安装samba 安装node.js 安装git 安装gedit 安装python3 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-25 17:02:19]]></content>
+    <content type="text"><![CDATA[安装openssh-server 安装samba 安装node.js 安装git 安装gedit 安装python3 # 已自带 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-25 17:02:19]]></content>
       <categories>
         <category>01.Linux</category>
       </categories>
@@ -150,75 +139,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[大数据--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>05.大数据</category>
-      </categories>
-      <tags>
-        <tag>大数据</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[人工智能--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>06.人工智能</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[中学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>中学忆事</category>
-      </categories>
-      <tags>
-        <tag>中学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[生活忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>生活忆事</category>
-      </categories>
-      <tags>
-        <tag>生活忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>07.自然语言处理(NLP)</category>
-      </categories>
-      <tags>
-        <tag>自然语言处理</tag>
-        <tag>NLP</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[尬聊记--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>09.尬聊记</category>
-      </categories>
-      <tags>
-        <tag>尬聊记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
     <content type="text"></content>
@@ -230,15 +150,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[大学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[尬聊记--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
     <content type="text"></content>
       <categories>
-        <category>08.忆往昔</category>
-        <category>大学忆事</category>
+        <category>09.尬聊记</category>
       </categories>
       <tags>
-        <tag>大学忆事</tag>
+        <tag>尬聊记</tag>
       </tags>
   </entry>
   <entry>
@@ -254,6 +173,65 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[人工智能--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>06.人工智能</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[生活忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>生活忆事</category>
+      </categories>
+      <tags>
+        <tag>生活忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[中学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>中学忆事</category>
+      </categories>
+      <tags>
+        <tag>中学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>07.自然语言处理(NLP)</category>
+      </categories>
+      <tags>
+        <tag>自然语言处理</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>大学忆事</category>
+      </categories>
+      <tags>
+        <tag>大学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[我也是段子手]]></title>
     <url>%2F2017%2F10%2F22%2F10.%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B%2F%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B%2F</url>
     <content type="text"><![CDATA[我打喷嚏，要是对着太阳，都能看见彩虹。]]></content>
@@ -262,18 +240,6 @@
       </categories>
       <tags>
         <tag>段子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Markdown博客模板]]></title>
-    <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
-    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
-      <categories>
-        <category>99.博客设置</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>博客模板</tag>
       </tags>
   </entry>
   <entry>
@@ -287,6 +253,18 @@
         <tag>安装</tag>
         <tag>python</tag>
         <tag>pycharm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+      <categories>
+        <category>99.博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
       </tags>
   </entry>
   <entry>

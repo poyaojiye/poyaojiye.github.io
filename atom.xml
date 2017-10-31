@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://poyaojiye.com/"/>
-  <updated>2017-10-31T06:35:38.729Z</updated>
+  <updated>2017-10-31T07:00:28.902Z</updated>
   <id>http://poyaojiye.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hadoop单机/伪分布式配置_hadoop2.7.4/Ubuntu16.04</title>
+    <link href="http://poyaojiye.com/2017/10/31/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%8D%95%E6%9C%BA_%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%85%8D%E7%BD%AE_hadoop2.7.4_Ubuntu16.04/"/>
+    <id>http://poyaojiye.com/2017/10/31/05.大数据/hadoop单机_伪分布式配置_hadoop2.7.4_Ubuntu16.04/</id>
+    <published>2017-10-31T07:00:12.000Z</published>
+    <updated>2017-10-31T07:00:28.902Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装hadoop"><a href="#安装hadoop" class="headerlink" title="安装hadoop"></a>安装hadoop</h3><ol><li>本教程需要些许linux基础</li><li>下载最新稳定版hadoop<br> 当前最新稳定版，stable，是hadoop-2.7.4.tar.gz：<br> <a href="https://dist.apache.org/repos/dist/release/hadoop/common/" target="_blank" rel="external">https://dist.apache.org/repos/dist/release/hadoop/common/</a> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># wget的-c是断点续传，6不6</div><div class="line">wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz</div><div class="line"># 同时建议下载，内含校验码判断文件是否下载完整，不然安装到一半报异常神烦啊，</div><div class="line">wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz.mds</div><div class="line"># 使用md5sum校验，与mds文件中的md5码比较即可</div><div class="line">md5sum hadoop-2.7.4.tar.gz|tr [a-z] [A-Z]</div></pre></td></tr></table></figure></li></ol><a id="more"></a><ol><li>安装jre获jdk，jdk中包含jre，具体步骤另见教程</li><li><p>添加hadoop用户</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">sudo useradd -m hadoop -s /bin/bash</div><div class="line"># 设置密码</div><div class="line">sudo passwd hadoop</div><div class="line"># 增加管理员权限</div><div class="line">sudo adduser hadoop sudo</div></pre></td></tr></table></figure></li><li><p>把tar包解压到/usr/local/，解压出来的文件</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">tar -zxvf hadoop-2.7.4.tar.gz -C /usr/local</div><div class="line">cd /usr/local/</div><div class="line">sudo mv ./hadoop-2.7.4/ ./hadoop</div><div class="line">sudo chown -R hadoop ./hadoop</div></pre></td></tr></table></figure></li></ol><p>1.然后可以执行hadoop查看版本，表示hadoop已安装成功<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd cd /usr/local/hadoop</div><div class="line">./bin/hadoop version</div></pre></td></tr></table></figure></p><h3 id="hadoop单机配置"><a href="#hadoop单机配置" class="headerlink" title="hadoop单机配置"></a>hadoop单机配置</h3><ol><li><p>通过上面的配置，现在可以查看hadoop自带的一些实例，运行：</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/</div><div class="line">./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.4.jar</div></pre></td></tr></table></figure><p> 可以看到wordcout,grep等多个示例</p></li></ol><h3 id="hadoop伪分布配置"><a href="#hadoop伪分布配置" class="headerlink" title="hadoop伪分布配置"></a>hadoop伪分布配置</h3><ol><li><p>配置/usr/local/hadoop/etc/hadoop/中的</p><ol><li><p><strong>core-site.xml</strong>,如果要切回hadoop单机模式，需要把改文件配置清空<strong>（敲黑板擦，划重点）</strong></p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">         &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;</div><div class="line">         &lt;value&gt;file:/usr/local/hadoop/tmp&lt;/value&gt;</div><div class="line">         &lt;description&gt;Abase for other temporary directories.&lt;/description&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">         &lt;name&gt;fs.defaultFS&lt;/name&gt;</div><div class="line">         &lt;value&gt;hdfs://localhost:9000&lt;/value&gt;</div><div class="line">    &lt;/property&gt;    </div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure></li><li><p><strong>hdfs-site.xml</strong></p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">    &lt;configuration&gt;</div><div class="line">        &lt;property&gt;</div><div class="line">             &lt;name&gt;dfs.replication&lt;/name&gt;</div><div class="line">             &lt;value&gt;1&lt;/value&gt;</div><div class="line">        &lt;/property&gt;</div><div class="line">        &lt;property&gt;</div><div class="line">             &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt;</div><div class="line">             &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/name&lt;/value&gt;</div><div class="line">        &lt;/property&gt;</div><div class="line">        &lt;property&gt;</div><div class="line">             &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt;</div><div class="line">             &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/data&lt;/value&gt;</div><div class="line">        &lt;/property&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure></li></ol></li><li><p>配置完成后格式化NameNode</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./bin/hdfs namenode -format</div></pre></td></tr></table></figure><p> 执行成功会显示：<br> name has been successfully formatted.<br> Exitting with status 0.</p></li><li><p>启动hdfs,包含两个进程NameNode和DataNode</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./sbin/start-dfs.sh</div></pre></td></tr></table></figure></li><li><p>通过<code>jps</code>可以查看存在的java进程中是否存在NameNode和DataNode</p></li><li>成功启动后，可以访问 Web 界面 <a href="http://localhost:50070" target="_blank" rel="external">http://localhost:50070</a> 查看 NameNode 和 Datanode 信息，及HDFS 中的文件。</li><li><p>停止hdfs的命令：</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./sbin/stop-dfs.sh</div></pre></td></tr></table></figure></li><li><p>其中，hadoop伪分布式的运行实例</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">#创建用户目录</div><div class="line">./bin/hdfs dfs -mkdir -p /user/hadoop</div><div class="line">#创建input目录</div><div class="line">./bin/hdfs dfs -mkdir input</div><div class="line">#上传数据文件</div><div class="line">./bin/hdfs dfs -put ./etc/hadoop/*xml input</div><div class="line">#查看input目录</div><div class="line">./bin/hdfs dfs -ls input</div><div class="line">#执行MapReduce作业</div><div class="line">./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep input output &apos;dfs[a-z.]+&apos;</div><div class="line">#查看执行结果</div><div class="line">./bin/hdfs dfs -cat output/*</div><div class="line">#下载/取回执行结果</div><div class="line">./bin/hdfs dfs -get output ./output</div><div class="line">#清除结果目录，执行前output不能已存在</div><div class="line">./bin/hdfs dfs -rm -r output</div></pre></td></tr></table></figure></li></ol><h3 id="启动YARN（yet-another-resource-negotiator）"><a href="#启动YARN（yet-another-resource-negotiator）" class="headerlink" title="启动YARN（yet another resource negotiator）"></a>启动YARN（yet another resource negotiator）</h3><ol><li>配置/usr/local/hadoop/etc/hadoop/mapred-site.xml</li><li><p>原文件名为mapred-site.xml.template，重命名为mapred-site.xml</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mv mapred-site.xml.template mapred-site.xml</div></pre></td></tr></table></figure></li><li><p>配置mapred-site.xml</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">         &lt;name&gt;mapreduce.framework.name&lt;/name&gt;</div><div class="line">         &lt;value&gt;yarn&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure></li><li><p>配置yarn-site.xml</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">         &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;</div><div class="line">         &lt;value&gt;mapreduce_shuffle&lt;/value&gt;</div><div class="line">        &lt;/property&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure></li><li><p>启动停止yarn</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#启动yarn</div><div class="line">./sbin/start-dfs.sh</div><div class="line">./sbin/start-yarn.sh</div><div class="line">./sbin/mr-jobhistory-daemon.sh start historyserver</div><div class="line"></div><div class="line">#停止yarn</div><div class="line">./sbin/stop-yarn.sh</div><div class="line">./sbin/mr-jobhistory-daemon.sh stop historyserver</div><div class="line">./sbin/stop-dfs.sh</div></pre></td></tr></table></figure></li><li><p>其中，启动yarn后可以通过jps看到 NodeManager 和 ResourceManager 两个Java进程</p></li><li><p>hadoop启动没有NodeManager,需要在yarn-site.xml中增加下面的配置,下面的内存我的机器里配置为3072才可以较为正常运行（敲黑板擦，划重点），所以伪分布式使用yarn不仅没有性能提升，反而更慢，龟速。中间修改配置文件需要重启yarn才能生效：</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;property&gt;</div><div class="line">    &lt;name&gt;yarn.nodemanager.resource.memory-mb&lt;/name&gt;</div><div class="line">    &lt;value&gt;3072&lt;/value&gt;</div><div class="line">&lt;/property&gt;</div><div class="line">&lt;property&gt;</div><div class="line">    &lt;name&gt;yarn.nodemanager.resource.cpu-vcores&lt;/name&gt;</div><div class="line">    &lt;value&gt;1&lt;/value&gt;</div><div class="line">&lt;/property&gt;</div></pre></td></tr></table></figure></li><li><p>配置完成后运行方式和伪单机命令相同，可以在<br><a href="http://localhost:8088/cluster" target="_blank" rel="external">http://localhost:8088/cluster</a><br>查看状态信息。</p></li></ol><h3 id="tips："><a href="#tips：" class="headerlink" title="tips："></a>tips：</h3><ul><li>可以通过配置环境变量和设置软连接的方式减少目录的切换和输入</li><li>hadoop不只是可扩展性，还有可收缩性，有点逆向思维。</li></ul><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-31 15:00:23</li></ol></blockquote><p><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;安装hadoop&quot;&gt;&lt;a href=&quot;#安装hadoop&quot; class=&quot;headerlink&quot; title=&quot;安装hadoop&quot;&gt;&lt;/a&gt;安装hadoop&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;本教程需要些许linux基础&lt;/li&gt;
+&lt;li&gt;下载最新稳定版hadoop&lt;br&gt; 当前最新稳定版，stable，是hadoop-2.7.4.tar.gz：&lt;br&gt; &lt;a href=&quot;https://dist.apache.org/repos/dist/release/hadoop/common/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://dist.apache.org/repos/dist/release/hadoop/common/&lt;/a&gt; &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;# wget的-c是断点续传，6不6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;# 同时建议下载，内含校验码判断文件是否下载完整，不然安装到一半报异常神烦啊，&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz.mds&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;# 使用md5sum校验，与mds文件中的md5码比较即可&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;md5sum hadoop-2.7.4.tar.gz|tr [a-z] [A-Z]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="05.大数据" scheme="http://poyaojiye.com/categories/05-%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+    
+      <category term="hadoop" scheme="http://poyaojiye.com/tags/hadoop/"/>
+    
+      <category term="单机" scheme="http://poyaojiye.com/tags/%E5%8D%95%E6%9C%BA/"/>
+    
+      <category term="伪分布" scheme="http://poyaojiye.com/tags/%E4%BC%AA%E5%88%86%E5%B8%83/"/>
+    
+      <category term="Ubuntu" scheme="http://poyaojiye.com/tags/Ubuntu/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux常用命令--持续更新</title>
@@ -45,8 +77,8 @@
   
   <entry>
     <title>ubuntu apt-get update时报waiting for headers</title>
-    <link href="http://poyaojiye.com/2017/10/31/01.Linux/Waiting_for_headers/"/>
-    <id>http://poyaojiye.com/2017/10/31/01.Linux/Waiting_for_headers/</id>
+    <link href="http://poyaojiye.com/2017/10/31/01.Linux/Ubuntu/Waiting_for_headers/"/>
+    <id>http://poyaojiye.com/2017/10/31/01.Linux/Ubuntu/Waiting_for_headers/</id>
     <published>2017-10-31T03:54:10.000Z</published>
     <updated>2017-10-31T05:19:05.034Z</updated>
     
@@ -70,39 +102,13 @@
   </entry>
   
   <entry>
-    <title>ubuntu apt-get update时报waiting for headers</title>
-    <link href="http://poyaojiye.com/2017/10/31/01.Linux/Ubuntu/Waiting_for_headers/"/>
-    <id>http://poyaojiye.com/2017/10/31/01.Linux/Ubuntu/Waiting_for_headers/</id>
-    <published>2017-10-31T03:54:10.000Z</published>
-    <updated>2017-10-31T03:55:43.132Z</updated>
-    
-    <content type="html"><![CDATA[<p>直接：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo rm -f /var/lib/apt/lists/*</div><div class="line">sudo rm -rf /var/lib/apt/lists/partial/*</div></pre></td></tr></table></figure></p><a id="more"></a><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-31 11:54:10</li></ol></blockquote><p><br><br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;直接：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;sudo rm -f /var/lib/apt/lists/*&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;sudo rm -rf /var/lib/apt/lists/partial/*&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
-    
-    
-      <category term="waiting for headers" scheme="http://poyaojiye.com/tags/waiting-for-headers/"/>
-    
-      <category term="apt-get update" scheme="http://poyaojiye.com/tags/apt-get-update/"/>
-    
-      <category term="ubuntu" scheme="http://poyaojiye.com/tags/ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>碎碎念201711</title>
-    <link href="http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201711/"/>
-    <id>http://poyaojiye.com/2017/10/29/11.碎碎念/碎碎念201711/</id>
+    <title>碎碎念201710</title>
+    <link href="http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201710/"/>
+    <id>http://poyaojiye.com/2017/10/29/11.碎碎念/碎碎念201710/</id>
     <published>2017-10-29T14:47:05.000Z</published>
-    <updated>2017-10-29T15:16:09.681Z</updated>
+    <updated>2017-10-29T15:28:53.633Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>即时想法的问答与追踪<a id="more"></a></li></ul><ol><li>123<blockquote><p>123</p></blockquote></li></ol><p>博客内容<br><!--more--><br>博客内容</p><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<ul><li>即时想法的问答与追踪<a id="more"></a></li></ul><ol><li>阶段性工作的抽象总结<blockquote><p>123</p></blockquote></li><li>新工作的方向，银行金融，与互联网公司的优缺点<blockquote><p>123</p></blockquote></li><li>为什么会有天才<blockquote><p>123</p></blockquote></li><li>star法则制作简历<blockquote><p>123</p></blockquote></li><li>追求其他资源的利用，避免单打独斗<blockquote><p>123</p></blockquote></li><li>裸辞的原因<blockquote><p>123</p></blockquote></li><li>Java,Python,基础算法，算法复杂度,自然语言<blockquote><p>123</p></blockquote></li><li>成功的案例<blockquote><p>与客户，业务等等打交道，业务逻辑学习能力<br>具体的案例，以及抽象出来的东西</p></blockquote></li><li>对于面试，准备，策划一场面试<blockquote><p>123</p></blockquote></li><li>面试技巧，最后环节问的问题<blockquote><p>123</p></blockquote></li><li>打有准备之仗<blockquote><p>123<br>123<br>123<br>123<br>123<br>123</p></blockquote></li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
     
     <summary type="html">
     
@@ -119,13 +125,13 @@
   </entry>
   
   <entry>
-    <title>碎碎念201710</title>
-    <link href="http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201710/"/>
-    <id>http://poyaojiye.com/2017/10/29/11.碎碎念/碎碎念201710/</id>
+    <title>碎碎念201711</title>
+    <link href="http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201711/"/>
+    <id>http://poyaojiye.com/2017/10/29/11.碎碎念/碎碎念201711/</id>
     <published>2017-10-29T14:47:05.000Z</published>
-    <updated>2017-10-29T15:28:53.633Z</updated>
+    <updated>2017-10-29T15:16:09.681Z</updated>
     
-    <content type="html"><![CDATA[<ul><li>即时想法的问答与追踪<a id="more"></a></li></ul><ol><li>阶段性工作的抽象总结<blockquote><p>123</p></blockquote></li><li>新工作的方向，银行金融，与互联网公司的优缺点<blockquote><p>123</p></blockquote></li><li>为什么会有天才<blockquote><p>123</p></blockquote></li><li>star法则制作简历<blockquote><p>123</p></blockquote></li><li>追求其他资源的利用，避免单打独斗<blockquote><p>123</p></blockquote></li><li>裸辞的原因<blockquote><p>123</p></blockquote></li><li>Java,Python,基础算法，算法复杂度,自然语言<blockquote><p>123</p></blockquote></li><li>成功的案例<blockquote><p>与客户，业务等等打交道，业务逻辑学习能力<br>具体的案例，以及抽象出来的东西</p></blockquote></li><li>对于面试，准备，策划一场面试<blockquote><p>123</p></blockquote></li><li>面试技巧，最后环节问的问题<blockquote><p>123</p></blockquote></li><li>打有准备之仗<blockquote><p>123<br>123<br>123<br>123<br>123<br>123</p></blockquote></li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<ul><li>即时想法的问答与追踪<a id="more"></a></li></ul><ol><li>123<blockquote><p>123</p></blockquote></li></ol><p>博客内容<br><!--more--><br>博客内容</p><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
     
     <summary type="html">
     
@@ -198,8 +204,8 @@
   
   <entry>
     <title>ubuntu软件安装记录</title>
-    <link href="http://poyaojiye.com/2017/10/26/01.Linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/"/>
-    <id>http://poyaojiye.com/2017/10/26/01.Linux/ubuntu软件安装记录/</id>
+    <link href="http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/"/>
+    <id>http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu软件安装记录/</id>
     <published>2017-10-25T23:57:15.000Z</published>
     <updated>2017-10-31T05:19:21.502Z</updated>
     
@@ -218,41 +224,6 @@
 &lt;li&gt;安装python3 # 已自带&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;br&gt;&lt;br
-      
-    
-    </summary>
-    
-      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
-    
-    
-      <category term="ubuntu" scheme="http://poyaojiye.com/tags/ubuntu/"/>
-    
-      <category term="软件" scheme="http://poyaojiye.com/tags/%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ubuntu软件安装记录</title>
-    <link href="http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/"/>
-    <id>http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu软件安装记录/</id>
-    <published>2017-10-25T23:57:15.000Z</published>
-    <updated>2017-10-31T03:10:01.202Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>安装openssh-server</li><li>安装samba</li><li>安装node.js</li><li>安装git</li><li>安装gedit</li><li>安装python3</li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-25 17:02:19</li></ol></blockquote><p><br><br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;安装openssh-server&lt;/li&gt;
-&lt;li&gt;安装samba&lt;/li&gt;
-&lt;li&gt;安装node.js&lt;/li&gt;
-&lt;li&gt;安装git&lt;/li&gt;
-&lt;li&gt;安装gedit&lt;/li&gt;
-&lt;li&gt;安装python3&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;
       
     
     </summary>
@@ -356,20 +327,58 @@
   </entry>
   
   <entry>
-    <title>大数据--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
-    <id>http://poyaojiye.com/2017/10/23/05.大数据/大数据/</id>
+    <title>Java--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
+    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.397Z</updated>
+    <updated>2017-10-23T00:58:28.382Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="05.大数据" scheme="http://poyaojiye.com/categories/05-%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
     
     
-      <category term="大数据" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>尬聊记--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+    <id>http://poyaojiye.com/2017/10/23/09.尬聊记/尬聊记/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.454Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="09.尬聊记" scheme="http://poyaojiye.com/categories/09-%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+    
+    
+      <category term="尬聊记" scheme="http://poyaojiye.com/tags/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工作忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.438Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -388,26 +397,6 @@
     
     
       <category term="人工智能" scheme="http://poyaojiye.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>中学忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.422Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    
-    
-      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -432,6 +421,26 @@
   </entry>
   
   <entry>
+    <title>中学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.422Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自然语言处理(NLP)--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)/"/>
     <id>http://poyaojiye.com/2017/10/23/07.自然语言处理(NLP)/自然语言处理(NLP)/</id>
@@ -452,42 +461,6 @@
   </entry>
   
   <entry>
-    <title>尬聊记--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    <id>http://poyaojiye.com/2017/10/23/09.尬聊记/尬聊记/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.454Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="09.尬聊记" scheme="http://poyaojiye.com/categories/09-%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    
-    
-      <category term="尬聊记" scheme="http://poyaojiye.com/tags/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
-    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.382Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
-    
-    
-      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大学忆事--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
@@ -504,6 +477,34 @@
     
     
       <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我也是段子手</title>
+    <link href="http://poyaojiye.com/2017/10/22/10.%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/"/>
+    <id>http://poyaojiye.com/2017/10/22/10.我也是段子手/我也是段子手/</id>
+    <published>2017-10-22T13:49:19.000Z</published>
+    <updated>2017-10-23T00:47:44.366Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>我打喷嚏，要是对着太阳，都能看见彩虹。<br><br><br><br><br><br><br><br><br><br></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;我打喷嚏，要是对着太阳，都能看见彩虹。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      
+    
+    </summary>
+    
+      <category term="10.我也是段子手" scheme="http://poyaojiye.com/categories/10-%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B/"/>
+    
+    
+      <category term="段子" scheme="http://poyaojiye.com/tags/%E6%AE%B5%E5%AD%90/"/>
     
   </entry>
   
