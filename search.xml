@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux常用命令--持续更新]]></title>
     <url>%2F2017%2F10%2F31%2F01.Linux%2FLinux%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[压缩/解压 12345678910111213141516171819# 压缩gzip filenamegzip *# 解压gzip -d filename.gzgzip -d *.gz# 打包tar -cvf xxx.tar /dir# 压缩打包tar -zcvf xxx.tar.gz /dir# 解包tar -xvf xxx.tar ./# 解包解压，参数z可以省略，tar自动识别tar -zxvf xxx.tar.gz ./# 到指定目录gzip -c filename&gt;/dir/xxx.gzgzip -cd xxx.gz&gt;/dir/filenametar -cvf /dir/xxx.tar /dirtar -xvf xxx.tar -C /dir 新增用户 12# -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shelluseradd -m hadoop -s /bin/bash 软链接 ln -s /source_path link 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 13:18:37]]></content>
+    <content type="text"><![CDATA[压缩/解压 12345678910111213141516171819# 压缩gzip filenamegzip *# 解压gzip -d filename.gzgzip -d *.gz# 打包tar -cvf xxx.tar /dir# 压缩打包tar -zcvf xxx.tar.gz /dir# 解包tar -xvf xxx.tar ./# 解包解压，参数z可以省略，tar自动识别tar -zxvf xxx.tar.gz ./# 到指定目录gzip -c filename&gt;/dir/xxx.gzgzip -cd xxx.gz&gt;/dir/filenametar -cvf /dir/xxx.tar /dirtar -xvf xxx.tar -C /dir 新增用户 12# -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shelluseradd -m hadoop -s /bin/bash 软链接 ln -s /source_path link 硬链接 1234# create hard linkln filename hard_link# view file&apos;s hard link after permissionsll filename 递归创建文件夹 mkdir -P folder 查看主机名 12hostnamecat /etc/hostname grep 12grep -n &apos;str&apos; file # show the line numbergrep -P &apos;regex&apos; file # by the regular expression find–查找 123456789101112131415161718192021222324252627282930313233343536find -name april* 在当前目录下查找以april开始的文件find -name april* fprint file 在当前目录下查找以april开始的文件，并把结果输出到file中find -name ap* -o -name may* 查找以ap或may开头的文件find /mnt -name tom.txt -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件find /mnt -name t.txt ! -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件find /tmp -name wa* -type l 在/tmp下查找名为wa开头且类型为符号链接的文件find /home -mtime -2 在/home下查最近两天内改动过的文件find /home -atime -1 查1天之内被存取过的文件find /home -mmin +60 在/home下查60分钟前改动过的文件find /home -amin +30 查最近30分钟前被存取过的文件find /home -newer tmp.txt 在/home下查更新时间比tmp.txt近的文件或目录find /home -anewer tmp.txt 在/home下查存取时间比tmp.txt近的文件或目录find /home -used -2 列出文件或目录被改动过之后，在2日内被存取过的文件或目录find /home -user cnscn 列出/home目录内属于用户cnscn的文件或目录find /home -uid +501 列出/home目录内用户的识别码大于501的文件或目录find /home -group cnscn 列出/home内组为cnscn的文件或目录find /home -gid 501 列出/home内组id为501的文件或目录find /home -nouser 列出/home内不属于本地用户的文件或目录find /home -nogroup 列出/home内不属于本地组的文件或目录find /home -name tmp.txt -maxdepth 4 列出/home内的tmp.txt 查时深度最多为3层find /home -name tmp.txt -mindepth 3 从第2层开始查find /home -empty 查找大小为0的文件或空目录find /home -size +512k 查大于512k的文件find /home -size -512k 查小于512k的文件find /home -links +2 查硬连接数大于2的文件或目录find /home -perm 0700 查权限为700的文件或目录find /tmp -name tmp.txt -exec cat &#123;&#125; \;find /tmp -name tmp.txt -ok rm &#123;&#125; \;find / -amin -10 # 查找在系统中最后10分钟访问的文件find / -atime -2 # 查找在系统中最后48小时访问的文件find / -empty # 查找在系统中为空的文件或者文件夹find / -group cat # 查找在系统中属于 groupcat的文件find / -mmin -5 # 查找在系统中最后5分钟里修改过的文件find / -mtime -1 #查找在系统中最后24小时里修改过的文件find / -nouser #查找在系统中属于作废用户的文件find / -user fred #查找在系统中属于FRED这个用户的文件 which–追踪命令路径 12which grepwhich python3 时间 12345cal 日期表date 格式输出date +%Y%m%d #20171001date +%Y-%m-%d #2017-10-01ntp 对时 ps–查看进程 1ps -ef|grep test kill–杀死进程 12kill processidkill -9 processid # 强制杀死 top/htop–查看系统性能 查看空间 12df -hdu -h ifconfig –查看、修改网卡信息，ip信息 用户和用户组操作 123456789101112131415161718useradd hadoop -m -s /bin/bash # 创建home目录和指定默认bashsudo passwd hadoop # 修改密码sudo adduser xxxx sudo # 添加用户到sudouserdel # 删除用户userdel -r # 删除home目录cat /etc/passwd # 查看是否有用户sudo -s # 执行环境变数中的 SHELL 所指定的 shellgroupaddgroupdelgroupmodsudo usermod -a -G sudo xxxxsudo usermod -g 默认用户组 xxxxsudo adduser xxxx sudochown username filechgrp groupname filechmod u=rwx filechmod g=rwx filechmod o=rwx file 关机/重启 123rebootshutdowninit split和cat重定向–拆分和合并 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 13:18:37]]></content>
       <categories>
         <category>01.Linux</category>
       </categories>
@@ -150,29 +150,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>02.Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[大学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>大学忆事</category>
-      </categories>
-      <tags>
-        <tag>大学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[大数据--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2F%E5%A4%A7%E6%95%B0%E6%8D%AE%2F</url>
     <content type="text"></content>
@@ -192,6 +169,30 @@
       </categories>
       <tags>
         <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[中学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>中学忆事</category>
+      </categories>
+      <tags>
+        <tag>中学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[生活忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>生活忆事</category>
+      </categories>
+      <tags>
+        <tag>生活忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -218,15 +219,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[中学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[Java--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>02.Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[大学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
       <categories>
         <category>08.忆往昔</category>
-        <category>中学忆事</category>
+        <category>大学忆事</category>
       </categories>
       <tags>
-        <tag>中学忆事</tag>
+        <tag>大学忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -239,18 +251,6 @@
       </categories>
       <tags>
         <tag>工作忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[生活忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>生活忆事</category>
-      </categories>
-      <tags>
-        <tag>生活忆事</tag>
       </tags>
   </entry>
   <entry>

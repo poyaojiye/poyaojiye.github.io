@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://poyaojiye.com/"/>
-  <updated>2017-10-31T05:23:06.148Z</updated>
+  <updated>2017-10-31T06:35:38.729Z</updated>
   <id>http://poyaojiye.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://poyaojiye.com/2017/10/31/01.Linux/Linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://poyaojiye.com/2017/10/31/01.Linux/Linux/Linux常用命令/</id>
     <published>2017-10-31T05:18:37.000Z</published>
-    <updated>2017-10-31T05:23:06.148Z</updated>
+    <updated>2017-10-31T06:35:38.729Z</updated>
     
-    <content type="html"><![CDATA[<ol><li>压缩/解压 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"># 压缩</div><div class="line">gzip filename</div><div class="line">gzip *</div><div class="line"># 解压</div><div class="line">gzip -d filename.gz</div><div class="line">gzip -d *.gz</div><div class="line"># 打包</div><div class="line">tar -cvf xxx.tar /dir</div><div class="line"># 压缩打包</div><div class="line">tar -zcvf xxx.tar.gz /dir</div><div class="line"># 解包</div><div class="line">tar -xvf xxx.tar ./</div><div class="line"># 解包解压，参数z可以省略，tar自动识别</div><div class="line">tar -zxvf xxx.tar.gz ./</div><div class="line"># 到指定目录</div><div class="line">gzip -c filename&gt;/dir/xxx.gz</div><div class="line">gzip -cd xxx.gz&gt;/dir/filename</div><div class="line">tar -cvf /dir/xxx.tar /dir</div><div class="line">tar -xvf xxx.tar -C /dir</div></pre></td></tr></table></figure></li></ol><a id="more"></a><ol><li><p>新增用户</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shell</div><div class="line">useradd -m hadoop -s /bin/bash</div></pre></td></tr></table></figure></li><li><p>软链接<br> <code>ln -s /source_path link</code></p></li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-31 13:18:37</li></ol></blockquote><p><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<ol><li>压缩/解压 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"># 压缩</div><div class="line">gzip filename</div><div class="line">gzip *</div><div class="line"># 解压</div><div class="line">gzip -d filename.gz</div><div class="line">gzip -d *.gz</div><div class="line"># 打包</div><div class="line">tar -cvf xxx.tar /dir</div><div class="line"># 压缩打包</div><div class="line">tar -zcvf xxx.tar.gz /dir</div><div class="line"># 解包</div><div class="line">tar -xvf xxx.tar ./</div><div class="line"># 解包解压，参数z可以省略，tar自动识别</div><div class="line">tar -zxvf xxx.tar.gz ./</div><div class="line"># 到指定目录</div><div class="line">gzip -c filename&gt;/dir/xxx.gz</div><div class="line">gzip -cd xxx.gz&gt;/dir/filename</div><div class="line">tar -cvf /dir/xxx.tar /dir</div><div class="line">tar -xvf xxx.tar -C /dir</div></pre></td></tr></table></figure></li></ol><a id="more"></a><ol><li><p>新增用户</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shell</div><div class="line">useradd -m hadoop -s /bin/bash</div></pre></td></tr></table></figure></li><li><p>软链接</p><p> <code>ln -s /source_path link</code></p></li><li><p>硬链接</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># create hard link</div><div class="line">ln filename hard_link</div><div class="line"># view file&apos;s hard link after permissions</div><div class="line">ll filename</div></pre></td></tr></table></figure></li><li><p>递归创建文件夹<br> <code>mkdir -P folder</code></p></li><li><p>查看主机名</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hostname</div><div class="line">cat /etc/hostname</div></pre></td></tr></table></figure></li><li><p>grep</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">grep -n &apos;str&apos; file # show the line number</div><div class="line">grep -P &apos;regex&apos; file # by the regular expression</div></pre></td></tr></table></figure></li><li><p>find–查找</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">find   -name april*                     在当前目录下查找以april开始的文件</div><div class="line">find   -name   april*   fprint file        在当前目录下查找以april开始的文件，并把结果输出到file中</div><div class="line">find   -name ap* -o -name may*   查找以ap或may开头的文件</div><div class="line">find   /mnt   -name tom.txt   -ftype vfat   在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件</div><div class="line">find   /mnt   -name t.txt ! -ftype vfat   在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件</div><div class="line">find   /tmp   -name wa* -type l            在/tmp下查找名为wa开头且类型为符号链接的文件</div><div class="line">find   /home   -mtime   -2                 在/home下查最近两天内改动过的文件</div><div class="line">find /home    -atime -1                  查1天之内被存取过的文件</div><div class="line">find /home -mmin    +60                  在/home下查60分钟前改动过的文件</div><div class="line">find /home   -amin   +30                  查最近30分钟前被存取过的文件</div><div class="line">find /home   -newer   tmp.txt             在/home下查更新时间比tmp.txt近的文件或目录</div><div class="line">find /home   -anewer   tmp.txt            在/home下查存取时间比tmp.txt近的文件或目录</div><div class="line">find   /home   -used   -2                  列出文件或目录被改动过之后，在2日内被存取过的文件或目录</div><div class="line">find   /home   -user cnscn                列出/home目录内属于用户cnscn的文件或目录</div><div class="line">find   /home   -uid   +501                  列出/home目录内用户的识别码大于501的文件或目录</div><div class="line">find   /home   -group   cnscn              列出/home内组为cnscn的文件或目录</div><div class="line">find   /home   -gid 501                   列出/home内组id为501的文件或目录</div><div class="line">find   /home   -nouser                    列出/home内不属于本地用户的文件或目录</div><div class="line">find   /home   -nogroup                   列出/home内不属于本地组的文件或目录</div><div class="line">find   /home    -name tmp.txt    -maxdepth   4   列出/home内的tmp.txt 查时深度最多为3层</div><div class="line">find   /home   -name tmp.txt   -mindepth   3   从第2层开始查</div><div class="line">find   /home   -empty                     查找大小为0的文件或空目录</div><div class="line">find   /home   -size   +512k                查大于512k的文件</div><div class="line">find   /home   -size   -512k               查小于512k的文件</div><div class="line">find   /home   -links   +2                查硬连接数大于2的文件或目录</div><div class="line">find   /home   -perm   0700                查权限为700的文件或目录</div><div class="line">find   /tmp   -name tmp.txt   -exec cat &#123;&#125; \;</div><div class="line">find   /tmp   -name   tmp.txt   -ok   rm &#123;&#125; \;</div><div class="line">find    /   -amin    -10     # 查找在系统中最后10分钟访问的文件</div><div class="line">find    /   -atime   -2        # 查找在系统中最后48小时访问的文件</div><div class="line">find    /   -empty             # 查找在系统中为空的文件或者文件夹</div><div class="line">find    /   -group   cat        # 查找在系统中属于 groupcat的文件</div><div class="line">find    /   -mmin   -5         # 查找在系统中最后5分钟里修改过的文件</div><div class="line">find    /   -mtime   -1       #查找在系统中最后24小时里修改过的文件</div><div class="line">find    /   -nouser           #查找在系统中属于作废用户的文件</div><div class="line">find    /   -user    fred     #查找在系统中属于FRED这个用户的文件</div></pre></td></tr></table></figure></li><li><p>which–追踪命令路径</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">which grep</div><div class="line">which python3</div></pre></td></tr></table></figure></li><li><p>时间</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cal  日期表</div><div class="line">date 格式输出</div><div class="line">date +%Y%m%d  #20171001</div><div class="line">date +%Y-%m-%d #2017-10-01</div><div class="line">ntp 对时</div></pre></td></tr></table></figure></li><li><p>ps–查看进程</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ps -ef|grep test</div></pre></td></tr></table></figure></li><li><p>kill–杀死进程</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">kill processid</div><div class="line">kill -9 processid # 强制杀死</div></pre></td></tr></table></figure></li><li><p>top/htop–查看系统性能</p></li><li><p>查看空间</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">df -h</div><div class="line">du -h</div></pre></td></tr></table></figure></li><li><p>ifconfig –查看、修改网卡信息，ip信息</p></li><li><p>用户和用户组操作</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">useradd hadoop -m -s /bin/bash # 创建home目录和指定默认bash</div><div class="line">sudo passwd hadoop # 修改密码</div><div class="line">sudo adduser xxxx sudo # 添加用户到sudo</div><div class="line">userdel # 删除用户</div><div class="line">userdel -r # 删除home目录</div><div class="line">cat /etc/passwd # 查看是否有用户</div><div class="line">sudo -s # 执行环境变数中的 SHELL 所指定的 shell</div><div class="line">groupadd</div><div class="line">groupdel</div><div class="line">groupmod</div><div class="line">sudo usermod -a -G sudo xxxx</div><div class="line">sudo usermod -g 默认用户组 xxxx</div><div class="line">sudo adduser xxxx sudo</div><div class="line">chown username file</div><div class="line">chgrp groupname file</div><div class="line">chmod u=rwx file</div><div class="line">chmod g=rwx file</div><div class="line">chmod o=rwx file</div></pre></td></tr></table></figure></li><li><p>关机/重启</p> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reboot</div><div class="line">shutdown</div><div class="line">init</div></pre></td></tr></table></figure></li><li><p>split和cat重定向–拆分和合并</p></li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-31 13:18:37</li></ol></blockquote><p><br><br><br></p>]]></content>
     
     <summary type="html">
     
@@ -356,44 +356,6 @@
   </entry>
   
   <entry>
-    <title>Java--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
-    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.382Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
-    
-    
-      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大学忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.431Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="大学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    
-    
-      <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大数据--分类占位</title>
     <link href="http://poyaojiye.com/2017/10/23/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     <id>http://poyaojiye.com/2017/10/23/05.大数据/大数据/</id>
@@ -426,6 +388,46 @@
     
     
       <category term="人工智能" scheme="http://poyaojiye.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.422Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生活忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/生活忆事/生活忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.447Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="生活忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="生活忆事" scheme="http://poyaojiye.com/tags/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -468,31 +470,29 @@
   </entry>
   
   <entry>
-    <title>中学忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
+    <title>Java--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/02.Java/Java/"/>
+    <id>http://poyaojiye.com/2017/10/23/02.Java/Java/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.422Z</updated>
+    <updated>2017-10-23T00:58:28.382Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+      <category term="02.Java" scheme="http://poyaojiye.com/categories/02-Java/"/>
     
     
-      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+      <category term="Java" scheme="http://poyaojiye.com/tags/Java/"/>
     
   </entry>
   
   <entry>
-    <title>工作忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <title>大学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.438Z</updated>
+    <updated>2017-10-23T00:58:28.431Z</updated>
     
     <summary type="html">
     
@@ -500,10 +500,10 @@
     
       <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
     
-      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="大学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
     
-      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
