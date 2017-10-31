@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://poyaojiye.com/2017/10/17/03.Python/Python/</loc>
+    
+    <lastmod>2017-10-31T05:30:15.819Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/31/01.Linux/Linux/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    
+    <lastmod>2017-10-31T05:23:06.148Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/26/01.Linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
+    
+    <lastmod>2017-10-31T05:19:21.502Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/31/01.Linux/Waiting_for_headers/</loc>
+    
+    <lastmod>2017-10-31T05:19:05.034Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/31/01.Linux/Ubuntu/Waiting_for_headers/</loc>
+    
+    <lastmod>2017-10-31T03:55:43.132Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
+    
+    <lastmod>2017-10-31T03:10:01.202Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201710/</loc>
+    
+    <lastmod>2017-10-29T15:28:53.633Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201711/</loc>
+    
+    <lastmod>2017-10-29T15:16:09.681Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://poyaojiye.com/2017/10/28/04.Github/GitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB/</loc>
+    
+    <lastmod>2017-10-29T08:21:33.749Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://poyaojiye.com/2017/10/17/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
     
     <lastmod>2017-10-29T08:16:18.347Z</lastmod>
@@ -9,35 +72,21 @@
   </url>
   
   <url>
-    <loc>http://poyaojiye.com/2017/10/28/04.Github/GitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB/</loc>
-    
-    <lastmod>2017-10-29T08:16:04.844Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://poyaojiye.com/2017/10/27/01.Linux/ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/</loc>
+    <loc>http://poyaojiye.com/2017/10/27/01.Linux/Ubuntu/ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/</loc>
     
     <lastmod>2017-10-27T14:05:13.892Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://poyaojiye.com/2017/10/26/01.Linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
-    
-    <lastmod>2017-10-26T00:14:24.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://poyaojiye.com/2017/10/25/01.Linux/%E9%80%9A%E8%BF%87%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%BF%9E%E6%8E%A5ubuntu/</loc>
+    <loc>http://poyaojiye.com/2017/10/25/01.Linux/Ubuntu/%E9%80%9A%E8%BF%87%E4%B8%BB%E6%9C%BA%E5%90%8D%E8%BF%9E%E6%8E%A5ubuntu/</loc>
     
     <lastmod>2017-10-25T09:04:15.362Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://poyaojiye.com/2017/10/25/01.Linux/VM%E5%AE%89%E8%A3%85Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <loc>http://poyaojiye.com/2017/10/25/01.Linux/Ubuntu/VM%E5%AE%89%E8%A3%85Ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     
     <lastmod>2017-10-25T04:08:54.261Z</lastmod>
     
@@ -54,13 +103,6 @@
     <loc>http://poyaojiye.com/2017/10/23/12.%E5%B0%8F%E8%80%8C%E7%BE%8E/Windows%E5%91%BD%E4%BB%A4%E8%AE%A1%E7%AE%97MD5%E4%B8%8ESHA1_SHA256%E5%80%BC/</loc>
     
     <lastmod>2017-10-24T04:27:08.684Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://poyaojiye.com/2017/10/23/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
-    
-    <lastmod>2017-10-23T00:58:28.462Z</lastmod>
     
   </url>
   
@@ -121,23 +163,9 @@
   </url>
   
   <url>
-    <loc>http://poyaojiye.com/2017/10/23/03.Python/Python/</loc>
-    
-    <lastmod>2017-10-23T00:58:28.389Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://poyaojiye.com/2017/10/23/02.Java/Java/</loc>
     
     <lastmod>2017-10-23T00:58:28.382Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://poyaojiye.com/2017/10/23/01.Linux/Linux/</loc>
-    
-    <lastmod>2017-10-23T00:57:11.146Z</lastmod>
     
   </url>
   

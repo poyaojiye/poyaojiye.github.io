@@ -89,7 +89,7 @@
 <meta name="description" content="除了学习，我什么都不想干">
 <meta property="og:type" content="website">
 <meta property="og:title" content="泼妖&amp;极爷的博客">
-<meta property="og:url" content="http://poyaojiye.com/tags/ubuntu/index.html">
+<meta property="og:url" content="http://poyaojiye.com/tags/Ubuntu/index.html">
 <meta property="og:site_name" content="泼妖&amp;极爷的博客">
 <meta property="og:description" content="除了学习，我什么都不想干">
 <meta property="og:locale" content="zh-Hans">
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://poyaojiye.com/tags/ubuntu/"/>
+  <link rel="canonical" href="http://poyaojiye.com/tags/Ubuntu/"/>
 
 
 
 
 
-  <title>标签: ubuntu | 泼妖&极爷的博客</title>
+  <title>标签: Ubuntu | 泼妖&极爷的博客</title>
   
 
 
@@ -315,7 +315,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>ubuntu<small>标签</small>
+        <h1>Ubuntu<small>标签</small>
         </h1>
       </div>
 
@@ -327,37 +327,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/10/27/01.Linux/ubuntu开启ssh服务/" itemprop="url">
+            <a class="post-title-link" href="/2017/10/25/01.Linux/Ubuntu/VM安装Ubuntu虚拟机/" itemprop="url">
               
-                <span itemprop="name">ubuntu开启ssh服务</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-27T22:04:58+08:00"
-              content="2017-10-27" >
-          10-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/26/01.Linux/ubuntu软件安装记录/" itemprop="url">
-              
-                <span itemprop="name">ubuntu软件安装记录</span>
+                <span itemprop="name">Vmware安装Ubuntu虚拟机</span>
               
             </a>
         
@@ -365,35 +337,7 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-26T07:57:15+08:00"
-              content="2017-10-26" >
-          10-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/10/25/01.Linux/通过主机名连接ubuntu/" itemprop="url">
-              
-                <span itemprop="name">通过主机名连接ubuntu</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-25T14:16:19+08:00"
+              datetime="2017-10-25T08:16:19+08:00"
               content="2017-10-25" >
           10-25
         </time>
@@ -459,7 +403,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">博文</span>
                 </a>
               </div>
@@ -481,7 +425,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -556,7 +500,7 @@
     
       <span class="post-meta-item-text" style="color:white;">博客已码字数&#58;</span>
     
-    <span style="color:red;font-size:162%;" title="博客已码字数">1.7k</span>
+    <span style="color:red;font-size:162%;" title="博客已码字数">2.3k</span>
   
 </div>
 
@@ -975,6 +919,124 @@
                   } else {
                     resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
                   }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+  }
 
                   slicesOfContent.forEach(function (slice) {
                     resultItem += "<a href='" + articleUrl + "'>" +
