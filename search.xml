@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hadoop单机/伪分布式配置_hadoop2.7.4/Ubuntu16.04]]></title>
     <url>%2F2017%2F10%2F31%2F05.%E5%A4%A7%E6%95%B0%E6%8D%AE%2Fhadoop%E5%8D%95%E6%9C%BA_%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%85%8D%E7%BD%AE_hadoop2.7.4_Ubuntu16.04%2F</url>
-    <content type="text"><![CDATA[安装hadoop 本教程需要些许linux基础 下载最新稳定版hadoop 当前最新稳定版，stable，是hadoop-2.7.4.tar.gz： https://dist.apache.org/repos/dist/release/hadoop/common/ 123456# wget的-c是断点续传，6不6wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz# 同时建议下载，内含校验码判断文件是否下载完整，不然安装到一半报异常神烦啊，wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz.mds# 使用md5sum校验，与mds文件中的md5码比较即可md5sum hadoop-2.7.4.tar.gz|tr [a-z] [A-Z] 安装jre获jdk，jdk中包含jre，具体步骤另见教程 添加hadoop用户 12345sudo useradd -m hadoop -s /bin/bash# 设置密码sudo passwd hadoop# 增加管理员权限sudo adduser hadoop sudo 把tar包解压到/usr/local/，解压出来的文件 1234tar -zxvf hadoop-2.7.4.tar.gz -C /usr/localcd /usr/local/sudo mv ./hadoop-2.7.4/ ./hadoopsudo chown -R hadoop ./hadoop 1.然后可以执行hadoop查看版本，表示hadoop已安装成功 12cd cd /usr/local/hadoop./bin/hadoop version hadoop单机配置 通过上面的配置，现在可以查看hadoop自带的一些实例，运行： 12cd /usr/local/./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.4.jar 可以看到wordcout,grep等多个示例 hadoop伪分布配置 配置/usr/local/hadoop/etc/hadoop/中的 core-site.xml,如果要切回hadoop单机模式，需要把改文件配置清空（敲黑板擦，划重点） 1234567891011&lt;configuration&gt; &lt;property&gt; &lt;name&gt;hadoop.tmp.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp&lt;/value&gt; &lt;description&gt;Abase for other temporary directories.&lt;/description&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;fs.defaultFS&lt;/name&gt; &lt;value&gt;hdfs://localhost:9000&lt;/value&gt; &lt;/property&gt; &lt;/configuration&gt; hdfs-site.xml 1234567891011121314 &lt;configuration&gt; &lt;property&gt; &lt;name&gt;dfs.replication&lt;/name&gt; &lt;value&gt;1&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/name&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/data&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 配置完成后格式化NameNode 1./bin/hdfs namenode -format 执行成功会显示： name has been successfully formatted. Exitting with status 0. 启动hdfs,包含两个进程NameNode和DataNode 1./sbin/start-dfs.sh 通过jps可以查看存在的java进程中是否存在NameNode和DataNode 成功启动后，可以访问 Web 界面 http://localhost:50070 查看 NameNode 和 Datanode 信息，及HDFS 中的文件。 停止hdfs的命令： 1./sbin/stop-dfs.sh 其中，hadoop伪分布式的运行实例 12345678910111213141516#创建用户目录./bin/hdfs dfs -mkdir -p /user/hadoop#创建input目录./bin/hdfs dfs -mkdir input#上传数据文件./bin/hdfs dfs -put ./etc/hadoop/*xml input#查看input目录./bin/hdfs dfs -ls input#执行MapReduce作业./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep input output &apos;dfs[a-z.]+&apos;#查看执行结果./bin/hdfs dfs -cat output/*#下载/取回执行结果./bin/hdfs dfs -get output ./output#清除结果目录，执行前output不能已存在./bin/hdfs dfs -rm -r output 启动YARN（yet another resource negotiator） 配置/usr/local/hadoop/etc/hadoop/mapred-site.xml 原文件名为mapred-site.xml.template，重命名为mapred-site.xml 1mv mapred-site.xml.template mapred-site.xml 配置mapred-site.xml 123456&lt;configuration&gt; &lt;property&gt; &lt;name&gt;mapreduce.framework.name&lt;/name&gt; &lt;value&gt;yarn&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 配置yarn-site.xml 123456&lt;configuration&gt; &lt;property&gt; &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt; &lt;value&gt;mapreduce_shuffle&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 启动停止yarn 123456789#启动yarn./sbin/start-dfs.sh./sbin/start-yarn.sh./sbin/mr-jobhistory-daemon.sh start historyserver#停止yarn./sbin/stop-yarn.sh./sbin/mr-jobhistory-daemon.sh stop historyserver./sbin/stop-dfs.sh 其中，启动yarn后可以通过jps看到 NodeManager 和 ResourceManager 两个Java进程 hadoop启动没有NodeManager,需要在yarn-site.xml中增加下面的配置,下面的内存我的机器里配置为3072才可以较为正常运行（敲黑板擦，划重点），所以伪分布式使用yarn不仅没有性能提升，反而更慢，龟速。中间修改配置文件需要重启yarn才能生效： 12345678&lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.memory-mb&lt;/name&gt; &lt;value&gt;3072&lt;/value&gt;&lt;/property&gt;&lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.cpu-vcores&lt;/name&gt; &lt;value&gt;1&lt;/value&gt;&lt;/property&gt; 配置完成后运行方式和伪单机命令相同，可以在http://localhost:8088/cluster查看状态信息。 tips： 可以通过配置环境变量和设置软连接的方式减少目录的切换和输入 hadoop不只是可扩展性，还有可收缩性，有点逆向思维。 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 15:00:23]]></content>
+    <content type="text"><![CDATA[安装hadoop 本教程需要些许linux基础 下载最新稳定版hadoop 当前最新稳定版，stable，是hadoop-2.7.4.tar.gz： https://dist.apache.org/repos/dist/release/hadoop/common/ 123456# wget的-c是断点续传，6不6wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz# 同时建议下载，内含校验码判断文件是否下载完整，不然安装到一半报异常神烦啊，wget -c https://dist.apache.org/repos/dist/release/hadoop/common/hadoop-2.7.4/hadoop-2.7.4.tar.gz.mds# 使用md5sum校验，与mds文件中的md5码比较即可md5sum hadoop-2.7.4.tar.gz|tr [a-z] [A-Z] 安装jre获jdk，jdk中包含jre，具体步骤另见教程 添加hadoop用户 12345sudo useradd -m hadoop -s /bin/bash# 设置密码sudo passwd hadoop# 增加管理员权限sudo adduser hadoop sudo 把tar包解压到/usr/local/，解压出来的文件 1234tar -zxvf hadoop-2.7.4.tar.gz -C /usr/localcd /usr/local/sudo mv ./hadoop-2.7.4/ ./hadoopsudo chown -R hadoop ./hadoop 然后可以执行hadoop查看版本，表示hadoop已安装成功 12cd cd /usr/local/hadoop./bin/hadoop version hadoop单机配置 通过上面的配置，现在可以查看hadoop自带的一些实例，运行： 12cd /usr/local/./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.4.jar 可以看到wordcout,grep等多个示例 hadoop伪分布配置 配置/usr/local/hadoop/etc/hadoop/中的 core-site.xml,如果要切回hadoop单机模式，需要把改文件配置清空（敲黑板擦，划重点） 1234567891011&lt;configuration&gt; &lt;property&gt; &lt;name&gt;hadoop.tmp.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp&lt;/value&gt; &lt;description&gt;Abase for other temporary directories.&lt;/description&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;fs.defaultFS&lt;/name&gt; &lt;value&gt;hdfs://localhost:9000&lt;/value&gt; &lt;/property&gt; &lt;/configuration&gt; hdfs-site.xml 1234567891011121314 &lt;configuration&gt; &lt;property&gt; &lt;name&gt;dfs.replication&lt;/name&gt; &lt;value&gt;1&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/name&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt; &lt;value&gt;file:/usr/local/hadoop/tmp/dfs/data&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 配置完成后格式化NameNode 1./bin/hdfs namenode -format 执行成功会显示： name has been successfully formatted. Exitting with status 0. 启动hdfs,包含两个进程NameNode和DataNode 1./sbin/start-dfs.sh 通过jps可以查看存在的java进程中是否存在NameNode和DataNode 成功启动后，可以访问 Web 界面 http://localhost:50070 查看 NameNode 和 Datanode 信息，及HDFS 中的文件。 停止hdfs的命令： 1./sbin/stop-dfs.sh 其中，hadoop伪分布式的运行实例 12345678910111213141516#创建用户目录./bin/hdfs dfs -mkdir -p /user/hadoop#创建input目录./bin/hdfs dfs -mkdir input#上传数据文件./bin/hdfs dfs -put ./etc/hadoop/*xml input#查看input目录./bin/hdfs dfs -ls input#执行MapReduce作业./bin/hadoop jar ./share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar grep input output &apos;dfs[a-z.]+&apos;#查看执行结果./bin/hdfs dfs -cat output/*#下载/取回执行结果./bin/hdfs dfs -get output ./output#清除结果目录，执行前output不能已存在./bin/hdfs dfs -rm -r output 启动YARN（yet another resource negotiator） 配置/usr/local/hadoop/etc/hadoop/mapred-site.xml 原文件名为mapred-site.xml.template，重命名为mapred-site.xml 1mv mapred-site.xml.template mapred-site.xml 配置mapred-site.xml 123456&lt;configuration&gt; &lt;property&gt; &lt;name&gt;mapreduce.framework.name&lt;/name&gt; &lt;value&gt;yarn&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 配置yarn-site.xml 123456&lt;configuration&gt; &lt;property&gt; &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt; &lt;value&gt;mapreduce_shuffle&lt;/value&gt; &lt;/property&gt;&lt;/configuration&gt; 启动停止yarn 123456789#启动yarn./sbin/start-dfs.sh./sbin/start-yarn.sh./sbin/mr-jobhistory-daemon.sh start historyserver#停止yarn./sbin/stop-yarn.sh./sbin/mr-jobhistory-daemon.sh stop historyserver./sbin/stop-dfs.sh 其中，启动yarn后可以通过jps看到 NodeManager 和 ResourceManager 两个Java进程 hadoop启动没有NodeManager,需要在yarn-site.xml中增加下面的配置,下面的内存我的机器里配置为3072才可以较为正常运行（敲黑板擦，划重点），所以伪分布式使用yarn不仅没有性能提升，反而更慢，龟速。中间修改配置文件需要重启yarn才能生效： 12345678&lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.memory-mb&lt;/name&gt; &lt;value&gt;3072&lt;/value&gt;&lt;/property&gt;&lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.cpu-vcores&lt;/name&gt; &lt;value&gt;1&lt;/value&gt;&lt;/property&gt; 配置完成后运行方式和伪单机命令相同，可以在http://localhost:8088/cluster查看状态信息。 tips： 可以通过配置环境变量和设置软连接的方式减少目录的切换和输入 hadoop不只是可扩展性，还有可收缩性，有点逆向思维。 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 15:00:23]]></content>
       <categories>
         <category>05.大数据</category>
       </categories>
@@ -40,9 +40,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[碎碎念201710]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201710%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 阶段性工作的抽象总结 123 新工作的方向，银行金融，与互联网公司的优缺点 123 为什么会有天才 123 star法则制作简历 123 追求其他资源的利用，避免单打独斗 123 裸辞的原因 123 Java,Python,基础算法，算法复杂度,自然语言 123 成功的案例 与客户，业务等等打交道，业务逻辑学习能力具体的案例，以及抽象出来的东西 对于面试，准备，策划一场面试 123 面试技巧，最后环节问的问题 123 打有准备之仗 123123123123123123 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+    <title><![CDATA[碎碎念201711]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>11.碎碎念</category>
       </categories>
@@ -51,9 +51,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[碎碎念201711]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+    <title><![CDATA[碎碎念201710]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201710%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 阶段性工作的抽象总结 123 新工作的方向，银行金融，与互联网公司的优缺点 123 为什么会有天才 123 star法则制作简历 123 追求其他资源的利用，避免单打独斗 123 裸辞的原因 123 Java,Python,基础算法，算法复杂度,自然语言 123 成功的案例 与客户，业务等等打交道，业务逻辑学习能力具体的案例，以及抽象出来的东西 对于面试，准备，策划一场面试 123 面试技巧，最后环节问的问题 123 打有准备之仗 123123123123123123 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>11.碎碎念</category>
       </categories>
@@ -150,6 +150,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>07.自然语言处理(NLP)</category>
+      </categories>
+      <tags>
+        <tag>自然语言处理</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[尬聊记--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
     <content type="text"></content>
@@ -158,41 +170,6 @@
       </categories>
       <tags>
         <tag>尬聊记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[工作忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>工作忆事</category>
-      </categories>
-      <tags>
-        <tag>工作忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[人工智能--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>06.人工智能</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[生活忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>生活忆事</category>
-      </categories>
-      <tags>
-        <tag>生活忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -208,15 +185,38 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
+    <title><![CDATA[生活忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
       <categories>
-        <category>07.自然语言处理(NLP)</category>
+        <category>08.忆往昔</category>
+        <category>生活忆事</category>
       </categories>
       <tags>
-        <tag>自然语言处理</tag>
-        <tag>NLP</tag>
+        <tag>生活忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[人工智能--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>06.人工智能</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[工作忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>工作忆事</category>
+      </categories>
+      <tags>
+        <tag>工作忆事</tag>
       </tags>
   </entry>
   <entry>
