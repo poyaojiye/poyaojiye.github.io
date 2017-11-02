@@ -4,6 +4,96 @@
 
     
   <url>
+    <loc>http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-11-02T16:58:31.932Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu软件安装记录</title>
+        <pubTime>2017-10-25T23:57:15.000Z</pubTime>
+        
+        <tag>ubuntu</tag>
+         
+        <tag>软件</tag>
+         
+         
+           
+             
+              <breadCrumb title="01.Linux" url="http://poyaojiye.com/categories/01-Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/31/01.Linux/Linux/Vim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2017-11-01T04:06:04.852Z</lastmod>
+    <data>
+        <display>
+        <title>Vim常用命令</title>
+        <pubTime>2017-10-31T09:44:16.000Z</pubTime>
+        
+        <tag>常用命令</tag>
+         
+        <tag>Vim</tag>
+         
+         
+           
+             
+              <breadCrumb title="01.Linux" url="http://poyaojiye.com/categories/01-Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/11/01/01.Linux/Linux/xshell%E4%B8%ADCtrl+S%E9%94%81%E5%AE%9A%E5%B1%8F%E5%B9%95/</loc>
+    <lastmod>2017-11-01T04:01:54.015Z</lastmod>
+    <data>
+        <display>
+        <title>xshell中Ctrl+S锁定屏幕</title>
+        <pubTime>2017-11-01T03:57:35.000Z</pubTime>
+        
+        <tag>xshell</tag>
+         
+        <tag>Ctrl+S</tag>
+         
+        <tag>锁定屏幕</tag>
+         
+         
+           
+             
+              <breadCrumb title="01.Linux" url="http://poyaojiye.com/categories/01-Linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://poyaojiye.com/2017/10/17/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2017-10-31T10:06:16.397Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown博客模板</title>
+        <pubTime>2017-10-17T09:16:19.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>博客模板</tag>
+         
+         
+           
+             
+              <breadCrumb title="99.博客设置" url="http://poyaojiye.com/categories/99-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://poyaojiye.com/2017/10/31/05.%E5%A4%A7%E6%95%B0%E6%8D%AE/hadoop%E5%8D%95%E6%9C%BA_%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%85%8D%E7%BD%AE_hadoop2.7.4_Ubuntu16.04/</loc>
     <lastmod>2017-10-31T07:07:57.763Z</lastmod>
     <data>
@@ -76,28 +166,6 @@
 
     
   <url>
-    <loc>http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2017-10-31T05:19:21.502Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu软件安装记录</title>
-        <pubTime>2017-10-25T23:57:15.000Z</pubTime>
-        
-        <tag>ubuntu</tag>
-         
-        <tag>软件</tag>
-         
-         
-           
-             
-              <breadCrumb title="01.Linux" url="http://poyaojiye.com/categories/01-Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://poyaojiye.com/2017/10/31/01.Linux/Ubuntu/Waiting_for_headers/</loc>
     <lastmod>2017-10-31T05:19:05.034Z</lastmod>
     <data>
@@ -105,11 +173,11 @@
         <title>ubuntu apt-get update时报waiting for headers</title>
         <pubTime>2017-10-31T03:54:10.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>waiting for headers</tag>
          
         <tag>apt-get update</tag>
-         
-        <tag>ubuntu</tag>
          
          
            
@@ -186,28 +254,6 @@
 
     
   <url>
-    <loc>http://poyaojiye.com/2017/10/17/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF/</loc>
-    <lastmod>2017-10-29T08:16:18.347Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown博客模板</title>
-        <pubTime>2017-10-17T09:16:19.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>博客模板</tag>
-         
-         
-           
-             
-              <breadCrumb title="99.博客设置" url="http://poyaojiye.com/categories/99-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://poyaojiye.com/2017/10/27/01.Linux/Ubuntu/ubuntu%E5%BC%80%E5%90%AFssh%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2017-10-27T14:05:13.892Z</lastmod>
     <data>
@@ -239,9 +285,9 @@
         
         <tag>ubuntu</tag>
          
-        <tag>ssh</tag>
-         
         <tag>主机名</tag>
+         
+        <tag>ssh</tag>
          
         <tag>ping</tag>
          
