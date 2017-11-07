@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Markdown博客模板]]></title>
+    <title><![CDATA[Markdown数学公式]]></title>
     <url>%2F2017%2F11%2F07%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E6%95%B0%E6%8D%AE%E5%85%AC%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[平方差公式 $$a^2-b^2= (a+b)(a-b)$$ 立方差公式 $a^3-b^3 = (a+b)(a^2-ab+b^2)$ 立方和公式 $a^3+b^3 = (a-b)(a^2+ab+b^2)$ 完全平方公式 $(a + b)^2 = a^2 + 2ab+b^2$$(a - b)^2 = a^2 - 2ab+b^2$ 一元二次方程求根公式 $ax^2+bx+c =0$$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ 韦达定理 设$x1,x2$是一元二次方程$ax^2+bx+c =0$的两个根，则$x1,x2$满足:$x1+x2 = -\frac{b}{a}$$x1 \cdot x2 = \frac{c}{a}$ 有关集合的公式 设$I$为全集，$\varnothing$为空集，如果$A$是$I$的子集,$B$是$I$的子集，则$A \subset I$,$B \subset I$。于是，$I \cup A = I$$I \cap \varnothing = \varnothing$若$\bar A ={x|x \in I且x \notin A,A \subseteq I }$,$\bar B ={x|x \in I且x \notin B,B \subseteq I }$则$A \cup \bar A = I$$A \cap \bar A = \varnothing$$\overline {A \cap B} = \bar A \cup \bar B$$\overline {A \cup B} = \bar A \cap \bar B$ 不等式 $|a| \ge 0$$|a|-|b| \le |a+b| \le |a|+|b|$$|a| \le b$$|a| \le b \Leftrightarrow -b \le a \le b (b&gt;0)$$a^2+b^2 \gt 2ab (a,b \in R)$$\frac{a+b}{2} \ge \sqrt{ab} (a,b \in R^+)$$\frac{b}{a} + \frac{a}{b} \ge 2 (ab&gt;0)$$\frac{a+b+c}{3} \ge \sqrt[3]{abc} (a,b,c \in R)$$\frac{a_1+a_2+ \ldots +a_n}{n} \ge \sqrt[n]{a_1a_2\ldots a_n} a_1,a_2, \ldots,a_n \in R^+ n \in N且n&gt;1$ 排列组合 $A_n^m = \frac{n!}{(n-m)!}$$C_n^m = \frac{n!}{m!(n-m)!}$$C_n^m = Cn^(n-m)$$C{n+1}^m = C_n^m + C_n^{m-1}$$C_n^0+C_n^1+\ldots +C_n^n = 2^n$ 积分公式 $\int sin(x)dx = cos(x) +C$$\int cos(x)dx = -sin(x) +C$$\int tan(x)dx = -ln|cos(x)| +C$$\int cot(s)dx = ln|sin(x)| +C$$\int sec^2(x)dx = tan(x) +C$ 导数公式 $(C)’=0$$(sin \,x)’ = cos \,x$$(tan \,x)’ = sec^2 \,x$$(sec \,x)’ = sec \,xtan \,x$$(a^x)’ = a^xln \,x$$(x^{\mu}) = \mu x^{\mu-1}$$(cos \,x)’ = -sin \,x$$(cot \,x)’ = -csc^2 \,x$$(csc \,x)’ = -csc \,xcot \,x$$(e^x)’ = e^x$$$(log_ax)’ = \frac{1}{xln \,a}$$$$(ln \,x)’ = \frac{1}{x}$$$$(arcsin \,x)’ = \frac{1}{\sqrt{1-x^2}}$$$$(arccos \,x)’ = -\frac{1}{\sqrt{1-x^2}}$$$$(arctan \,x)’ = \frac{1}{1+x^2}$$$$(arccot \,x)’ = -\frac{1}{1+x^2}$$ 重要的极限 $$\lim{x\to 0} \,{\frac{\sin x}{x}} = 1$$$$\lim{x\to \infty} \,{({1+ \frac{1}{x}})}^x = e$$ 参考地址：http://blog.csdn.net/sanqima/article/details/48576361 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-11-7 16:05:35]]></content>
+    <content type="text"><![CDATA[平方差公式$(a^2-b^2= (a+b)(a-b)$ 立方差公式 $a^3-b^3 = (a+b)(a^2-ab+b^2)$ 立方和公式 $a^3+b^3 = (a-b)(a^2+ab+b^2)$ 完全平方公式 $(a + b)^2 = a^2 + 2ab+b^2$$(a - b)^2 = a^2 - 2ab+b^2$ 一元二次方程求根公式 $ax^2+bx+c =0$$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ 韦达定理 设$x1,x2$是一元二次方程$ax^2+bx+c =0$的两个根，则$x1,x2$满足:$x1+x2 = -\frac{b}{a}$$x1 \cdot x2 = \frac{c}{a}$ 有关集合的公式 设$I$为全集，$\varnothing$为空集，如果$A$是$I$的子集,$B$是$I$的子集，则$A \subset I$,$B \subset I$。于是，$I \cup A = I$$I \cap \varnothing = \varnothing$若$\bar A =\{x|x \in I且x \notin A,A \subseteq I \}$,$\bar B =\{x|x \in I且x \notin B,B \subseteq I \}$则$A \cup \bar A = I$$A \cap \bar A = \varnothing$$\overline {A \cap B} = \bar A \cup \bar B$$\overline {A \cup B} = \bar A \cap \bar B$ 不等式 $|a| \ge 0$$|a|-|b| \le |a+b| \le |a|+|b|$$|a| \le b$$|a| \le b \Leftrightarrow -b \le a \le b (b&gt;0)$$a^2+b^2 \gt 2ab (a,b \in R)$$\frac{a+b}{2} \ge \sqrt{ab} (a,b \in R^+)$$\frac{b}{a} + \frac{a}{b} \ge 2 (ab&gt;0)$$\frac{a+b+c}{3} \ge \sqrt[3]{abc} (a,b,c \in R)$$\frac{a_1+a_2+ \ldots +a_n}{n} \ge \sqrt[n]{a_1a_2\ldots a_n} a_1,a_2, \ldots,a_n \in R^+ n \in N且n&gt;1$ 排列组合 $A_n^m = \frac{n!}{(n-m)!}$$C_n^m = \frac{n!}{m!(n-m)!}$$C_n^m = C_n^(n-m)$$C_{n+1}^m = C_n^m + C_n^{m-1}$$C_n^0+C_n^1+\ldots +C_n^n = 2^n$ 积分公式 $\int sin(x)dx = cos(x) +C$$\int cos(x)dx = -sin(x) +C$$\int tan(x)dx = -ln|cos(x)| +C$$\int cot(s)dx = ln|sin(x)| +C$$\int sec^2(x)dx = tan(x) +C$ 导数公式 $(C)’=0$$(sin \,x)’ = cos \,x$$(tan \,x)’ = sec^2 \,x$$(sec \,x)’ = sec \,xtan \,x$$(a^x)’ = a^xln \,x$$(x^{\mu}) = \mu x^{\mu-1}$$(cos \,x)’ = -sin \,x$$(cot \,x)’ = -csc^2 \,x$$(csc \,x)’ = -csc \,xcot \,x$$(e^x)’ = e^x$ (log_ax)' = \frac{1}{xln \,a}(ln \,x)' = \frac{1}{x}(arcsin \,x)' = \frac{1}{\sqrt{1-x^2}}(arccos \,x)' = -\frac{1}{\sqrt{1-x^2}}(arctan \,x)' = \frac{1}{1+x^2}(arccot \,x)' = -\frac{1}{1+x^2} 重要的极限 \lim_{x\to 0} \,{\frac{\sin x}{x}} = 1\lim_{x\to \infty} \,{({1+ \frac{1}{x}})}^x = e 参考地址：http://blog.csdn.net/sanqima/article/details/48576361http://www.ai-heng.cn/2017/08/03/hexo%E5%8D%9A%E5%AE%A2MathJax%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93%E9%97%AE%E9%A2%98/http://www.jianshu.com/p/7ab21c7f0674欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-11-7 16:05:35]]></content>
       <categories>
         <category>99.博客设置</category>
       </categories>
@@ -40,13 +40,13 @@
   <entry>
     <title><![CDATA[Vim常用命令]]></title>
     <url>%2F2017%2F10%2F31%2F01.Linux%2FLinux%2FVim%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[列编辑 删除列 光标定位到要操作的地方。 CTRL+v 进入“可视 块”模式，选取这一列操作多少行。 d 删除。 插入列 插入操作的话知识稍有区别。例如我们在每一行前都插入”() “： 光标定位到要操作的地方。 CTRL+v 进入“可视 块”模式，选取这一列操作多少行。 SHIFT+i(I) 输入要插入的内容。 ESC 按两次，会在每行的选定的区域出现插入的内容。 复制/剪切–粘贴字符串 使用normal模式下的 v命令，进入visual模式，v+ j/k/h/l 进行文本选中 对于选中的文本进行如下按键： d------剪切操作 y------复制操作 p------粘贴操作 ^------选中当前行，光标位置到行首（或者使用键盘的HOME键） $------选中当前行，光标位置到行尾（或者使用键盘的END键） Visual Line模式 按键V可以进入 按键V之后，进入Visual Line模式，使用 j/k键可以选中一行或者多行 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 17:44:16]]></content>
+    <content type="text"><![CDATA[列编辑 删除列 光标定位到要操作的地方。 CTRL+v 进入“可视 块”模式，选取这一列操作多少行。 d 删除。 插入列 插入操作的话知识稍有区别。例如我们在每一行前都插入”() “： 光标定位到要操作的地方。 CTRL+v 进入“可视 块”模式，选取这一列操作多少行。 SHIFT+i(I) 输入要插入的内容。 ESC 按两次，会在每行的选定的区域出现插入的内容。 复制/剪切—粘贴字符串 使用normal模式下的 v命令，进入visual模式，v+ j/k/h/l 进行文本选中 对于选中的文本进行如下按键： d------剪切操作 y------复制操作 p------粘贴操作 ^------选中当前行，光标位置到行首（或者使用键盘的HOME键） $------选中当前行，光标位置到行尾（或者使用键盘的END键） Visual Line模式 按键V可以进入 按键V之后，进入Visual Line模式，使用 j/k键可以选中一行或者多行 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 17:44:16]]></content>
       <categories>
         <category>01.Linux</category>
       </categories>
       <tags>
-        <tag>Vim</tag>
         <tag>常用命令</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -66,13 +66,13 @@
   <entry>
     <title><![CDATA[Linux常用命令--持续更新]]></title>
     <url>%2F2017%2F10%2F31%2F01.Linux%2FLinux%2FLinux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[压缩/解压 12345678910111213141516171819# 压缩gzip filenamegzip *# 解压gzip -d filename.gzgzip -d *.gz# 打包tar -cvf xxx.tar /dir# 压缩打包tar -zcvf xxx.tar.gz /dir# 解包tar -xvf xxx.tar ./# 解包解压，参数z可以省略，tar自动识别tar -zxvf xxx.tar.gz ./# 到指定目录gzip -c filename&gt;/dir/xxx.gzgzip -cd xxx.gz&gt;/dir/filenametar -cvf /dir/xxx.tar /dirtar -xvf xxx.tar -C /dir 新增用户 12# -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shelluseradd -m hadoop -s /bin/bash 软链接 ln -s /source_path link 硬链接 1234# create hard linkln filename hard_link# view file&apos;s hard link after permissionsll filename 递归创建文件夹 mkdir -P folder 查看主机名 12hostnamecat /etc/hostname grep 12grep -n &apos;str&apos; file # show the line numbergrep -P &apos;regex&apos; file # by the regular expression find–查找 123456789101112131415161718192021222324252627282930313233343536find -name april* 在当前目录下查找以april开始的文件find -name april* fprint file 在当前目录下查找以april开始的文件，并把结果输出到file中find -name ap* -o -name may* 查找以ap或may开头的文件find /mnt -name tom.txt -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件find /mnt -name t.txt ! -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件find /tmp -name wa* -type l 在/tmp下查找名为wa开头且类型为符号链接的文件find /home -mtime -2 在/home下查最近两天内改动过的文件find /home -atime -1 查1天之内被存取过的文件find /home -mmin +60 在/home下查60分钟前改动过的文件find /home -amin +30 查最近30分钟前被存取过的文件find /home -newer tmp.txt 在/home下查更新时间比tmp.txt近的文件或目录find /home -anewer tmp.txt 在/home下查存取时间比tmp.txt近的文件或目录find /home -used -2 列出文件或目录被改动过之后，在2日内被存取过的文件或目录find /home -user cnscn 列出/home目录内属于用户cnscn的文件或目录find /home -uid +501 列出/home目录内用户的识别码大于501的文件或目录find /home -group cnscn 列出/home内组为cnscn的文件或目录find /home -gid 501 列出/home内组id为501的文件或目录find /home -nouser 列出/home内不属于本地用户的文件或目录find /home -nogroup 列出/home内不属于本地组的文件或目录find /home -name tmp.txt -maxdepth 4 列出/home内的tmp.txt 查时深度最多为3层find /home -name tmp.txt -mindepth 3 从第2层开始查find /home -empty 查找大小为0的文件或空目录find /home -size +512k 查大于512k的文件find /home -size -512k 查小于512k的文件find /home -links +2 查硬连接数大于2的文件或目录find /home -perm 0700 查权限为700的文件或目录find /tmp -name tmp.txt -exec cat &#123;&#125; \;find /tmp -name tmp.txt -ok rm &#123;&#125; \;find / -amin -10 # 查找在系统中最后10分钟访问的文件find / -atime -2 # 查找在系统中最后48小时访问的文件find / -empty # 查找在系统中为空的文件或者文件夹find / -group cat # 查找在系统中属于 groupcat的文件find / -mmin -5 # 查找在系统中最后5分钟里修改过的文件find / -mtime -1 #查找在系统中最后24小时里修改过的文件find / -nouser #查找在系统中属于作废用户的文件find / -user fred #查找在系统中属于FRED这个用户的文件 which–追踪命令路径 12which grepwhich python3 时间 12345cal 日期表date 格式输出date +%Y%m%d #20171001date +%Y-%m-%d #2017-10-01ntp 对时 ps–查看进程 1ps -ef|grep test kill–杀死进程 12kill processidkill -9 processid # 强制杀死 top/htop–查看系统性能 查看空间 12df -hdu -h ifconfig –查看、修改网卡信息，ip信息 用户和用户组操作 123456789101112131415161718useradd hadoop -m -s /bin/bash # 创建home目录和指定默认bashsudo passwd hadoop # 修改密码sudo adduser xxxx sudo # 添加用户到sudouserdel # 删除用户userdel -r # 删除home目录cat /etc/passwd # 查看是否有用户sudo -s # 执行环境变数中的 SHELL 所指定的 shellgroupaddgroupdelgroupmodsudo usermod -a -G sudo xxxxsudo usermod -g 默认用户组 xxxxsudo adduser xxxx sudochown username filechgrp groupname filechmod u=rwx filechmod g=rwx filechmod o=rwx file 关机/重启 123rebootshutdowninit split和cat重定向–拆分和合并 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 13:18:37]]></content>
+    <content type="text"><![CDATA[压缩/解压 12345678910111213141516171819# 压缩gzip filenamegzip *# 解压gzip -d filename.gzgzip -d *.gz# 打包tar -cvf xxx.tar /dir# 压缩打包tar -zcvf xxx.tar.gz /dir# 解包tar -xvf xxx.tar ./# 解包解压，参数z可以省略，tar自动识别tar -zxvf xxx.tar.gz ./# 到指定目录gzip -c filename&gt;/dir/xxx.gzgzip -cd xxx.gz&gt;/dir/filenametar -cvf /dir/xxx.tar /dirtar -xvf xxx.tar -C /dir 新增用户 12# -m 创建用户主目录的，默认为/home/用户名，-s指定登录默认的shelluseradd -m hadoop -s /bin/bash 软链接 ln -s /source_path link 硬链接 1234# create hard linkln filename hard_link# view file&apos;s hard link after permissionsll filename 递归创建文件夹 mkdir -P folder 查看主机名 12hostnamecat /etc/hostname grep 12grep -n &apos;str&apos; file # show the line numbergrep -P &apos;regex&apos; file # by the regular expression find—查找 123456789101112131415161718192021222324252627282930313233343536find -name april* 在当前目录下查找以april开始的文件find -name april* fprint file 在当前目录下查找以april开始的文件，并把结果输出到file中find -name ap* -o -name may* 查找以ap或may开头的文件find /mnt -name tom.txt -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型为vfat的文件find /mnt -name t.txt ! -ftype vfat 在/mnt下查找名称为tom.txt且文件系统类型不为vfat的文件find /tmp -name wa* -type l 在/tmp下查找名为wa开头且类型为符号链接的文件find /home -mtime -2 在/home下查最近两天内改动过的文件find /home -atime -1 查1天之内被存取过的文件find /home -mmin +60 在/home下查60分钟前改动过的文件find /home -amin +30 查最近30分钟前被存取过的文件find /home -newer tmp.txt 在/home下查更新时间比tmp.txt近的文件或目录find /home -anewer tmp.txt 在/home下查存取时间比tmp.txt近的文件或目录find /home -used -2 列出文件或目录被改动过之后，在2日内被存取过的文件或目录find /home -user cnscn 列出/home目录内属于用户cnscn的文件或目录find /home -uid +501 列出/home目录内用户的识别码大于501的文件或目录find /home -group cnscn 列出/home内组为cnscn的文件或目录find /home -gid 501 列出/home内组id为501的文件或目录find /home -nouser 列出/home内不属于本地用户的文件或目录find /home -nogroup 列出/home内不属于本地组的文件或目录find /home -name tmp.txt -maxdepth 4 列出/home内的tmp.txt 查时深度最多为3层find /home -name tmp.txt -mindepth 3 从第2层开始查find /home -empty 查找大小为0的文件或空目录find /home -size +512k 查大于512k的文件find /home -size -512k 查小于512k的文件find /home -links +2 查硬连接数大于2的文件或目录find /home -perm 0700 查权限为700的文件或目录find /tmp -name tmp.txt -exec cat &#123;&#125; \;find /tmp -name tmp.txt -ok rm &#123;&#125; \;find / -amin -10 # 查找在系统中最后10分钟访问的文件find / -atime -2 # 查找在系统中最后48小时访问的文件find / -empty # 查找在系统中为空的文件或者文件夹find / -group cat # 查找在系统中属于 groupcat的文件find / -mmin -5 # 查找在系统中最后5分钟里修改过的文件find / -mtime -1 #查找在系统中最后24小时里修改过的文件find / -nouser #查找在系统中属于作废用户的文件find / -user fred #查找在系统中属于FRED这个用户的文件 which—追踪命令路径 12which grepwhich python3 时间 12345cal 日期表date 格式输出date +%Y%m%d #20171001date +%Y-%m-%d #2017-10-01ntp 对时 ps—查看进程 1ps -ef|grep test kill—杀死进程 12kill processidkill -9 processid # 强制杀死 top/htop—查看系统性能 查看空间 12df -hdu -h ifconfig —查看、修改网卡信息，ip信息 用户和用户组操作 123456789101112131415161718useradd hadoop -m -s /bin/bash # 创建home目录和指定默认bashsudo passwd hadoop # 修改密码sudo adduser xxxx sudo # 添加用户到sudouserdel # 删除用户userdel -r # 删除home目录cat /etc/passwd # 查看是否有用户sudo -s # 执行环境变数中的 SHELL 所指定的 shellgroupaddgroupdelgroupmodsudo usermod -a -G sudo xxxxsudo usermod -g 默认用户组 xxxxsudo adduser xxxx sudochown username filechgrp groupname filechmod u=rwx filechmod g=rwx filechmod o=rwx file 关机/重启 123rebootshutdowninit split和cat重定向—拆分和合并 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-31 13:18:37]]></content>
       <categories>
         <category>01.Linux</category>
       </categories>
       <tags>
-        <tag>常用命令</tag>
         <tag>Linux</tag>
+        <tag>常用命令</tag>
       </tags>
   </entry>
   <entry>
@@ -113,7 +113,7 @@
   <entry>
     <title><![CDATA[GitPages博客源码迁移]]></title>
     <url>%2F2017%2F10%2F28%2F04.Github%2FGitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB%2F</url>
-    <content type="text"><![CDATA[参考我的博客 git pages 源码迁移的原因 需要更换git pages 源码所在的机器重装系统多终端使用编辑博客 在旧终端上要做的操作123456# 在github上新建repo，在本地hexo文件夹(你的源码文件夹)执行：git initgit remote add origin https://github.com/poyaojiye/hexo.gitgit add .git commit -m &quot;xxx&quot;git push origin master 另外，自定义主题 themes/主题的同步问题，需要使用submodule解决如果你的博客主题是直接clone了第三方的仓库，push hexo 到github 后，themes/主题文件夹是空的，需要使用git 子模块解决首先把主题fork到自己的github中，然后添加到子模块： 1git submodule add git@github.com:poyaojiye/hexo-theme-next.git themes/next 安装环境，node.js，git12345sudo apt install nodejs-legacysudo apt install npmsudo apt install gitgit config --global user.name &quot;your github username&quot;git config --global user.email &quot;your github email&quot; 配置ssh，前面这几步类似新建博客环境123ssh-keygen -t rsa -C &quot;your github email&quot;github 设置 添加pub key测试连接：ssh -T git@github.com 安装hexosudo npm install -g hexo-cli clone源码123# 我的源码文件夹是hexo，创建源码文件夹hexo# clone 源码到hexogit clone https://github.com/poyaojiye/hexo.git ./ 禁执行 hexo init，会新生成配置文件_config.yml覆盖原有文件 安装node插件12#会根据原来的配置文件安装所需插件npm install` 到themes/主题 下，用submodule处理自定义的主题123git submodule initgit submodule updategit checkout master 这一步的前提是在原来的机器上的源码处，把themes/next添加到了submodule中 注意 # 对于插件wordcount：# Node 版本7.6.0之前,请安装 2.x 版本 (Node.js v7.6.0 and previous)npm install hexo-wordcount@2 –save 参考我的博客 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-28 23:20:03]]></content>
+    <content type="text"><![CDATA[参考我的博客 git pages 源码迁移的原因 需要更换git pages 源码所在的机器重装系统多终端使用编辑博客 在旧终端上要做的操作123456# 在github上新建repo，在本地hexo文件夹(你的源码文件夹)执行：git initgit remote add origin https://github.com/poyaojiye/hexo.gitgit add .git commit -m &quot;xxx&quot;git push origin master 另外，自定义主题 themes/主题的同步问题，需要使用submodule解决如果你的博客主题是直接clone了第三方的仓库，push hexo 到github 后，themes/主题文件夹是空的，需要使用git 子模块解决首先把主题fork到自己的github中，然后添加到子模块： 1git submodule add git@github.com:poyaojiye/hexo-theme-next.git themes/next 安装环境，node.js，git12345sudo apt install nodejs-legacysudo apt install npmsudo apt install gitgit config --global user.name &quot;your github username&quot;git config --global user.email &quot;your github email&quot; 配置ssh，前面这几步类似新建博客环境123ssh-keygen -t rsa -C &quot;your github email&quot;github 设置 添加pub key测试连接：ssh -T git@github.com 安装hexosudo npm install -g hexo-cli clone源码123# 我的源码文件夹是hexo，创建源码文件夹hexo# clone 源码到hexogit clone https://github.com/poyaojiye/hexo.git ./ 禁执行 hexo init，会新生成配置文件_config.yml覆盖原有文件 安装node插件12#会根据原来的配置文件安装所需插件npm install` 到themes/主题 下，用submodule处理自定义的主题123git submodule initgit submodule updategit checkout master 这一步的前提是在原来的机器上的源码处，把themes/next添加到了submodule中 注意 # 对于插件wordcount：# Node 版本7.6.0之前,请安装 2.x 版本 (Node.js v7.6.0 and previous)npm install hexo-wordcount@2 —save 参考我的博客 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-28 23:20:03]]></content>
       <categories>
         <category>04.Github</category>
       </categories>
@@ -188,37 +188,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[尬聊记--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
+    <title><![CDATA[人工智能--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
     <content type="text"></content>
       <categories>
-        <category>09.尬聊记</category>
+        <category>06.人工智能</category>
       </categories>
       <tags>
-        <tag>尬聊记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[大学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>大学忆事</category>
-      </categories>
-      <tags>
-        <tag>大学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>02.Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
+        <tag>人工智能</tag>
       </tags>
   </entry>
   <entry>
@@ -234,6 +211,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[大学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>大学忆事</category>
+      </categories>
+      <tags>
+        <tag>大学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[生活忆事--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
@@ -243,29 +232,6 @@
       </categories>
       <tags>
         <tag>生活忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[中学忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>08.忆往昔</category>
-        <category>中学忆事</category>
-      </categories>
-      <tags>
-        <tag>中学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[人工智能--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>06.人工智能</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
       </tags>
   </entry>
   <entry>
@@ -281,6 +247,40 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[尬聊记--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>09.尬聊记</category>
+      </categories>
+      <tags>
+        <tag>尬聊记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[中学忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>中学忆事</category>
+      </categories>
+      <tags>
+        <tag>中学忆事</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F02.Java%2FJava%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>02.Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[我也是段子手]]></title>
     <url>%2F2017%2F10%2F22%2F10.%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B%2F%E6%88%91%E4%B9%9F%E6%98%AF%E6%AE%B5%E5%AD%90%E6%89%8B%2F</url>
     <content type="text"><![CDATA[我打喷嚏，要是对着太阳，都能看见彩虹。]]></content>
@@ -289,18 +289,6 @@
       </categories>
       <tags>
         <tag>段子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Markdown博客模板]]></title>
-    <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
-    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19]]></content>
-      <categories>
-        <category>99.博客设置</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>博客模板</tag>
       </tags>
   </entry>
   <entry>
@@ -317,9 +305,21 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19]]></content>
+      <categories>
+        <category>99.博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git常用命令]]></title>
     <url>%2F2017%2F10%2F16%2F04.Github%2FGit%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[参考链接http://blog.csdn.net/free_wind22/article/details/50967723 Git常用命令如下： 创建一个空目录 XX指目录名) mkdir XX 显示当前目录的路径。 pwd 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git init 把xx文件添加到暂存区去。 git add XX 提交文件 –m 后面的是注释。 git commit –m “XX” 查看仓库状态 git status 查看XX文件修改了那些内容 git diff XX 查看历史记录 git log 回退到上一个版本 git reset –hard HEAD^ 回退到上一个版本 git reset –hard HEAD~ 如果想回退到100个版本，使用 ) git reset –hard HEAD~100 查看XX文件内容 cat XX 查看历史记录的版本号id git reflog 把XX文件在工作区的修改全部撤销。 git checkout – XX 删除XX文件 git rm XX 关联一个远程库 git remote add origin https://github.com/…. 把当前master分支推送到远程库，第一次要用-u 以后不需要 git push –u origin master 从远程库中克隆 git clone https://github.com/…. 创建dev分支 并切换到dev分支上 git checkout –b dev 查看当前所有的分支 git branch 切换回master分支 git checkout master 在当前的分支上合并dev分支 git merge dev 删除dev分支 git branch –d dev 创建分支 git branch name 把当前的工作隐藏起来 等以后恢复现场后继续工作 git stash 查看所有被隐藏的文件列表 git stash list 恢复被隐藏的文件，但是内容不删除 git stash apply 删除文件 git stash drop 恢复文件的同时 也删除文件 git stash pop 查看远程库的信息 git remote 查看远程库的详细信息 git remote –v Git会把master分支推送到远程库对应的远程分支上 git push origin master]]></content>
+    <content type="text"><![CDATA[参考链接http://blog.csdn.net/free_wind22/article/details/50967723 Git常用命令如下： 创建一个空目录 XX指目录名) mkdir XX 显示当前目录的路径。 pwd 把当前的目录变成可以管理的git仓库，生成隐藏.git文件。 git init 把xx文件添加到暂存区去。 git add XX 提交文件 –m 后面的是注释。 git commit –m “XX” 查看仓库状态 git status 查看XX文件修改了那些内容 git diff XX 查看历史记录 git log 回退到上一个版本 git reset —hard HEAD^ 回退到上一个版本 git reset —hard HEAD~ 如果想回退到100个版本，使用 ) git reset –hard HEAD~100 查看XX文件内容 cat XX 查看历史记录的版本号id git reflog 把XX文件在工作区的修改全部撤销。 git checkout — XX 删除XX文件 git rm XX 关联一个远程库 git remote add origin https://github.com/…. 把当前master分支推送到远程库，第一次要用-u 以后不需要 git push –u origin master 从远程库中克隆 git clone https://github.com/…. 创建dev分支 并切换到dev分支上 git checkout –b dev 查看当前所有的分支 git branch 切换回master分支 git checkout master 在当前的分支上合并dev分支 git merge dev 删除dev分支 git branch –d dev 创建分支 git branch name 把当前的工作隐藏起来 等以后恢复现场后继续工作 git stash 查看所有被隐藏的文件列表 git stash list 恢复被隐藏的文件，但是内容不删除 git stash apply 删除文件 git stash drop 恢复文件的同时 也删除文件 git stash pop 查看远程库的信息 git remote 查看远程库的详细信息 git remote –v Git会把master分支推送到远程库对应的远程分支上 git push origin master]]></content>
       <categories>
         <category>04.Github</category>
       </categories>
