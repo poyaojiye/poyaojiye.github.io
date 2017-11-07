@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://poyaojiye.com/"/>
-  <updated>2017-11-01T04:01:54.015Z</updated>
+  <updated>2017-11-06T06:52:26.328Z</updated>
   <id>http://poyaojiye.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>局域网访问jupyter</title>
+    <link href="http://poyaojiye.com/2017/11/06/01.Linux/Ubuntu/%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AEjupyter/"/>
+    <id>http://poyaojiye.com/2017/11/06/01.Linux/Ubuntu/局域网访问jupyter/</id>
+    <published>2017-11-06T06:49:08.000Z</published>
+    <updated>2017-11-06T06:52:26.328Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>安装jupyter</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo pip3 install jupyter</div></pre></td></tr></table></figure></li><li><p>局域网内访问jupyter</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 加上jupyter： --ip=&quot;*&quot;</div><div class="line">jupyter notebook --ip=&quot;*&quot;</div></pre></td></tr></table></figure></li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><blockquote><ol><li>创建于 2017-11-6 14:49:08</li></ol></blockquote></blockquote><p><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装jupyter&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;
+      
+    
+    </summary>
+    
+      <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
+    
+    
+      <category term="jupyter" scheme="http://poyaojiye.com/tags/jupyter/"/>
+    
+      <category term="局域网" scheme="http://poyaojiye.com/tags/%E5%B1%80%E5%9F%9F%E7%BD%91/"/>
+    
+  </entry>
   
   <entry>
     <title>xshell中Ctrl+S锁定屏幕</title>
@@ -81,9 +110,9 @@
       <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
     
     
-      <category term="Vim" scheme="http://poyaojiye.com/tags/Vim/"/>
-    
       <category term="常用命令" scheme="http://poyaojiye.com/tags/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+      <category term="Vim" scheme="http://poyaojiye.com/tags/Vim/"/>
     
   </entry>
   
@@ -140,9 +169,9 @@
       <category term="01.Linux" scheme="http://poyaojiye.com/categories/01-Linux/"/>
     
     
-      <category term="常用命令" scheme="http://poyaojiye.com/tags/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    
       <category term="Linux" scheme="http://poyaojiye.com/tags/Linux/"/>
+    
+      <category term="常用命令" scheme="http://poyaojiye.com/tags/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -200,7 +229,7 @@
     <link href="http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201710/"/>
     <id>http://poyaojiye.com/2017/10/29/11.碎碎念/碎碎念201710/</id>
     <published>2017-10-29T14:47:05.000Z</published>
-    <updated>2017-10-29T15:28:53.633Z</updated>
+    <updated>2017-11-07T05:42:29.092Z</updated>
     
     <content type="html"><![CDATA[<ul><li>即时想法的问答与追踪<a id="more"></a></li></ul><ol><li>阶段性工作的抽象总结<blockquote><p>123</p></blockquote></li><li>新工作的方向，银行金融，与互联网公司的优缺点<blockquote><p>123</p></blockquote></li><li>为什么会有天才<blockquote><p>123</p></blockquote></li><li>star法则制作简历<blockquote><p>123</p></blockquote></li><li>追求其他资源的利用，避免单打独斗<blockquote><p>123</p></blockquote></li><li>裸辞的原因<blockquote><p>123</p></blockquote></li><li>Java,Python,基础算法，算法复杂度,自然语言<blockquote><p>123</p></blockquote></li><li>成功的案例<blockquote><p>与客户，业务等等打交道，业务逻辑学习能力<br>具体的案例，以及抽象出来的东西</p></blockquote></li><li>对于面试，准备，策划一场面试<blockquote><p>123</p></blockquote></li><li>面试技巧，最后环节问的问题<blockquote><p>123</p></blockquote></li><li>打有准备之仗<blockquote><p>123<br>123<br>123<br>123<br>123<br>123</p></blockquote></li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-17 17:16:19</li><li>更新于 2017-10-24 8:16:19</li></ol></blockquote><p><br><br><br></p>]]></content>
     
@@ -278,9 +307,9 @@
     <link href="http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/"/>
     <id>http://poyaojiye.com/2017/10/26/01.Linux/Ubuntu/ubuntu软件安装记录/</id>
     <published>2017-10-25T23:57:15.000Z</published>
-    <updated>2017-11-02T16:58:31.932Z</updated>
+    <updated>2017-11-06T06:48:12.748Z</updated>
     
-    <content type="html"><![CDATA[<ol><li>安装openssh-server</li><li>安装samba</li><li>安装node.js</li><li>安装git</li><li>安装gedit</li><li>安装python3 # 已自带</li><li>安装ipython3 #已自带ipython</li><li>安装pip</li><li>安装emacs</li><li>安装unzip</li><li>安装dos2unix</li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-25 17:02:19</li></ol></blockquote><p><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<ol><li>安装openssh-server</li><li>安装samba</li><li>安装node.js</li><li>安装git</li><li>安装gedit</li><li>安装python3 # 已自带</li><li>安装ipython</li><li>安装ipython3</li><li>安装unzip</li><li>安装setuptools</li><li>安装pip</li><li>安装emacs</li><li>安装dos2unix</li><li>安装tree</li><li>安装jupyter</li></ol><p><br><br><br><br><br><br><strong>欢迎评论、留言，一起交流死磕~~</strong></p><blockquote><p>ChangeLog:</p><ol><li>创建于 2017-10-25 17:02:19</li></ol></blockquote><p><br><br><br></p>]]></content>
     
     <summary type="html">
     
@@ -293,7 +322,7 @@
 &lt;li&gt;安装git&lt;/li&gt;
 &lt;li&gt;安装gedit&lt;/li&gt;
 &lt;li&gt;安装python3 # 已自带&lt;/li&gt;
-&lt;li&gt;安装ipython3 #
+&lt;li&gt;安装ipython&lt;/l
       
     
     </summary>
@@ -417,20 +446,42 @@
   </entry>
   
   <entry>
-    <title>人工智能--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    <id>http://poyaojiye.com/2017/10/23/06.人工智能/人工智能/</id>
+    <title>大学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.405Z</updated>
+    <updated>2017-10-23T00:58:28.431Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="06.人工智能" scheme="http://poyaojiye.com/categories/06-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="大学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
     
-      <category term="人工智能" scheme="http://poyaojiye.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+      <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工作忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
+    <published>2017-10-23T00:49:19.000Z</published>
+    <updated>2017-10-23T00:58:28.438Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+    
+    
+      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
@@ -453,29 +504,29 @@
   </entry>
   
   <entry>
-    <title>尬聊记--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/09.%E5%B0%AC%E8%81%8A%E8%AE%B0/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
-    <id>http://poyaojiye.com/2017/10/23/09.尬聊记/尬聊记/</id>
+    <title>人工智能--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    <id>http://poyaojiye.com/2017/10/23/06.人工智能/人工智能/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.454Z</updated>
+    <updated>2017-10-23T00:58:28.405Z</updated>
     
     <summary type="html">
     
     </summary>
     
-      <category term="09.尬聊记" scheme="http://poyaojiye.com/categories/09-%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+      <category term="06.人工智能" scheme="http://poyaojiye.com/categories/06-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
     
-      <category term="尬聊记" scheme="http://poyaojiye.com/tags/%E5%B0%AC%E8%81%8A%E8%AE%B0/"/>
+      <category term="人工智能" scheme="http://poyaojiye.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     
   </entry>
   
   <entry>
-    <title>大学忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/大学忆事/大学忆事/</id>
+    <title>中学忆事--分类占位</title>
+    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/中学忆事/中学忆事/</id>
     <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.431Z</updated>
+    <updated>2017-10-23T00:58:28.422Z</updated>
     
     <summary type="html">
     
@@ -483,50 +534,10 @@
     
       <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
     
-      <category term="大学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
+      <category term="中学忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
     
-      <category term="大学忆事" scheme="http://poyaojiye.com/tags/%E5%A4%A7%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生活忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/生活忆事/生活忆事/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.447Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="生活忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
-    
-    
-      <category term="生活忆事" scheme="http://poyaojiye.com/tags/%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>工作忆事--分类占位</title>
-    <link href="http://poyaojiye.com/2017/10/23/08.%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    <id>http://poyaojiye.com/2017/10/23/08.忆往昔/工作忆事/工作忆事/</id>
-    <published>2017-10-23T00:49:19.000Z</published>
-    <updated>2017-10-23T00:58:28.438Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="08.忆往昔" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/"/>
-    
-      <category term="工作忆事" scheme="http://poyaojiye.com/categories/08-%E5%BF%86%E5%BE%80%E6%98%94/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
-    
-    
-      <category term="工作忆事" scheme="http://poyaojiye.com/tags/%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B/"/>
+      <category term="中学忆事" scheme="http://poyaojiye.com/tags/%E4%B8%AD%E5%AD%A6%E5%BF%86%E4%BA%8B/"/>
     
   </entry>
   
