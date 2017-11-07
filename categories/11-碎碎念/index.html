@@ -133,8 +133,12 @@
 <script>
     (function(){
         if(''){
-            if (prompt('文章暂未公开，如要访问请与作者联系！') !== ''){
-                alert('密码错误，请与作者联系！');
+			var pw = prompt('文章暂未公开，访问请联系作者：\nsmart.sun@outlook.com！\n输入口令：')
+			if (pw == null){
+				alert('已取消输入，文章暂未公开，访问请联系作者：\nsmart.sun@outlook.com！');
+                history.back();
+			}else if ( pw !== ''){
+                alert('口令错误，请与作者联系：\nsmart.sun@outlook.com！');
                 history.back();
             }
         }
@@ -336,9 +340,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/10/29/11.碎碎念/碎碎念201710/" itemprop="url">
+            <a class="post-title-link" href="/2017/10/29/11.碎碎念/碎碎念201711/" itemprop="url">
               
-                <span itemprop="name">碎碎念201710</span>
+                <span itemprop="name">碎碎念201711</span>
               
             </a>
         
@@ -364,9 +368,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2017/10/29/11.碎碎念/碎碎念201711/" itemprop="url">
+            <a class="post-title-link" href="/2017/10/29/11.碎碎念/碎碎念201710/" itemprop="url">
               
-                <span itemprop="name">碎碎念201711</span>
+                <span itemprop="name">碎碎念201710</span>
               
             </a>
         

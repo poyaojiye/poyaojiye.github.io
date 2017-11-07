@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="泼妖&amp;极爷的博客">
 <meta property="og:description" content="参考我的博客  git pages 源码迁移的原因 需要更换git pages 源码所在的机器重装系统多终端使用编辑博客">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-29T08:21:33.749Z">
+<meta property="og:updated_time" content="2017-11-07T06:55:24.940Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitPages博客源码迁移">
 <meta name="twitter:description" content="参考我的博客  git pages 源码迁移的原因 需要更换git pages 源码所在的机器重装系统多终端使用编辑博客">
@@ -135,8 +135,12 @@
 <script>
     (function(){
         if(''){
-            if (prompt('文章暂未公开，如要访问请与作者联系！') !== ''){
-                alert('密码错误，请与作者联系！');
+			var pw = prompt('文章暂未公开，访问请联系作者：\nsmart.sun@outlook.com！\n输入口令：')
+			if (pw == null){
+				alert('已取消输入，文章暂未公开，访问请联系作者：\nsmart.sun@outlook.com！');
+                history.back();
+			}else if ( pw !== ''){
+                alert('口令错误，请与作者联系：\nsmart.sun@outlook.com！');
                 history.back();
             }
         }
@@ -426,7 +430,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  464 字
+                  466 字
                 </span>
               
 
@@ -478,7 +482,7 @@
 <li><span style="color:red;font-weight:bold">禁执行 hexo init，会新生成配置<br>文件_config.yml覆盖原有文件</span></li>
 </ul>
 <h3 id="安装node插件"><a href="#安装node插件" class="headerlink" title="安装node插件"></a>安装node插件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#会根据原来的配置文件安装所需插件</div><div class="line">npm install`</div></pre></td></tr></table></figure>
-<h3 id="到themes-主题-下，用submodule处理自定义的主题"><a href="#到themes-主题-下，用submodule处理自定义的主题" class="headerlink" title="到themes/主题 下，用submodule处理自定义的主题"></a>到themes/主题 下，用submodule处理自定义的主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git submodule init</div><div class="line">git submodule update</div></pre></td></tr></table></figure>
+<h3 id="到themes-主题-下，用submodule处理自定义的主题"><a href="#到themes-主题-下，用submodule处理自定义的主题" class="headerlink" title="到themes/主题 下，用submodule处理自定义的主题"></a>到themes/主题 下，用submodule处理自定义的主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git submodule init</div><div class="line">git submodule update</div><div class="line">git checkout master</div></pre></td></tr></table></figure>
 <ul>
 <li>这一步的前提是在原来的机器上的源码处，把themes/next添加到了submodule中</li>
 </ul>
@@ -585,8 +589,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/29/11.碎碎念/碎碎念201710/" rel="prev" title="碎碎念201710">
-                碎碎念201710 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/29/11.碎碎念/碎碎念201711/" rel="prev" title="碎碎念201711">
+                碎碎念201711 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

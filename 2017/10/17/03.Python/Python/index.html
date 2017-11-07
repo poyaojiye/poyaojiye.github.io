@@ -135,8 +135,12 @@
 <script>
     (function(){
         if(''){
-            if (prompt('文章暂未公开，如要访问请与作者联系！') !== ''){
-                alert('密码错误，请与作者联系！');
+			var pw = prompt('文章暂未公开，访问请联系作者：\nsmart.sun@outlook.com！\n输入口令：')
+			if (pw == null){
+				alert('已取消输入，文章暂未公开，访问请联系作者：\nsmart.sun@outlook.com！');
+                history.back();
+			}else if ( pw !== ''){
+                alert('口令错误，请与作者联系：\nsmart.sun@outlook.com！');
                 history.back();
             }
         }
@@ -565,8 +569,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/17/99.博客设置/Markdown博客模板/" rel="next" title="Markdown博客模板">
-                <i class="fa fa-chevron-left"></i> Markdown博客模板
+              <a href="/2017/10/16/04.Github/Git常用命令/" rel="next" title="Git常用命令">
+                <i class="fa fa-chevron-left"></i> Git常用命令
               </a>
             
           </div>
@@ -575,8 +579,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/22/10.我也是段子手/我也是段子手/" rel="prev" title="我也是段子手">
-                我也是段子手 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/17/99.博客设置/Markdown博客模板/" rel="prev" title="Markdown博客模板">
+                Markdown博客模板 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

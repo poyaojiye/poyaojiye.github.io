@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://poyaojiye.com/2017/10/28/04.Github/GitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB/</loc>
+    <lastmod>2017-11-07T06:55:24.940Z</lastmod>
+    <data>
+        <display>
+        <title>GitPages博客源码迁移</title>
+        <pubTime>2017-10-28T15:20:03.000Z</pubTime>
+        
+        <tag>Git Pages</tag>
+         
+        <tag>博客</tag>
+         
+        <tag>源码迁移</tag>
+         
+         
+           
+             
+              <breadCrumb title="04.Github" url="http://poyaojiye.com/categories/04-Github/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://poyaojiye.com/2017/10/29/11.%E7%A2%8E%E7%A2%8E%E5%BF%B5/%E7%A2%8E%E7%A2%8E%E5%BF%B5201710/</loc>
     <lastmod>2017-11-07T05:42:29.092Z</lastmod>
     <data>
@@ -75,9 +99,9 @@
         <title>Vim常用命令</title>
         <pubTime>2017-10-31T09:44:16.000Z</pubTime>
         
-        <tag>常用命令</tag>
-         
         <tag>Vim</tag>
+         
+        <tag>常用命令</tag>
          
          
            
@@ -169,9 +193,9 @@
         <title>Linux常用命令--持续更新</title>
         <pubTime>2017-10-31T05:18:37.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>常用命令</tag>
+         
+        <tag>Linux</tag>
          
          
            
@@ -215,11 +239,11 @@
         <title>ubuntu apt-get update时报waiting for headers</title>
         <pubTime>2017-10-31T03:54:10.000Z</pubTime>
         
+        <tag>ubuntu</tag>
+         
         <tag>waiting for headers</tag>
          
         <tag>apt-get update</tag>
-         
-        <tag>ubuntu</tag>
          
          
            
@@ -245,30 +269,6 @@
            
              
               <breadCrumb title="11.碎碎念" url="http://poyaojiye.com/categories/11-%E7%A2%8E%E7%A2%8E%E5%BF%B5/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://poyaojiye.com/2017/10/28/04.Github/GitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB/</loc>
-    <lastmod>2017-10-29T08:21:33.749Z</lastmod>
-    <data>
-        <display>
-        <title>GitPages博客源码迁移</title>
-        <pubTime>2017-10-28T15:20:03.000Z</pubTime>
-        
-        <tag>Git Pages</tag>
-         
-        <tag>博客</tag>
-         
-        <tag>源码迁移</tag>
-         
-         
-           
-             
-              <breadCrumb title="04.Github" url="http://poyaojiye.com/categories/04-Github/"/>
           
         </display>
     </data>

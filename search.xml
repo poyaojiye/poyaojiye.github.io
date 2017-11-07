@@ -33,8 +33,8 @@
         <category>01.Linux</category>
       </categories>
       <tags>
-        <tag>常用命令</tag>
         <tag>Vim</tag>
+        <tag>常用命令</tag>
       </tags>
   </entry>
   <entry>
@@ -59,8 +59,8 @@
         <category>01.Linux</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
         <tag>常用命令</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -71,20 +71,9 @@
         <category>01.Linux</category>
       </categories>
       <tags>
+        <tag>ubuntu</tag>
         <tag>waiting for headers</tag>
         <tag>apt-get update</tag>
-        <tag>ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[碎碎念201711]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
-      <categories>
-        <category>11.碎碎念</category>
-      </categories>
-      <tags>
-        <tag>碎碎念</tag>
       </tags>
   </entry>
   <entry>
@@ -99,9 +88,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[碎碎念201711]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+      <categories>
+        <category>11.碎碎念</category>
+      </categories>
+      <tags>
+        <tag>碎碎念</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[GitPages博客源码迁移]]></title>
     <url>%2F2017%2F10%2F28%2F04.Github%2FGitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB%2F</url>
-    <content type="text"><![CDATA[参考我的博客 git pages 源码迁移的原因 需要更换git pages 源码所在的机器重装系统多终端使用编辑博客 在旧终端上要做的操作123456# 在github上新建repo，在本地hexo文件夹(你的源码文件夹)执行：git initgit remote add origin https://github.com/poyaojiye/hexo.gitgit add .git commit -m &quot;xxx&quot;git push origin master 另外，自定义主题 themes/主题的同步问题，需要使用submodule解决如果你的博客主题是直接clone了第三方的仓库，push hexo 到github 后，themes/主题文件夹是空的，需要使用git 子模块解决首先把主题fork到自己的github中，然后添加到子模块： 1git submodule add git@github.com:poyaojiye/hexo-theme-next.git themes/next 安装环境，node.js，git12345sudo apt install nodejs-legacysudo apt install npmsudo apt install gitgit config --global user.name &quot;your github username&quot;git config --global user.email &quot;your github email&quot; 配置ssh，前面这几步类似新建博客环境123ssh-keygen -t rsa -C &quot;your github email&quot;github 设置 添加pub key测试连接：ssh -T git@github.com 安装hexosudo npm install -g hexo-cli clone源码123# 我的源码文件夹是hexo，创建源码文件夹hexo# clone 源码到hexogit clone https://github.com/poyaojiye/hexo.git ./ 禁执行 hexo init，会新生成配置文件_config.yml覆盖原有文件 安装node插件12#会根据原来的配置文件安装所需插件npm install` 到themes/主题 下，用submodule处理自定义的主题12git submodule initgit submodule update 这一步的前提是在原来的机器上的源码处，把themes/next添加到了submodule中 注意 # 对于插件wordcount：# Node 版本7.6.0之前,请安装 2.x 版本 (Node.js v7.6.0 and previous)npm install hexo-wordcount@2 –save 参考我的博客 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-28 23:20:03]]></content>
+    <content type="text"><![CDATA[参考我的博客 git pages 源码迁移的原因 需要更换git pages 源码所在的机器重装系统多终端使用编辑博客 在旧终端上要做的操作123456# 在github上新建repo，在本地hexo文件夹(你的源码文件夹)执行：git initgit remote add origin https://github.com/poyaojiye/hexo.gitgit add .git commit -m &quot;xxx&quot;git push origin master 另外，自定义主题 themes/主题的同步问题，需要使用submodule解决如果你的博客主题是直接clone了第三方的仓库，push hexo 到github 后，themes/主题文件夹是空的，需要使用git 子模块解决首先把主题fork到自己的github中，然后添加到子模块： 1git submodule add git@github.com:poyaojiye/hexo-theme-next.git themes/next 安装环境，node.js，git12345sudo apt install nodejs-legacysudo apt install npmsudo apt install gitgit config --global user.name &quot;your github username&quot;git config --global user.email &quot;your github email&quot; 配置ssh，前面这几步类似新建博客环境123ssh-keygen -t rsa -C &quot;your github email&quot;github 设置 添加pub key测试连接：ssh -T git@github.com 安装hexosudo npm install -g hexo-cli clone源码123# 我的源码文件夹是hexo，创建源码文件夹hexo# clone 源码到hexogit clone https://github.com/poyaojiye/hexo.git ./ 禁执行 hexo init，会新生成配置文件_config.yml覆盖原有文件 安装node插件12#会根据原来的配置文件安装所需插件npm install` 到themes/主题 下，用submodule处理自定义的主题123git submodule initgit submodule updategit checkout master 这一步的前提是在原来的机器上的源码处，把themes/next添加到了submodule中 注意 # 对于插件wordcount：# Node 版本7.6.0之前,请安装 2.x 版本 (Node.js v7.6.0 and previous)npm install hexo-wordcount@2 –save 参考我的博客 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-28 23:20:03]]></content>
       <categories>
         <category>04.Github</category>
       </categories>
@@ -200,15 +200,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[工作忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[尬聊记--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
     <content type="text"></content>
       <categories>
-        <category>08.忆往昔</category>
-        <category>工作忆事</category>
+        <category>09.尬聊记</category>
       </categories>
       <tags>
-        <tag>工作忆事</tag>
+        <tag>尬聊记</tag>
       </tags>
   </entry>
   <entry>
@@ -220,6 +219,18 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[工作忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F%E5%B7%A5%E4%BD%9C%E5%BF%86%E4%BA%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>08.忆往昔</category>
+        <category>工作忆事</category>
+      </categories>
+      <tags>
+        <tag>工作忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -246,17 +257,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[尬聊记--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>09.尬聊记</category>
-      </categories>
-      <tags>
-        <tag>尬聊记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[生活忆事--分类占位]]></title>
     <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
@@ -280,6 +280,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
+    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19]]></content>
+      <categories>
+        <category>99.博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客模板</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[安装python、pycharm]]></title>
     <url>%2F2017%2F10%2F17%2F03.Python%2FPython%2F</url>
     <content type="text"><![CDATA[下载pythonhttps://www.python.org/downloads/ 安装 环境变量，path IDE pycharmhttp://www.jetbrains.com/pycharm/download/#section=windows然后搜索pycharm 激活http://idea.lanyus.com/ pycharm 的使用http://www.cnblogs.com/programmer-tlh/p/5733689.html 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
@@ -290,18 +302,6 @@
         <tag>安装</tag>
         <tag>python</tag>
         <tag>pycharm</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Markdown博客模板]]></title>
-    <url>%2F2017%2F10%2F17%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E5%8D%9A%E5%AE%A2%E6%A8%A1%E6%9D%BF%2F</url>
-    <content type="text"><![CDATA[Markdown博客模板博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19]]></content>
-      <categories>
-        <category>99.博客设置</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>博客模板</tag>
       </tags>
   </entry>
   <entry>
