@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://poyaojiye.com/2017/11/07/99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/Markdown%E6%95%B0%E6%8D%AE%E5%85%AC%E5%BC%8F/</loc>
+    <lastmod>2017-11-07T10:06:16.078Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown博客模板</title>
+        <pubTime>2017-11-07T08:05:35.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>数学公式</tag>
+         
+         
+           
+             
+              <breadCrumb title="99.博客设置" url="http://poyaojiye.com/categories/99-%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://poyaojiye.com/2017/10/28/04.Github/GitPage%E5%8D%9A%E5%AE%A2%E6%BA%90%E7%A0%81%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2017-11-07T06:55:24.940Z</lastmod>
     <data>
@@ -239,11 +261,11 @@
         <title>ubuntu apt-get update时报waiting for headers</title>
         <pubTime>2017-10-31T03:54:10.000Z</pubTime>
         
-        <tag>ubuntu</tag>
-         
         <tag>waiting for headers</tag>
          
         <tag>apt-get update</tag>
+         
+        <tag>ubuntu</tag>
          
          
            

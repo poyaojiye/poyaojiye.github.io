@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Markdown博客模板]]></title>
+    <url>%2F2017%2F11%2F07%2F99.%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE%2FMarkdown%E6%95%B0%E6%8D%AE%E5%85%AC%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[平方差公式 $$a^2-b^2= (a+b)(a-b)$$ 立方差公式 $a^3-b^3 = (a+b)(a^2-ab+b^2)$ 立方和公式 $a^3+b^3 = (a-b)(a^2+ab+b^2)$ 完全平方公式 $(a + b)^2 = a^2 + 2ab+b^2$$(a - b)^2 = a^2 - 2ab+b^2$ 一元二次方程求根公式 $ax^2+bx+c =0$$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ 韦达定理 设$x1,x2$是一元二次方程$ax^2+bx+c =0$的两个根，则$x1,x2$满足:$x1+x2 = -\frac{b}{a}$$x1 \cdot x2 = \frac{c}{a}$ 有关集合的公式 设$I$为全集，$\varnothing$为空集，如果$A$是$I$的子集,$B$是$I$的子集，则$A \subset I$,$B \subset I$。于是，$I \cup A = I$$I \cap \varnothing = \varnothing$若$\bar A ={x|x \in I且x \notin A,A \subseteq I }$,$\bar B ={x|x \in I且x \notin B,B \subseteq I }$则$A \cup \bar A = I$$A \cap \bar A = \varnothing$$\overline {A \cap B} = \bar A \cup \bar B$$\overline {A \cup B} = \bar A \cap \bar B$ 不等式 $|a| \ge 0$$|a|-|b| \le |a+b| \le |a|+|b|$$|a| \le b$$|a| \le b \Leftrightarrow -b \le a \le b (b&gt;0)$$a^2+b^2 \gt 2ab (a,b \in R)$$\frac{a+b}{2} \ge \sqrt{ab} (a,b \in R^+)$$\frac{b}{a} + \frac{a}{b} \ge 2 (ab&gt;0)$$\frac{a+b+c}{3} \ge \sqrt[3]{abc} (a,b,c \in R)$$\frac{a_1+a_2+ \ldots +a_n}{n} \ge \sqrt[n]{a_1a_2\ldots a_n} a_1,a_2, \ldots,a_n \in R^+ n \in N且n&gt;1$ 排列组合 $A_n^m = \frac{n!}{(n-m)!}$$C_n^m = \frac{n!}{m!(n-m)!}$$C_n^m = Cn^(n-m)$$C{n+1}^m = C_n^m + C_n^{m-1}$$C_n^0+C_n^1+\ldots +C_n^n = 2^n$ 积分公式 $\int sin(x)dx = cos(x) +C$$\int cos(x)dx = -sin(x) +C$$\int tan(x)dx = -ln|cos(x)| +C$$\int cot(s)dx = ln|sin(x)| +C$$\int sec^2(x)dx = tan(x) +C$ 导数公式 $(C)’=0$$(sin \,x)’ = cos \,x$$(tan \,x)’ = sec^2 \,x$$(sec \,x)’ = sec \,xtan \,x$$(a^x)’ = a^xln \,x$$(x^{\mu}) = \mu x^{\mu-1}$$(cos \,x)’ = -sin \,x$$(cot \,x)’ = -csc^2 \,x$$(csc \,x)’ = -csc \,xcot \,x$$(e^x)’ = e^x$$$(log_ax)’ = \frac{1}{xln \,a}$$$$(ln \,x)’ = \frac{1}{x}$$$$(arcsin \,x)’ = \frac{1}{\sqrt{1-x^2}}$$$$(arccos \,x)’ = -\frac{1}{\sqrt{1-x^2}}$$$$(arctan \,x)’ = \frac{1}{1+x^2}$$$$(arccot \,x)’ = -\frac{1}{1+x^2}$$ 重要的极限 $$\lim{x\to 0} \,{\frac{\sin x}{x}} = 1$$$$\lim{x\to \infty} \,{({1+ \frac{1}{x}})}^x = e$$ 参考地址：http://blog.csdn.net/sanqima/article/details/48576361 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-11-7 16:05:35]]></content>
+      <categories>
+        <category>99.博客设置</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>数学公式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[局域网访问jupyter]]></title>
     <url>%2F2017%2F11%2F06%2F01.Linux%2FUbuntu%2F%E5%B1%80%E5%9F%9F%E7%BD%91%E8%AE%BF%E9%97%AEjupyter%2F</url>
     <content type="text"><![CDATA[安装jupyter 1sudo pip3 install jupyter 局域网内访问jupyter 12# 加上jupyter： --ip=&quot;*&quot;jupyter notebook --ip=&quot;*&quot; 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-11-6 14:49:08]]></content>
@@ -71,15 +83,15 @@
         <category>01.Linux</category>
       </categories>
       <tags>
-        <tag>ubuntu</tag>
         <tag>waiting for headers</tag>
         <tag>apt-get update</tag>
+        <tag>ubuntu</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[碎碎念201710]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201710%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 阶段性工作的抽象总结 123 新工作的方向，银行金融，与互联网公司的优缺点 123 为什么会有天才 123 star法则制作简历 123 追求其他资源的利用，避免单打独斗 123 裸辞的原因 123 Java,Python,基础算法，算法复杂度,自然语言 123 成功的案例 与客户，业务等等打交道，业务逻辑学习能力具体的案例，以及抽象出来的东西 对于面试，准备，策划一场面试 123 面试技巧，最后环节问的问题 123 打有准备之仗 123123123123123123 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+    <title><![CDATA[碎碎念201711]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>11.碎碎念</category>
       </categories>
@@ -88,9 +100,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[碎碎念201711]]></title>
-    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201711%2F</url>
-    <content type="text"><![CDATA[即时想法的问答与追踪 123 123 博客内容博客内容 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
+    <title><![CDATA[碎碎念201710]]></title>
+    <url>%2F2017%2F10%2F29%2F11.%E7%A2%8E%E7%A2%8E%E5%BF%B5%2F%E7%A2%8E%E7%A2%8E%E5%BF%B5201710%2F</url>
+    <content type="text"><![CDATA[即时想法的问答与追踪 阶段性工作的抽象总结 123 新工作的方向，银行金融，与互联网公司的优缺点 123 为什么会有天才 123 star法则制作简历 123 追求其他资源的利用，避免单打独斗 123 裸辞的原因 123 Java,Python,基础算法，算法复杂度,自然语言 123 成功的案例 与客户，业务等等打交道，业务逻辑学习能力具体的案例，以及抽象出来的东西 对于面试，准备，策划一场面试 123 面试技巧，最后环节问的问题 123 打有准备之仗 123123123123123123 欢迎评论、留言，一起交流死磕~~ ChangeLog: 创建于 2017-10-17 17:16:19 更新于 2017-10-24 8:16:19]]></content>
       <categories>
         <category>11.碎碎念</category>
       </categories>
@@ -176,15 +188,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
+    <title><![CDATA[尬聊记--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
     <content type="text"></content>
       <categories>
-        <category>07.自然语言处理(NLP)</category>
+        <category>09.尬聊记</category>
       </categories>
       <tags>
-        <tag>自然语言处理</tag>
-        <tag>NLP</tag>
+        <tag>尬聊记</tag>
       </tags>
   </entry>
   <entry>
@@ -197,17 +208,6 @@
       </categories>
       <tags>
         <tag>大学忆事</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[尬聊记--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F09.%E5%B0%AC%E8%81%8A%E8%AE%B0%2F%E5%B0%AC%E8%81%8A%E8%AE%B0%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>09.尬聊记</category>
-      </categories>
-      <tags>
-        <tag>尬聊记</tag>
       </tags>
   </entry>
   <entry>
@@ -234,14 +234,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[人工智能--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
+    <title><![CDATA[生活忆事--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
     <content type="text"></content>
       <categories>
-        <category>06.人工智能</category>
+        <category>08.忆往昔</category>
+        <category>生活忆事</category>
       </categories>
       <tags>
-        <tag>人工智能</tag>
+        <tag>生活忆事</tag>
       </tags>
   </entry>
   <entry>
@@ -257,15 +258,26 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[生活忆事--分类占位]]></title>
-    <url>%2F2017%2F10%2F23%2F08.%E5%BF%86%E5%BE%80%E6%98%94%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F%E7%94%9F%E6%B4%BB%E5%BF%86%E4%BA%8B%2F</url>
+    <title><![CDATA[人工智能--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F06.%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%2F</url>
     <content type="text"></content>
       <categories>
-        <category>08.忆往昔</category>
-        <category>生活忆事</category>
+        <category>06.人工智能</category>
       </categories>
       <tags>
-        <tag>生活忆事</tag>
+        <tag>人工智能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[自然语言处理(NLP)--分类占位]]></title>
+    <url>%2F2017%2F10%2F23%2F07.%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86(NLP)%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>07.自然语言处理(NLP)</category>
+      </categories>
+      <tags>
+        <tag>自然语言处理</tag>
+        <tag>NLP</tag>
       </tags>
   </entry>
   <entry>
